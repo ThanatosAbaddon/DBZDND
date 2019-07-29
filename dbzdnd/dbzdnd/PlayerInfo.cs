@@ -10,11 +10,15 @@ using System.Windows.Forms;
 
 namespace dbzdnd
 {
-    public partial class Form1 : Form
+    public partial class PlayerInfo : Form
     {
-        public Form1()
+        public PlayerInfo()
         {
             InitializeComponent();
+        }
+
+        private void PlayerInfo_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }

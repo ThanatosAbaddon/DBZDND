@@ -1,0 +1,11 @@
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.exe.config
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.exe
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.pdb
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csprojAssemblyReference.cache
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.MainForm.resources
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.Properties.Resources.resources
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.GenerateResource.cache
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CoreCompileInputs.cache
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.exe
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.pdb
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.PlayerInfo.resources
