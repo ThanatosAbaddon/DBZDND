@@ -13,20 +13,32 @@ namespace dbzdnd
     public partial class MainForm : Form
     {
         private PlayerInfo infoWindow = new PlayerInfo();
+        private Transformations transformWindow = new Transformations();
+        private Skills skillWindow = new Skills();
+        private Inventory inventoryWindow = new Inventory();
 
         public MainForm()
         {
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void openWindow(Form Window)
+        {
+
+            if (Window.Visible == false)
+            {
+                Window.Show();
+            }
+            else
+            {
+                Window.BringToFront();
+            }
         }
 
         private void PlayerInfo_Click(object sender, EventArgs e)
@@ -35,16 +47,38 @@ namespace dbzdnd
             {
                 infoWindow = new PlayerInfo();
             }
-            if (infoWindow.Visible == false)
-            {
-                infoWindow.Show();
-            }
-            
+            openWindow(infoWindow);
+
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            if (inventoryWindow.IsDisposed == true)
+            {
+                inventoryWindow = new Inventory();
+            }
+            openWindow(inventoryWindow);
+        }
+
+        private void btnTransform_Click(object sender, EventArgs e)
+        {
+            
+            if (transformWindow.IsDisposed == true)
+            {
+                transformWindow = new Transformations();
+            }
+            openWindow(transformWindow);
+
+        }
+
+        private void btnSkills_Click(object sender, EventArgs e)
+        {
+            if (skillWindow.IsDisposed == true)
+            {
+                skillWindow = new Skills();
+            }
+            openWindow(skillWindow);
         }
     }
 }

@@ -29,59 +29,27 @@
         private void InitializeComponent()
         {
             this.btnInfo = new System.Windows.Forms.Button();
-            this.cbInventory = new System.Windows.Forms.ComboBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbCharacterPicture = new System.Windows.Forms.PictureBox();
             this.nudLevel = new System.Windows.Forms.NumericUpDown();
             this.lblLevel = new System.Windows.Forms.Label();
-            this.btnAmountAdd = new System.Windows.Forms.Button();
-            this.btnAmountMinus = new System.Windows.Forms.Button();
-            this.lblAmount = new System.Windows.Forms.Label();
-            this.cbEquipment = new System.Windows.Forms.ComboBox();
-            this.cbEquipmentStatChanged = new System.Windows.Forms.ComboBox();
-            this.nudEquipmentStatValue = new System.Windows.Forms.NumericUpDown();
-            this.InventoryGroup = new System.Windows.Forms.GroupBox();
             this.PlayerGroup = new System.Windows.Forms.GroupBox();
             this.lblPowerLevel = new System.Windows.Forms.Label();
             this.tabStrengthTop = new System.Windows.Forms.TabControl();
             this.tabStrength = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.StatsGroup = new System.Windows.Forms.GroupBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.label11 = new System.Windows.Forms.Label();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
@@ -92,6 +60,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
@@ -102,12 +71,14 @@
             this.label21 = new System.Windows.Forms.Label();
             this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
             this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
@@ -116,6 +87,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.numericUpDown31 = new System.Windows.Forms.NumericUpDown();
@@ -126,57 +98,101 @@
             this.label33 = new System.Windows.Forms.Label();
             this.numericUpDown34 = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.nudStatPoints = new System.Windows.Forms.NumericUpDown();
+            this.lblStats = new System.Windows.Forms.Label();
+            this.lblSpec = new System.Windows.Forms.Label();
+            this.nudSpecPoints = new System.Windows.Forms.NumericUpDown();
+            this.StatsGroup = new System.Windows.Forms.GroupBox();
+            this.nudCurrentHealth = new System.Windows.Forms.NumericUpDown();
+            this.BattleGroup = new System.Windows.Forms.GroupBox();
+            this.btnSkills = new System.Windows.Forms.Button();
+            this.btnTransform = new System.Windows.Forms.Button();
+            this.btnAddConstStam = new System.Windows.Forms.Button();
+            this.btnRecieveDamage = new System.Windows.Forms.Button();
+            this.btnSuper = new System.Windows.Forms.Button();
+            this.btnAttack = new System.Windows.Forms.Button();
+            this.btnFillStamina = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.nudCurrentStamina = new System.Windows.Forms.NumericUpDown();
+            this.btnFillChi = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.nudCurrentChi = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.nudEXP = new System.Windows.Forms.NumericUpDown();
+            this.btnFillHealth = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.InventoryGroup = new System.Windows.Forms.GroupBox();
+            this.btnInventory = new System.Windows.Forms.Button();
+            this.lblStimPills = new System.Windows.Forms.Label();
+            this.lblRecoveryPills = new System.Windows.Forms.Label();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.nudStimPill = new System.Windows.Forms.NumericUpDown();
+            this.nudRecPill = new System.Windows.Forms.NumericUpDown();
+            this.nudCredits = new System.Windows.Forms.NumericUpDown();
+            this.btnUseStim = new System.Windows.Forms.Button();
+            this.btnUseRec = new System.Windows.Forms.Button();
+            this.btnAddStim = new System.Windows.Forms.Button();
+            this.btnAddRec = new System.Windows.Forms.Button();
+            this.btnAddCredits = new System.Windows.Forms.Button();
+            this.btnRemStim = new System.Windows.Forms.Button();
+            this.btnRemRec = new System.Windows.Forms.Button();
+            this.btnRemoveCredits = new System.Windows.Forms.Button();
+            this.btnRemEnergy = new System.Windows.Forms.Button();
+            this.btnAddEnergy = new System.Windows.Forms.Button();
+            this.btnUseEnergy = new System.Windows.Forms.Button();
+            this.nudEnergyPill = new System.Windows.Forms.NumericUpDown();
+            this.lblEnergyPills = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEquipmentStatValue)).BeginInit();
-            this.InventoryGroup.SuspendLayout();
             this.PlayerGroup.SuspendLayout();
             this.tabStrengthTop.SuspendLayout();
             this.tabStrength.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            this.StatsGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpecPoints)).BeginInit();
+            this.StatsGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentHealth)).BeginInit();
+            this.BattleGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentStamina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentChi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).BeginInit();
+            this.InventoryGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInfo
@@ -189,22 +205,6 @@
             this.btnInfo.UseVisualStyleBackColor = true;
             this.btnInfo.Click += new System.EventHandler(this.PlayerInfo_Click);
             // 
-            // cbInventory
-            // 
-            this.cbInventory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbInventory.FormattingEnabled = true;
-            this.cbInventory.Items.AddRange(new object[] {
-            "Recovery Pills",
-            "Stamina Pills",
-            "Credits",
-            "Add"});
-            this.cbInventory.Location = new System.Drawing.Point(6, 19);
-            this.cbInventory.Name = "cbInventory";
-            this.cbInventory.Size = new System.Drawing.Size(346, 28);
-            this.cbInventory.TabIndex = 4;
-            this.cbInventory.Text = "Inventory";
-            this.cbInventory.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
             // lblName
             // 
             this.lblName.AutoSize = true;
@@ -215,15 +215,15 @@
             this.lblName.TabIndex = 5;
             this.lblName.Text = "PlayerName";
             // 
-            // pictureBox1
+            // pbCharacterPicture
             // 
-            this.pictureBox1.Image = global::dbzdnd.Properties.Resources.CharacterPic;
-            this.pictureBox1.Location = new System.Drawing.Point(376, 236);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 306);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbCharacterPicture.Image = global::dbzdnd.Properties.Resources.CharacterPic;
+            this.pbCharacterPicture.Location = new System.Drawing.Point(376, 236);
+            this.pbCharacterPicture.Name = "pbCharacterPicture";
+            this.pbCharacterPicture.Size = new System.Drawing.Size(350, 306);
+            this.pbCharacterPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCharacterPicture.TabIndex = 2;
+            this.pbCharacterPicture.TabStop = false;
             // 
             // nudLevel
             // 
@@ -242,82 +242,6 @@
             this.lblLevel.Size = new System.Drawing.Size(46, 20);
             this.lblLevel.TabIndex = 7;
             this.lblLevel.Text = "Level";
-            // 
-            // btnAmountAdd
-            // 
-            this.btnAmountAdd.Location = new System.Drawing.Point(290, 53);
-            this.btnAmountAdd.Name = "btnAmountAdd";
-            this.btnAmountAdd.Size = new System.Drawing.Size(28, 28);
-            this.btnAmountAdd.TabIndex = 9;
-            this.btnAmountAdd.Text = "+";
-            this.btnAmountAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnAmountMinus
-            // 
-            this.btnAmountMinus.Location = new System.Drawing.Point(324, 53);
-            this.btnAmountMinus.Name = "btnAmountMinus";
-            this.btnAmountMinus.Size = new System.Drawing.Size(28, 28);
-            this.btnAmountMinus.TabIndex = 10;
-            this.btnAmountMinus.Text = "-";
-            this.btnAmountMinus.UseVisualStyleBackColor = true;
-            // 
-            // lblAmount
-            // 
-            this.lblAmount.AutoSize = true;
-            this.lblAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmount.Location = new System.Drawing.Point(2, 56);
-            this.lblAmount.Name = "lblAmount";
-            this.lblAmount.Size = new System.Drawing.Size(69, 20);
-            this.lblAmount.TabIndex = 11;
-            this.lblAmount.Text = "Amount:";
-            // 
-            // cbEquipment
-            // 
-            this.cbEquipment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEquipment.FormattingEnabled = true;
-            this.cbEquipment.Items.AddRange(new object[] {
-            "add"});
-            this.cbEquipment.Location = new System.Drawing.Point(6, 87);
-            this.cbEquipment.Name = "cbEquipment";
-            this.cbEquipment.Size = new System.Drawing.Size(346, 28);
-            this.cbEquipment.TabIndex = 12;
-            this.cbEquipment.Text = "Equipment";
-            // 
-            // cbEquipmentStatChanged
-            // 
-            this.cbEquipmentStatChanged.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbEquipmentStatChanged.FormattingEnabled = true;
-            this.cbEquipmentStatChanged.Items.AddRange(new object[] {
-            "add"});
-            this.cbEquipmentStatChanged.Location = new System.Drawing.Point(6, 121);
-            this.cbEquipmentStatChanged.Name = "cbEquipmentStatChanged";
-            this.cbEquipmentStatChanged.Size = new System.Drawing.Size(250, 28);
-            this.cbEquipmentStatChanged.TabIndex = 13;
-            this.cbEquipmentStatChanged.Text = "Stat Changed";
-            // 
-            // nudEquipmentStatValue
-            // 
-            this.nudEquipmentStatValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudEquipmentStatValue.Location = new System.Drawing.Point(262, 123);
-            this.nudEquipmentStatValue.Name = "nudEquipmentStatValue";
-            this.nudEquipmentStatValue.Size = new System.Drawing.Size(90, 26);
-            this.nudEquipmentStatValue.TabIndex = 14;
-            // 
-            // InventoryGroup
-            // 
-            this.InventoryGroup.Controls.Add(this.cbInventory);
-            this.InventoryGroup.Controls.Add(this.nudEquipmentStatValue);
-            this.InventoryGroup.Controls.Add(this.btnAmountAdd);
-            this.InventoryGroup.Controls.Add(this.cbEquipmentStatChanged);
-            this.InventoryGroup.Controls.Add(this.btnAmountMinus);
-            this.InventoryGroup.Controls.Add(this.cbEquipment);
-            this.InventoryGroup.Controls.Add(this.lblAmount);
-            this.InventoryGroup.Location = new System.Drawing.Point(12, 149);
-            this.InventoryGroup.Name = "InventoryGroup";
-            this.InventoryGroup.Size = new System.Drawing.Size(358, 161);
-            this.InventoryGroup.TabIndex = 15;
-            this.InventoryGroup.TabStop = false;
-            this.InventoryGroup.Text = "Inventory";
             // 
             // PlayerGroup
             // 
@@ -379,384 +303,23 @@
             this.tabStrength.Text = "STR";
             this.tabStrength.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.numericUpDown13);
-            this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.numericUpDown14);
-            this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.numericUpDown15);
-            this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.numericUpDown16);
-            this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.numericUpDown17);
-            this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(341, 149);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "DEX";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.numericUpDown18);
-            this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.numericUpDown19);
-            this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Controls.Add(this.numericUpDown20);
-            this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.numericUpDown21);
-            this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.numericUpDown22);
-            this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(341, 149);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "CON";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.numericUpDown25);
-            this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.numericUpDown26);
-            this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Controls.Add(this.numericUpDown27);
-            this.tabPage4.Controls.Add(this.label27);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(341, 149);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "INT";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.numericUpDown24);
-            this.tabPage5.Controls.Add(this.label24);
-            this.tabPage5.Controls.Add(this.numericUpDown28);
-            this.tabPage5.Controls.Add(this.label28);
-            this.tabPage5.Controls.Add(this.numericUpDown29);
-            this.tabPage5.Controls.Add(this.label29);
-            this.tabPage5.Controls.Add(this.numericUpDown30);
-            this.tabPage5.Controls.Add(this.label30);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(341, 149);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "WISD";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.numericUpDown23);
-            this.tabPage6.Controls.Add(this.label23);
-            this.tabPage6.Controls.Add(this.numericUpDown31);
-            this.tabPage6.Controls.Add(this.label31);
-            this.tabPage6.Controls.Add(this.numericUpDown32);
-            this.tabPage6.Controls.Add(this.label32);
-            this.tabPage6.Controls.Add(this.numericUpDown33);
-            this.tabPage6.Controls.Add(this.label33);
-            this.tabPage6.Controls.Add(this.numericUpDown34);
-            this.tabPage6.Controls.Add(this.label34);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(341, 149);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "CHAR";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(89, 16);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            10000000,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(59, 21);
-            this.numericUpDown1.TabIndex = 18;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 18);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Stat Points";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(199, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Spec Points";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown2.Location = new System.Drawing.Point(293, 16);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            10000000,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(59, 21);
-            this.numericUpDown2.TabIndex = 20;
-            // 
-            // StatsGroup
-            // 
-            this.StatsGroup.Controls.Add(this.label1);
-            this.StatsGroup.Controls.Add(this.label2);
-            this.StatsGroup.Controls.Add(this.tabStrengthTop);
-            this.StatsGroup.Controls.Add(this.numericUpDown2);
-            this.StatsGroup.Controls.Add(this.numericUpDown1);
-            this.StatsGroup.Location = new System.Drawing.Point(12, 316);
-            this.StatsGroup.Name = "StatsGroup";
-            this.StatsGroup.Size = new System.Drawing.Size(358, 226);
-            this.StatsGroup.TabIndex = 22;
-            this.StatsGroup.TabStop = false;
-            this.StatsGroup.Text = "Stats";
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.numericUpDown3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown3.Location = new System.Drawing.Point(80, 19);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(200, 26);
-            this.numericUpDown3.TabIndex = 23;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button9);
-            this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button7);
-            this.groupBox1.Controls.Add(this.button6);
-            this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.numericUpDown6);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.numericUpDown5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.numericUpDown4);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.numericUpDown3);
-            this.groupBox1.Location = new System.Drawing.Point(376, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(350, 213);
-            this.groupBox1.TabIndex = 24;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Battle Stats";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(6, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 20);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Health";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(287, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 23);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Full";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(6, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 20);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "EXP";
-            // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown4.Location = new System.Drawing.Point(80, 51);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(200, 26);
-            this.numericUpDown4.TabIndex = 26;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(287, 85);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(57, 23);
-            this.button3.TabIndex = 31;
-            this.button3.Text = "Full";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(6, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 20);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Chi";
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown5.Location = new System.Drawing.Point(80, 83);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(200, 26);
-            this.numericUpDown5.TabIndex = 29;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(287, 117);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(57, 23);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Full";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(6, 117);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 20);
-            this.label6.TabIndex = 33;
-            this.label6.Text = "Stamina";
-            // 
-            // numericUpDown6
-            // 
-            this.numericUpDown6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.numericUpDown6.Location = new System.Drawing.Point(80, 115);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(137, 26);
-            this.numericUpDown6.TabIndex = 32;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(10, 147);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(103, 23);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "Attack";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(119, 147);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 23);
-            this.button6.TabIndex = 36;
-            this.button6.Text = "Supers";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(10, 176);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(160, 23);
-            this.button7.TabIndex = 37;
-            this.button7.Text = "Recieve Damage";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Strength: ";
-            // 
-            // numericUpDown7
-            // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown7.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown7.TabIndex = 1;
-            // 
-            // numericUpDown8
-            // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown8.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown8.TabIndex = 3;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 28);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 16);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Basic Attack:";
-            // 
-            // numericUpDown9
-            // 
-            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown9.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown9.TabIndex = 5;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 52);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 16);
-            this.label9.TabIndex = 4;
-            this.label9.Text = "Strike Supers:";
-            // 
-            // numericUpDown10
-            // 
-            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown10.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown10.TabIndex = 7;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(7, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 16);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "Chi Blast Supers:";
+            // numericUpDown12
+            // 
+            this.numericUpDown12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown12.Location = new System.Drawing.Point(118, 122);
+            this.numericUpDown12.Name = "numericUpDown12";
+            this.numericUpDown12.Size = new System.Drawing.Size(217, 21);
+            this.numericUpDown12.TabIndex = 11;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(7, 124);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 16);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Power:";
             // 
             // numericUpDown11
             // 
@@ -776,23 +339,97 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Athletics:";
             // 
-            // numericUpDown12
+            // numericUpDown10
             // 
-            this.numericUpDown12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown12.Location = new System.Drawing.Point(118, 122);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown12.TabIndex = 11;
+            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown10.Location = new System.Drawing.Point(118, 74);
+            this.numericUpDown10.Name = "numericUpDown10";
+            this.numericUpDown10.Size = new System.Drawing.Size(217, 21);
+            this.numericUpDown10.TabIndex = 7;
             // 
-            // label12
+            // label10
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(7, 124);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 16);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Power:";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(7, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(109, 16);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Chi Blast Supers:";
+            // 
+            // numericUpDown9
+            // 
+            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown9.Location = new System.Drawing.Point(118, 50);
+            this.numericUpDown9.Name = "numericUpDown9";
+            this.numericUpDown9.Size = new System.Drawing.Size(217, 21);
+            this.numericUpDown9.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(7, 52);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 16);
+            this.label9.TabIndex = 4;
+            this.label9.Text = "Strike Supers:";
+            // 
+            // numericUpDown8
+            // 
+            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown8.Location = new System.Drawing.Point(118, 26);
+            this.numericUpDown8.Name = "numericUpDown8";
+            this.numericUpDown8.Size = new System.Drawing.Size(217, 21);
+            this.numericUpDown8.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(7, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(85, 16);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Basic Attack:";
+            // 
+            // numericUpDown7
+            // 
+            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numericUpDown7.Location = new System.Drawing.Point(118, 2);
+            this.numericUpDown7.Name = "numericUpDown7";
+            this.numericUpDown7.Size = new System.Drawing.Size(217, 21);
+            this.numericUpDown7.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(7, 4);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(63, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Strength: ";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.numericUpDown13);
+            this.tabPage2.Controls.Add(this.label13);
+            this.tabPage2.Controls.Add(this.numericUpDown14);
+            this.tabPage2.Controls.Add(this.label14);
+            this.tabPage2.Controls.Add(this.numericUpDown15);
+            this.tabPage2.Controls.Add(this.label15);
+            this.tabPage2.Controls.Add(this.numericUpDown16);
+            this.tabPage2.Controls.Add(this.label16);
+            this.tabPage2.Controls.Add(this.numericUpDown17);
+            this.tabPage2.Controls.Add(this.label17);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(341, 229);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "DEX";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // numericUpDown13
             // 
@@ -884,6 +521,26 @@
             this.label17.TabIndex = 10;
             this.label17.Text = "Dexterity: ";
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.numericUpDown18);
+            this.tabPage3.Controls.Add(this.label18);
+            this.tabPage3.Controls.Add(this.numericUpDown19);
+            this.tabPage3.Controls.Add(this.label19);
+            this.tabPage3.Controls.Add(this.numericUpDown20);
+            this.tabPage3.Controls.Add(this.label20);
+            this.tabPage3.Controls.Add(this.numericUpDown21);
+            this.tabPage3.Controls.Add(this.label21);
+            this.tabPage3.Controls.Add(this.numericUpDown22);
+            this.tabPage3.Controls.Add(this.label22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(341, 229);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "CON";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown18
             // 
             this.numericUpDown18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -974,6 +631,22 @@
             this.label22.TabIndex = 10;
             this.label22.Text = "Constitution:";
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.numericUpDown25);
+            this.tabPage4.Controls.Add(this.label25);
+            this.tabPage4.Controls.Add(this.numericUpDown26);
+            this.tabPage4.Controls.Add(this.label26);
+            this.tabPage4.Controls.Add(this.numericUpDown27);
+            this.tabPage4.Controls.Add(this.label27);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(341, 229);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "INT";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown25
             // 
             this.numericUpDown25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1027,6 +700,24 @@
             this.label27.Size = new System.Drawing.Size(82, 16);
             this.label27.TabIndex = 10;
             this.label27.Text = "Intelligence: ";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.numericUpDown24);
+            this.tabPage5.Controls.Add(this.label24);
+            this.tabPage5.Controls.Add(this.numericUpDown28);
+            this.tabPage5.Controls.Add(this.label28);
+            this.tabPage5.Controls.Add(this.numericUpDown29);
+            this.tabPage5.Controls.Add(this.label29);
+            this.tabPage5.Controls.Add(this.numericUpDown30);
+            this.tabPage5.Controls.Add(this.label30);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(341, 229);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "WISD";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // numericUpDown24
             // 
@@ -1099,6 +790,26 @@
             this.label30.Size = new System.Drawing.Size(64, 16);
             this.label30.TabIndex = 10;
             this.label30.Text = "Wisdom: ";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.numericUpDown23);
+            this.tabPage6.Controls.Add(this.label23);
+            this.tabPage6.Controls.Add(this.numericUpDown31);
+            this.tabPage6.Controls.Add(this.label31);
+            this.tabPage6.Controls.Add(this.numericUpDown32);
+            this.tabPage6.Controls.Add(this.label32);
+            this.tabPage6.Controls.Add(this.numericUpDown33);
+            this.tabPage6.Controls.Add(this.label33);
+            this.tabPage6.Controls.Add(this.numericUpDown34);
+            this.tabPage6.Controls.Add(this.label34);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(341, 229);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "CHAR";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // numericUpDown23
             // 
@@ -1190,104 +901,532 @@
             this.label34.TabIndex = 10;
             this.label34.Text = "Charisma: ";
             // 
-            // button2
+            // nudStatPoints
             // 
-            this.button2.Location = new System.Drawing.Point(223, 117);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 23);
-            this.button2.TabIndex = 38;
-            this.button2.Text = "+ const";
-            this.button2.UseVisualStyleBackColor = true;
+            this.nudStatPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudStatPoints.Location = new System.Drawing.Point(90, 16);
+            this.nudStatPoints.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.nudStatPoints.Name = "nudStatPoints";
+            this.nudStatPoints.Size = new System.Drawing.Size(59, 21);
+            this.nudStatPoints.TabIndex = 18;
             // 
-            // button8
+            // lblStats
             // 
-            this.button8.Location = new System.Drawing.Point(176, 176);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(168, 23);
-            this.button8.TabIndex = 39;
-            this.button8.Text = "Transform";
-            this.button8.UseVisualStyleBackColor = true;
+            this.lblStats.AutoSize = true;
+            this.lblStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStats.Location = new System.Drawing.Point(3, 16);
+            this.lblStats.Name = "lblStats";
+            this.lblStats.Size = new System.Drawing.Size(80, 18);
+            this.lblStats.TabIndex = 19;
+            this.lblStats.Text = "Stat Points";
             // 
-            // button9
+            // lblSpec
             // 
-            this.button9.Location = new System.Drawing.Point(238, 147);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(106, 23);
-            this.button9.TabIndex = 9;
-            this.button9.Text = "Skills";
-            this.button9.UseVisualStyleBackColor = true;
+            this.lblSpec.AutoSize = true;
+            this.lblSpec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSpec.Location = new System.Drawing.Point(199, 16);
+            this.lblSpec.Name = "lblSpec";
+            this.lblSpec.Size = new System.Drawing.Size(88, 18);
+            this.lblSpec.TabIndex = 21;
+            this.lblSpec.Text = "Spec Points";
+            // 
+            // nudSpecPoints
+            // 
+            this.nudSpecPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSpecPoints.Location = new System.Drawing.Point(293, 16);
+            this.nudSpecPoints.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
+            this.nudSpecPoints.Name = "nudSpecPoints";
+            this.nudSpecPoints.Size = new System.Drawing.Size(59, 21);
+            this.nudSpecPoints.TabIndex = 20;
+            // 
+            // StatsGroup
+            // 
+            this.StatsGroup.Controls.Add(this.lblStats);
+            this.StatsGroup.Controls.Add(this.lblSpec);
+            this.StatsGroup.Controls.Add(this.tabStrengthTop);
+            this.StatsGroup.Controls.Add(this.nudSpecPoints);
+            this.StatsGroup.Controls.Add(this.nudStatPoints);
+            this.StatsGroup.Location = new System.Drawing.Point(12, 316);
+            this.StatsGroup.Name = "StatsGroup";
+            this.StatsGroup.Size = new System.Drawing.Size(358, 226);
+            this.StatsGroup.TabIndex = 22;
+            this.StatsGroup.TabStop = false;
+            this.StatsGroup.Text = "Stats";
+            // 
+            // nudCurrentHealth
+            // 
+            this.nudCurrentHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.nudCurrentHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCurrentHealth.Location = new System.Drawing.Point(80, 19);
+            this.nudCurrentHealth.Name = "nudCurrentHealth";
+            this.nudCurrentHealth.Size = new System.Drawing.Size(200, 26);
+            this.nudCurrentHealth.TabIndex = 23;
+            // 
+            // BattleGroup
+            // 
+            this.BattleGroup.Controls.Add(this.btnSkills);
+            this.BattleGroup.Controls.Add(this.btnTransform);
+            this.BattleGroup.Controls.Add(this.btnAddConstStam);
+            this.BattleGroup.Controls.Add(this.btnRecieveDamage);
+            this.BattleGroup.Controls.Add(this.btnSuper);
+            this.BattleGroup.Controls.Add(this.btnAttack);
+            this.BattleGroup.Controls.Add(this.btnFillStamina);
+            this.BattleGroup.Controls.Add(this.label6);
+            this.BattleGroup.Controls.Add(this.nudCurrentStamina);
+            this.BattleGroup.Controls.Add(this.btnFillChi);
+            this.BattleGroup.Controls.Add(this.label5);
+            this.BattleGroup.Controls.Add(this.nudCurrentChi);
+            this.BattleGroup.Controls.Add(this.label4);
+            this.BattleGroup.Controls.Add(this.nudEXP);
+            this.BattleGroup.Controls.Add(this.btnFillHealth);
+            this.BattleGroup.Controls.Add(this.label3);
+            this.BattleGroup.Controls.Add(this.nudCurrentHealth);
+            this.BattleGroup.Location = new System.Drawing.Point(376, 12);
+            this.BattleGroup.Name = "BattleGroup";
+            this.BattleGroup.Size = new System.Drawing.Size(350, 213);
+            this.BattleGroup.TabIndex = 24;
+            this.BattleGroup.TabStop = false;
+            this.BattleGroup.Text = "Battle Stats";
+            // 
+            // btnSkills
+            // 
+            this.btnSkills.Location = new System.Drawing.Point(238, 147);
+            this.btnSkills.Name = "btnSkills";
+            this.btnSkills.Size = new System.Drawing.Size(106, 23);
+            this.btnSkills.TabIndex = 9;
+            this.btnSkills.Text = "Skills";
+            this.btnSkills.UseVisualStyleBackColor = true;
+            this.btnSkills.Click += new System.EventHandler(this.btnSkills_Click);
+            // 
+            // btnTransform
+            // 
+            this.btnTransform.Location = new System.Drawing.Point(176, 176);
+            this.btnTransform.Name = "btnTransform";
+            this.btnTransform.Size = new System.Drawing.Size(168, 23);
+            this.btnTransform.TabIndex = 39;
+            this.btnTransform.Text = "Transform";
+            this.btnTransform.UseVisualStyleBackColor = true;
+            this.btnTransform.Click += new System.EventHandler(this.btnTransform_Click);
+            // 
+            // btnAddConstStam
+            // 
+            this.btnAddConstStam.Location = new System.Drawing.Point(223, 117);
+            this.btnAddConstStam.Name = "btnAddConstStam";
+            this.btnAddConstStam.Size = new System.Drawing.Size(58, 23);
+            this.btnAddConstStam.TabIndex = 38;
+            this.btnAddConstStam.Text = "+ const";
+            this.btnAddConstStam.UseVisualStyleBackColor = true;
+            // 
+            // btnRecieveDamage
+            // 
+            this.btnRecieveDamage.Location = new System.Drawing.Point(10, 176);
+            this.btnRecieveDamage.Name = "btnRecieveDamage";
+            this.btnRecieveDamage.Size = new System.Drawing.Size(160, 23);
+            this.btnRecieveDamage.TabIndex = 37;
+            this.btnRecieveDamage.Text = "Recieve Damage";
+            this.btnRecieveDamage.UseVisualStyleBackColor = true;
+            // 
+            // btnSuper
+            // 
+            this.btnSuper.Location = new System.Drawing.Point(119, 147);
+            this.btnSuper.Name = "btnSuper";
+            this.btnSuper.Size = new System.Drawing.Size(113, 23);
+            this.btnSuper.TabIndex = 36;
+            this.btnSuper.Text = "Supers";
+            this.btnSuper.UseVisualStyleBackColor = true;
+            // 
+            // btnAttack
+            // 
+            this.btnAttack.Location = new System.Drawing.Point(10, 147);
+            this.btnAttack.Name = "btnAttack";
+            this.btnAttack.Size = new System.Drawing.Size(103, 23);
+            this.btnAttack.TabIndex = 35;
+            this.btnAttack.Text = "Attack";
+            this.btnAttack.UseVisualStyleBackColor = true;
+            // 
+            // btnFillStamina
+            // 
+            this.btnFillStamina.Location = new System.Drawing.Point(287, 117);
+            this.btnFillStamina.Name = "btnFillStamina";
+            this.btnFillStamina.Size = new System.Drawing.Size(57, 23);
+            this.btnFillStamina.TabIndex = 34;
+            this.btnFillStamina.Text = "Full";
+            this.btnFillStamina.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label6.Location = new System.Drawing.Point(6, 117);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 20);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Stamina";
+            // 
+            // nudCurrentStamina
+            // 
+            this.nudCurrentStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCurrentStamina.Location = new System.Drawing.Point(80, 115);
+            this.nudCurrentStamina.Name = "nudCurrentStamina";
+            this.nudCurrentStamina.Size = new System.Drawing.Size(137, 26);
+            this.nudCurrentStamina.TabIndex = 32;
+            // 
+            // btnFillChi
+            // 
+            this.btnFillChi.Location = new System.Drawing.Point(287, 85);
+            this.btnFillChi.Name = "btnFillChi";
+            this.btnFillChi.Size = new System.Drawing.Size(57, 23);
+            this.btnFillChi.TabIndex = 31;
+            this.btnFillChi.Text = "Full";
+            this.btnFillChi.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label5.Location = new System.Drawing.Point(6, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 20);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Chi";
+            // 
+            // nudCurrentChi
+            // 
+            this.nudCurrentChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudCurrentChi.Location = new System.Drawing.Point(80, 83);
+            this.nudCurrentChi.Name = "nudCurrentChi";
+            this.nudCurrentChi.Size = new System.Drawing.Size(200, 26);
+            this.nudCurrentChi.TabIndex = 29;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label4.Location = new System.Drawing.Point(6, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "EXP";
+            // 
+            // nudEXP
+            // 
+            this.nudEXP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.nudEXP.Location = new System.Drawing.Point(80, 51);
+            this.nudEXP.Name = "nudEXP";
+            this.nudEXP.Size = new System.Drawing.Size(200, 26);
+            this.nudEXP.TabIndex = 26;
+            // 
+            // btnFillHealth
+            // 
+            this.btnFillHealth.Location = new System.Drawing.Point(287, 21);
+            this.btnFillHealth.Name = "btnFillHealth";
+            this.btnFillHealth.Size = new System.Drawing.Size(57, 23);
+            this.btnFillHealth.TabIndex = 25;
+            this.btnFillHealth.Text = "Full";
+            this.btnFillHealth.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label3.Location = new System.Drawing.Point(6, 21);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Health";
+            // 
+            // InventoryGroup
+            // 
+            this.InventoryGroup.Controls.Add(this.btnRemEnergy);
+            this.InventoryGroup.Controls.Add(this.btnAddEnergy);
+            this.InventoryGroup.Controls.Add(this.btnUseEnergy);
+            this.InventoryGroup.Controls.Add(this.nudEnergyPill);
+            this.InventoryGroup.Controls.Add(this.lblEnergyPills);
+            this.InventoryGroup.Controls.Add(this.btnRemoveCredits);
+            this.InventoryGroup.Controls.Add(this.btnRemRec);
+            this.InventoryGroup.Controls.Add(this.btnRemStim);
+            this.InventoryGroup.Controls.Add(this.btnAddCredits);
+            this.InventoryGroup.Controls.Add(this.btnAddRec);
+            this.InventoryGroup.Controls.Add(this.btnAddStim);
+            this.InventoryGroup.Controls.Add(this.btnUseRec);
+            this.InventoryGroup.Controls.Add(this.btnUseStim);
+            this.InventoryGroup.Controls.Add(this.nudCredits);
+            this.InventoryGroup.Controls.Add(this.nudRecPill);
+            this.InventoryGroup.Controls.Add(this.nudStimPill);
+            this.InventoryGroup.Controls.Add(this.lblCredits);
+            this.InventoryGroup.Controls.Add(this.lblRecoveryPills);
+            this.InventoryGroup.Controls.Add(this.lblStimPills);
+            this.InventoryGroup.Controls.Add(this.btnInventory);
+            this.InventoryGroup.Location = new System.Drawing.Point(12, 149);
+            this.InventoryGroup.Name = "InventoryGroup";
+            this.InventoryGroup.Size = new System.Drawing.Size(358, 161);
+            this.InventoryGroup.TabIndex = 15;
+            this.InventoryGroup.TabStop = false;
+            this.InventoryGroup.Text = "Inventory";
+            // 
+            // btnInventory
+            // 
+            this.btnInventory.Location = new System.Drawing.Point(0, 19);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(124, 23);
+            this.btnInventory.TabIndex = 0;
+            this.btnInventory.Text = "View inventory";
+            this.btnInventory.UseVisualStyleBackColor = true;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
+            // lblStimPills
+            // 
+            this.lblStimPills.AutoSize = true;
+            this.lblStimPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblStimPills.Location = new System.Drawing.Point(2, 47);
+            this.lblStimPills.Name = "lblStimPills";
+            this.lblStimPills.Size = new System.Drawing.Size(118, 20);
+            this.lblStimPills.TabIndex = 1;
+            this.lblStimPills.Text = "Stimulation pills";
+            // 
+            // lblRecoveryPills
+            // 
+            this.lblRecoveryPills.AutoSize = true;
+            this.lblRecoveryPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRecoveryPills.Location = new System.Drawing.Point(2, 75);
+            this.lblRecoveryPills.Name = "lblRecoveryPills";
+            this.lblRecoveryPills.Size = new System.Drawing.Size(105, 20);
+            this.lblRecoveryPills.TabIndex = 2;
+            this.lblRecoveryPills.Text = "Recovery pills";
+            // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblCredits.Location = new System.Drawing.Point(2, 131);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(59, 20);
+            this.lblCredits.TabIndex = 3;
+            this.lblCredits.Text = "Credits";
+            // 
+            // nudStimPill
+            // 
+            this.nudStimPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudStimPill.Location = new System.Drawing.Point(119, 48);
+            this.nudStimPill.Name = "nudStimPill";
+            this.nudStimPill.Size = new System.Drawing.Size(91, 22);
+            this.nudStimPill.TabIndex = 4;
+            // 
+            // nudRecPill
+            // 
+            this.nudRecPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudRecPill.Location = new System.Drawing.Point(119, 76);
+            this.nudRecPill.Name = "nudRecPill";
+            this.nudRecPill.Size = new System.Drawing.Size(91, 22);
+            this.nudRecPill.TabIndex = 5;
+            // 
+            // nudCredits
+            // 
+            this.nudCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudCredits.Location = new System.Drawing.Point(119, 132);
+            this.nudCredits.Name = "nudCredits";
+            this.nudCredits.Size = new System.Drawing.Size(91, 22);
+            this.nudCredits.TabIndex = 6;
+            // 
+            // btnUseStim
+            // 
+            this.btnUseStim.Location = new System.Drawing.Point(294, 47);
+            this.btnUseStim.Name = "btnUseStim";
+            this.btnUseStim.Size = new System.Drawing.Size(58, 23);
+            this.btnUseStim.TabIndex = 7;
+            this.btnUseStim.Text = "Use";
+            this.btnUseStim.UseVisualStyleBackColor = true;
+            // 
+            // btnUseRec
+            // 
+            this.btnUseRec.Location = new System.Drawing.Point(294, 75);
+            this.btnUseRec.Name = "btnUseRec";
+            this.btnUseRec.Size = new System.Drawing.Size(58, 23);
+            this.btnUseRec.TabIndex = 8;
+            this.btnUseRec.Text = "Use";
+            this.btnUseRec.UseVisualStyleBackColor = true;
+            // 
+            // btnAddStim
+            // 
+            this.btnAddStim.Location = new System.Drawing.Point(216, 47);
+            this.btnAddStim.Name = "btnAddStim";
+            this.btnAddStim.Size = new System.Drawing.Size(33, 23);
+            this.btnAddStim.TabIndex = 9;
+            this.btnAddStim.Text = "+";
+            this.btnAddStim.UseVisualStyleBackColor = true;
+            // 
+            // btnAddRec
+            // 
+            this.btnAddRec.Location = new System.Drawing.Point(216, 75);
+            this.btnAddRec.Name = "btnAddRec";
+            this.btnAddRec.Size = new System.Drawing.Size(33, 23);
+            this.btnAddRec.TabIndex = 10;
+            this.btnAddRec.Text = "+";
+            this.btnAddRec.UseVisualStyleBackColor = true;
+            // 
+            // btnAddCredits
+            // 
+            this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
+            this.btnAddCredits.Name = "btnAddCredits";
+            this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnAddCredits.TabIndex = 11;
+            this.btnAddCredits.Text = "+";
+            this.btnAddCredits.UseVisualStyleBackColor = true;
+            // 
+            // btnRemStim
+            // 
+            this.btnRemStim.Location = new System.Drawing.Point(255, 47);
+            this.btnRemStim.Name = "btnRemStim";
+            this.btnRemStim.Size = new System.Drawing.Size(33, 23);
+            this.btnRemStim.TabIndex = 12;
+            this.btnRemStim.Text = "-";
+            this.btnRemStim.UseVisualStyleBackColor = true;
+            // 
+            // btnRemRec
+            // 
+            this.btnRemRec.Location = new System.Drawing.Point(255, 75);
+            this.btnRemRec.Name = "btnRemRec";
+            this.btnRemRec.Size = new System.Drawing.Size(33, 23);
+            this.btnRemRec.TabIndex = 13;
+            this.btnRemRec.Text = "-";
+            this.btnRemRec.UseVisualStyleBackColor = true;
+            // 
+            // btnRemoveCredits
+            // 
+            this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
+            this.btnRemoveCredits.Name = "btnRemoveCredits";
+            this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnRemoveCredits.TabIndex = 14;
+            this.btnRemoveCredits.Text = "-";
+            this.btnRemoveCredits.UseVisualStyleBackColor = true;
+            // 
+            // btnRemEnergy
+            // 
+            this.btnRemEnergy.Location = new System.Drawing.Point(255, 103);
+            this.btnRemEnergy.Name = "btnRemEnergy";
+            this.btnRemEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnRemEnergy.TabIndex = 19;
+            this.btnRemEnergy.Text = "-";
+            this.btnRemEnergy.UseVisualStyleBackColor = true;
+            // 
+            // btnAddEnergy
+            // 
+            this.btnAddEnergy.Location = new System.Drawing.Point(216, 103);
+            this.btnAddEnergy.Name = "btnAddEnergy";
+            this.btnAddEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnAddEnergy.TabIndex = 18;
+            this.btnAddEnergy.Text = "+";
+            this.btnAddEnergy.UseVisualStyleBackColor = true;
+            // 
+            // btnUseEnergy
+            // 
+            this.btnUseEnergy.Location = new System.Drawing.Point(294, 103);
+            this.btnUseEnergy.Name = "btnUseEnergy";
+            this.btnUseEnergy.Size = new System.Drawing.Size(58, 23);
+            this.btnUseEnergy.TabIndex = 17;
+            this.btnUseEnergy.Text = "Use";
+            this.btnUseEnergy.UseVisualStyleBackColor = true;
+            // 
+            // nudEnergyPill
+            // 
+            this.nudEnergyPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudEnergyPill.Location = new System.Drawing.Point(119, 104);
+            this.nudEnergyPill.Name = "nudEnergyPill";
+            this.nudEnergyPill.Size = new System.Drawing.Size(91, 22);
+            this.nudEnergyPill.TabIndex = 16;
+            // 
+            // lblEnergyPills
+            // 
+            this.lblEnergyPills.AutoSize = true;
+            this.lblEnergyPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblEnergyPills.Location = new System.Drawing.Point(2, 103);
+            this.lblEnergyPills.Name = "lblEnergyPills";
+            this.lblEnergyPills.Size = new System.Drawing.Size(89, 20);
+            this.lblEnergyPills.TabIndex = 15;
+            this.lblEnergyPills.Text = "Energy pills";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 554);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.BattleGroup);
             this.Controls.Add(this.StatsGroup);
             this.Controls.Add(this.PlayerGroup);
             this.Controls.Add(this.InventoryGroup);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbCharacterPicture);
             this.Name = "MainForm";
             this.Text = "PlayerName";
             this.Load += new System.EventHandler(this.MainForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEquipmentStatValue)).EndInit();
-            this.InventoryGroup.ResumeLayout(false);
-            this.InventoryGroup.PerformLayout();
             this.PlayerGroup.ResumeLayout(false);
             this.PlayerGroup.PerformLayout();
             this.tabStrengthTop.ResumeLayout(false);
             this.tabStrength.ResumeLayout(false);
             this.tabStrength.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            this.StatsGroup.ResumeLayout(false);
-            this.StatsGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpecPoints)).EndInit();
+            this.StatsGroup.ResumeLayout(false);
+            this.StatsGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentHealth)).EndInit();
+            this.BattleGroup.ResumeLayout(false);
+            this.BattleGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentStamina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCurrentChi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).EndInit();
+            this.InventoryGroup.ResumeLayout(false);
+            this.InventoryGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1295,18 +1434,10 @@
         #endregion
 
         private System.Windows.Forms.Button btnInfo;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox cbInventory;
+        private System.Windows.Forms.PictureBox pbCharacterPicture;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.NumericUpDown nudLevel;
         private System.Windows.Forms.Label lblLevel;
-        private System.Windows.Forms.Button btnAmountAdd;
-        private System.Windows.Forms.Button btnAmountMinus;
-        private System.Windows.Forms.Label lblAmount;
-        private System.Windows.Forms.ComboBox cbEquipment;
-        private System.Windows.Forms.ComboBox cbEquipmentStatChanged;
-        private System.Windows.Forms.NumericUpDown nudEquipmentStatValue;
-        private System.Windows.Forms.GroupBox InventoryGroup;
         private System.Windows.Forms.GroupBox PlayerGroup;
         private System.Windows.Forms.Label lblPowerLevel;
         private System.Windows.Forms.TabControl tabStrengthTop;
@@ -1316,25 +1447,25 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nudStatPoints;
+        private System.Windows.Forms.Label lblStats;
+        private System.Windows.Forms.Label lblSpec;
+        private System.Windows.Forms.NumericUpDown nudSpecPoints;
         private System.Windows.Forms.GroupBox StatsGroup;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.NumericUpDown nudCurrentHealth;
+        private System.Windows.Forms.GroupBox BattleGroup;
+        private System.Windows.Forms.Button btnRecieveDamage;
+        private System.Windows.Forms.Button btnSuper;
+        private System.Windows.Forms.Button btnAttack;
+        private System.Windows.Forms.Button btnFillStamina;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.NumericUpDown nudCurrentStamina;
+        private System.Windows.Forms.Button btnFillChi;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown nudCurrentChi;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown nudEXP;
+        private System.Windows.Forms.Button btnFillHealth;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown numericUpDown12;
         private System.Windows.Forms.Label label12;
@@ -1392,9 +1523,30 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.NumericUpDown numericUpDown34;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnAddConstStam;
+        private System.Windows.Forms.Button btnTransform;
+        private System.Windows.Forms.Button btnSkills;
+        private System.Windows.Forms.GroupBox InventoryGroup;
+        private System.Windows.Forms.Button btnRemoveCredits;
+        private System.Windows.Forms.Button btnRemRec;
+        private System.Windows.Forms.Button btnRemStim;
+        private System.Windows.Forms.Button btnAddCredits;
+        private System.Windows.Forms.Button btnAddRec;
+        private System.Windows.Forms.Button btnAddStim;
+        private System.Windows.Forms.Button btnUseRec;
+        private System.Windows.Forms.Button btnUseStim;
+        private System.Windows.Forms.NumericUpDown nudCredits;
+        private System.Windows.Forms.NumericUpDown nudRecPill;
+        private System.Windows.Forms.NumericUpDown nudStimPill;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label lblRecoveryPills;
+        private System.Windows.Forms.Label lblStimPills;
+        private System.Windows.Forms.Button btnInventory;
+        private System.Windows.Forms.Button btnRemEnergy;
+        private System.Windows.Forms.Button btnAddEnergy;
+        private System.Windows.Forms.Button btnUseEnergy;
+        private System.Windows.Forms.NumericUpDown nudEnergyPill;
+        private System.Windows.Forms.Label lblEnergyPills;
     }
 }
 
