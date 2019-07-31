@@ -41,23 +41,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblPName = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.cbAge = new System.Windows.Forms.NumericUpDown();
+            this.cbRace = new System.Windows.Forms.ComboBox();
+            this.cbGender = new System.Windows.Forms.ComboBox();
+            this.txtLanguages = new System.Windows.Forms.TextBox();
+            this.txtFactions = new System.Windows.Forms.TextBox();
+            this.txtAlignment = new System.Windows.Forms.TextBox();
+            this.txtSkin = new System.Windows.Forms.TextBox();
+            this.txtEyes = new System.Windows.Forms.TextBox();
+            this.txtWeight = new System.Windows.Forms.TextBox();
+            this.txtHeight = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPlayerName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbAge)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -84,18 +84,18 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.numericUpDown1);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox12);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox11);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox10);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox9);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox8);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox7);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox6);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox2);
-            this.splitContainer1.Panel2.Controls.Add(this.textBox1);
+            this.splitContainer1.Panel2.Controls.Add(this.cbAge);
+            this.splitContainer1.Panel2.Controls.Add(this.cbRace);
+            this.splitContainer1.Panel2.Controls.Add(this.cbGender);
+            this.splitContainer1.Panel2.Controls.Add(this.txtLanguages);
+            this.splitContainer1.Panel2.Controls.Add(this.txtFactions);
+            this.splitContainer1.Panel2.Controls.Add(this.txtAlignment);
+            this.splitContainer1.Panel2.Controls.Add(this.txtSkin);
+            this.splitContainer1.Panel2.Controls.Add(this.txtEyes);
+            this.splitContainer1.Panel2.Controls.Add(this.txtWeight);
+            this.splitContainer1.Panel2.Controls.Add(this.txtHeight);
+            this.splitContainer1.Panel2.Controls.Add(this.txtName);
+            this.splitContainer1.Panel2.Controls.Add(this.txtPlayerName);
             this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(5);
             this.splitContainer1.Size = new System.Drawing.Size(644, 449);
             this.splitContainer1.SplitterDistance = 157;
@@ -233,103 +233,124 @@
             this.lblPName.TabIndex = 12;
             this.lblPName.Text = "Player Name";
             // 
-            // textBox12
+            // cbAge
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox12.Location = new System.Drawing.Point(8, 415);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(453, 31);
-            this.textBox12.TabIndex = 1;
+            this.cbAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.cbAge.Location = new System.Drawing.Point(8, 157);
+            this.cbAge.Name = "cbAge";
+            this.cbAge.Size = new System.Drawing.Size(453, 31);
+            this.cbAge.TabIndex = 4;
+            this.cbAge.ValueChanged += new System.EventHandler(this.cbAge_ValueChanged);
             // 
-            // textBox11
+            // cbRace
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox11.Location = new System.Drawing.Point(8, 378);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(453, 31);
-            this.textBox11.TabIndex = 9;
+            this.cbRace.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.cbRace.FormattingEnabled = true;
+            this.cbRace.Items.AddRange(new object[] {
+            "Saiyan",
+            "Namekian",
+            "Frieza Race"});
+            this.cbRace.Location = new System.Drawing.Point(8, 119);
+            this.cbRace.Name = "cbRace";
+            this.cbRace.Size = new System.Drawing.Size(453, 33);
+            this.cbRace.TabIndex = 3;
+            this.cbRace.SelectedIndexChanged += new System.EventHandler(this.cbRace_SelectedIndexChanged);
+            this.cbRace.TextChanged += new System.EventHandler(this.cbRace_TextChanged);
             // 
-            // textBox10
+            // cbGender
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox10.Location = new System.Drawing.Point(8, 341);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(453, 31);
-            this.textBox10.TabIndex = 1;
+            this.cbGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.cbGender.FormattingEnabled = true;
+            this.cbGender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.cbGender.Location = new System.Drawing.Point(8, 82);
+            this.cbGender.Name = "cbGender";
+            this.cbGender.Size = new System.Drawing.Size(453, 33);
+            this.cbGender.TabIndex = 2;
+            this.cbGender.SelectedIndexChanged += new System.EventHandler(this.cbGender_SelectedIndexChanged);
+            this.cbGender.TextChanged += new System.EventHandler(this.cbGender_TextChanged);
             // 
-            // textBox9
+            // txtLanguages
             // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox9.Location = new System.Drawing.Point(8, 304);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(453, 31);
-            this.textBox9.TabIndex = 8;
+            this.txtLanguages.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtLanguages.Location = new System.Drawing.Point(8, 415);
+            this.txtLanguages.Name = "txtLanguages";
+            this.txtLanguages.Size = new System.Drawing.Size(453, 31);
+            this.txtLanguages.TabIndex = 11;
+            this.txtLanguages.TextChanged += new System.EventHandler(this.txtLanguages_TextChanged);
             // 
-            // textBox8
+            // txtFactions
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox8.Location = new System.Drawing.Point(8, 267);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(453, 31);
-            this.textBox8.TabIndex = 7;
+            this.txtFactions.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtFactions.Location = new System.Drawing.Point(8, 378);
+            this.txtFactions.Name = "txtFactions";
+            this.txtFactions.Size = new System.Drawing.Size(453, 31);
+            this.txtFactions.TabIndex = 10;
+            this.txtFactions.TextChanged += new System.EventHandler(this.txtFactions_TextChanged);
             // 
-            // textBox7
+            // txtAlignment
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox7.Location = new System.Drawing.Point(8, 230);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(453, 31);
-            this.textBox7.TabIndex = 6;
+            this.txtAlignment.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtAlignment.Location = new System.Drawing.Point(8, 341);
+            this.txtAlignment.Name = "txtAlignment";
+            this.txtAlignment.Size = new System.Drawing.Size(453, 31);
+            this.txtAlignment.TabIndex = 9;
+            this.txtAlignment.TextChanged += new System.EventHandler(this.txtAlignment_TextChanged);
             // 
-            // textBox6
+            // txtSkin
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox6.Location = new System.Drawing.Point(8, 193);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(453, 31);
-            this.textBox6.TabIndex = 5;
+            this.txtSkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtSkin.Location = new System.Drawing.Point(8, 304);
+            this.txtSkin.Name = "txtSkin";
+            this.txtSkin.Size = new System.Drawing.Size(453, 31);
+            this.txtSkin.TabIndex = 8;
+            this.txtSkin.TextChanged += new System.EventHandler(this.txtSkin_TextChanged);
             // 
-            // textBox2
+            // txtEyes
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox2.Location = new System.Drawing.Point(8, 45);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(453, 31);
-            this.textBox2.TabIndex = 1;
+            this.txtEyes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtEyes.Location = new System.Drawing.Point(8, 267);
+            this.txtEyes.Name = "txtEyes";
+            this.txtEyes.Size = new System.Drawing.Size(453, 31);
+            this.txtEyes.TabIndex = 7;
+            this.txtEyes.TextChanged += new System.EventHandler(this.txtEyes_TextChanged);
             // 
-            // textBox1
+            // txtWeight
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.textBox1.Location = new System.Drawing.Point(8, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(453, 31);
-            this.textBox1.TabIndex = 0;
+            this.txtWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtWeight.Location = new System.Drawing.Point(8, 230);
+            this.txtWeight.Name = "txtWeight";
+            this.txtWeight.Size = new System.Drawing.Size(453, 31);
+            this.txtWeight.TabIndex = 6;
+            this.txtWeight.TextChanged += new System.EventHandler(this.txtWeight_TextChanged);
             // 
-            // comboBox1
+            // txtHeight
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(8, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(453, 33);
-            this.comboBox1.TabIndex = 10;
+            this.txtHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtHeight.Location = new System.Drawing.Point(8, 193);
+            this.txtHeight.Name = "txtHeight";
+            this.txtHeight.Size = new System.Drawing.Size(453, 31);
+            this.txtHeight.TabIndex = 5;
+            this.txtHeight.TextChanged += new System.EventHandler(this.txtHeight_TextChanged);
             // 
-            // comboBox2
+            // txtName
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(8, 119);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(453, 33);
-            this.comboBox2.TabIndex = 11;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtName.Location = new System.Drawing.Point(8, 45);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(453, 31);
+            this.txtName.TabIndex = 1;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
-            // numericUpDown1
+            // txtPlayerName
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.numericUpDown1.Location = new System.Drawing.Point(8, 157);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(453, 31);
-            this.numericUpDown1.TabIndex = 12;
+            this.txtPlayerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.txtPlayerName.Location = new System.Drawing.Point(8, 8);
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.Size = new System.Drawing.Size(453, 31);
+            this.txtPlayerName.TabIndex = 0;
+            this.txtPlayerName.TextChanged += new System.EventHandler(this.txtPlayerName_TextChanged);
             // 
             // PlayerInfo
             // 
@@ -340,14 +361,13 @@
             this.Name = "PlayerInfo";
             this.Padding = new System.Windows.Forms.Padding(5);
             this.Text = "Player Info";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.PlayerInfo_FormClosed);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbAge)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,17 +387,17 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblPName;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtLanguages;
+        private System.Windows.Forms.TextBox txtFactions;
+        private System.Windows.Forms.TextBox txtAlignment;
+        private System.Windows.Forms.TextBox txtSkin;
+        private System.Windows.Forms.TextBox txtEyes;
+        private System.Windows.Forms.TextBox txtWeight;
+        private System.Windows.Forms.TextBox txtHeight;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPlayerName;
+        private System.Windows.Forms.NumericUpDown cbAge;
+        private System.Windows.Forms.ComboBox cbRace;
+        private System.Windows.Forms.ComboBox cbGender;
     }
 }

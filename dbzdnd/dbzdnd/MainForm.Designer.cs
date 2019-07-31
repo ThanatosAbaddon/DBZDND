@@ -231,7 +231,7 @@
             this.nudLevel.Location = new System.Drawing.Point(54, 71);
             this.nudLevel.Name = "nudLevel";
             this.nudLevel.Size = new System.Drawing.Size(159, 22);
-            this.nudLevel.TabIndex = 6;
+            this.nudLevel.TabIndex = 1;
             // 
             // lblLevel
             // 
@@ -363,7 +363,7 @@
             this.nudStrikeSupers.Location = new System.Drawing.Point(118, 50);
             this.nudStrikeSupers.Name = "nudStrikeSupers";
             this.nudStrikeSupers.Size = new System.Drawing.Size(217, 21);
-            this.nudStrikeSupers.TabIndex = 5;
+            this.nudStrikeSupers.TabIndex = 21;
             // 
             // label9
             // 
@@ -381,7 +381,7 @@
             this.nudBasicAttack.Location = new System.Drawing.Point(118, 26);
             this.nudBasicAttack.Name = "nudBasicAttack";
             this.nudBasicAttack.Size = new System.Drawing.Size(217, 21);
-            this.nudBasicAttack.TabIndex = 3;
+            this.nudBasicAttack.TabIndex = 20;
             // 
             // label8
             // 
@@ -399,7 +399,7 @@
             this.nudStrength.Location = new System.Drawing.Point(118, 2);
             this.nudStrength.Name = "nudStrength";
             this.nudStrength.Size = new System.Drawing.Size(217, 21);
-            this.nudStrength.TabIndex = 1;
+            this.nudStrength.TabIndex = 19;
             // 
             // label7
             // 
@@ -945,7 +945,7 @@
             0});
             this.nudSpecPoints.Name = "nudSpecPoints";
             this.nudSpecPoints.Size = new System.Drawing.Size(59, 21);
-            this.nudSpecPoints.TabIndex = 20;
+            this.nudSpecPoints.TabIndex = 19;
             // 
             // StatsGroup
             // 
@@ -1177,7 +1177,7 @@
             this.btnRemEnergy.Location = new System.Drawing.Point(255, 103);
             this.btnRemEnergy.Name = "btnRemEnergy";
             this.btnRemEnergy.Size = new System.Drawing.Size(33, 23);
-            this.btnRemEnergy.TabIndex = 19;
+            this.btnRemEnergy.TabIndex = 13;
             this.btnRemEnergy.Text = "-";
             this.btnRemEnergy.UseVisualStyleBackColor = true;
             // 
@@ -1186,7 +1186,7 @@
             this.btnAddEnergy.Location = new System.Drawing.Point(216, 103);
             this.btnAddEnergy.Name = "btnAddEnergy";
             this.btnAddEnergy.Size = new System.Drawing.Size(33, 23);
-            this.btnAddEnergy.TabIndex = 18;
+            this.btnAddEnergy.TabIndex = 12;
             this.btnAddEnergy.Text = "+";
             this.btnAddEnergy.UseVisualStyleBackColor = true;
             // 
@@ -1195,7 +1195,7 @@
             this.btnUseEnergy.Location = new System.Drawing.Point(294, 103);
             this.btnUseEnergy.Name = "btnUseEnergy";
             this.btnUseEnergy.Size = new System.Drawing.Size(58, 23);
-            this.btnUseEnergy.TabIndex = 17;
+            this.btnUseEnergy.TabIndex = 14;
             this.btnUseEnergy.Text = "Use";
             this.btnUseEnergy.UseVisualStyleBackColor = true;
             // 
@@ -1205,7 +1205,7 @@
             this.nudEnergyPill.Location = new System.Drawing.Point(119, 104);
             this.nudEnergyPill.Name = "nudEnergyPill";
             this.nudEnergyPill.Size = new System.Drawing.Size(91, 22);
-            this.nudEnergyPill.TabIndex = 16;
+            this.nudEnergyPill.TabIndex = 11;
             // 
             // lblEnergyPills
             // 
@@ -1222,7 +1222,7 @@
             this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
             this.btnRemoveCredits.Name = "btnRemoveCredits";
             this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
-            this.btnRemoveCredits.TabIndex = 14;
+            this.btnRemoveCredits.TabIndex = 17;
             this.btnRemoveCredits.Text = "-";
             this.btnRemoveCredits.UseVisualStyleBackColor = true;
             // 
@@ -1231,7 +1231,7 @@
             this.btnRemRec.Location = new System.Drawing.Point(255, 75);
             this.btnRemRec.Name = "btnRemRec";
             this.btnRemRec.Size = new System.Drawing.Size(33, 23);
-            this.btnRemRec.TabIndex = 13;
+            this.btnRemRec.TabIndex = 9;
             this.btnRemRec.Text = "-";
             this.btnRemRec.UseVisualStyleBackColor = true;
             // 
@@ -1240,7 +1240,7 @@
             this.btnRemStim.Location = new System.Drawing.Point(255, 47);
             this.btnRemStim.Name = "btnRemStim";
             this.btnRemStim.Size = new System.Drawing.Size(33, 23);
-            this.btnRemStim.TabIndex = 12;
+            this.btnRemStim.TabIndex = 5;
             this.btnRemStim.Text = "-";
             this.btnRemStim.UseVisualStyleBackColor = true;
             // 
@@ -1249,7 +1249,7 @@
             this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
             this.btnAddCredits.Name = "btnAddCredits";
             this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
-            this.btnAddCredits.TabIndex = 11;
+            this.btnAddCredits.TabIndex = 16;
             this.btnAddCredits.Text = "+";
             this.btnAddCredits.UseVisualStyleBackColor = true;
             // 
@@ -1258,7 +1258,7 @@
             this.btnAddRec.Location = new System.Drawing.Point(216, 75);
             this.btnAddRec.Name = "btnAddRec";
             this.btnAddRec.Size = new System.Drawing.Size(33, 23);
-            this.btnAddRec.TabIndex = 10;
+            this.btnAddRec.TabIndex = 8;
             this.btnAddRec.Text = "+";
             this.btnAddRec.UseVisualStyleBackColor = true;
             // 
@@ -1267,7 +1267,7 @@
             this.btnAddStim.Location = new System.Drawing.Point(216, 47);
             this.btnAddStim.Name = "btnAddStim";
             this.btnAddStim.Size = new System.Drawing.Size(33, 23);
-            this.btnAddStim.TabIndex = 9;
+            this.btnAddStim.TabIndex = 4;
             this.btnAddStim.Text = "+";
             this.btnAddStim.UseVisualStyleBackColor = true;
             // 
@@ -1276,7 +1276,7 @@
             this.btnUseRec.Location = new System.Drawing.Point(294, 75);
             this.btnUseRec.Name = "btnUseRec";
             this.btnUseRec.Size = new System.Drawing.Size(58, 23);
-            this.btnUseRec.TabIndex = 8;
+            this.btnUseRec.TabIndex = 10;
             this.btnUseRec.Text = "Use";
             this.btnUseRec.UseVisualStyleBackColor = true;
             // 
@@ -1285,7 +1285,7 @@
             this.btnUseStim.Location = new System.Drawing.Point(294, 47);
             this.btnUseStim.Name = "btnUseStim";
             this.btnUseStim.Size = new System.Drawing.Size(58, 23);
-            this.btnUseStim.TabIndex = 7;
+            this.btnUseStim.TabIndex = 6;
             this.btnUseStim.Text = "Use";
             this.btnUseStim.UseVisualStyleBackColor = true;
             // 
@@ -1295,7 +1295,7 @@
             this.nudCredits.Location = new System.Drawing.Point(119, 132);
             this.nudCredits.Name = "nudCredits";
             this.nudCredits.Size = new System.Drawing.Size(91, 22);
-            this.nudCredits.TabIndex = 6;
+            this.nudCredits.TabIndex = 15;
             // 
             // nudRecPill
             // 
@@ -1303,7 +1303,7 @@
             this.nudRecPill.Location = new System.Drawing.Point(119, 76);
             this.nudRecPill.Name = "nudRecPill";
             this.nudRecPill.Size = new System.Drawing.Size(91, 22);
-            this.nudRecPill.TabIndex = 5;
+            this.nudRecPill.TabIndex = 7;
             // 
             // nudStimPill
             // 
@@ -1311,7 +1311,7 @@
             this.nudStimPill.Location = new System.Drawing.Point(119, 48);
             this.nudStimPill.Name = "nudStimPill";
             this.nudStimPill.Size = new System.Drawing.Size(91, 22);
-            this.nudStimPill.TabIndex = 4;
+            this.nudStimPill.TabIndex = 3;
             // 
             // lblCredits
             // 
@@ -1348,7 +1348,7 @@
             this.btnInventory.Location = new System.Drawing.Point(0, 19);
             this.btnInventory.Name = "btnInventory";
             this.btnInventory.Size = new System.Drawing.Size(124, 23);
-            this.btnInventory.TabIndex = 0;
+            this.btnInventory.TabIndex = 2;
             this.btnInventory.Text = "View inventory";
             this.btnInventory.UseVisualStyleBackColor = true;
             this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
