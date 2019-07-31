@@ -20,6 +20,10 @@ namespace dbzdnd
         public MainForm()
         {
             InitializeComponent();
+            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
+            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
+            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
+            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
         }
 
 
@@ -79,6 +83,139 @@ namespace dbzdnd
                 skillWindow = new Skills();
             }
             openWindow(skillWindow);
+        }
+
+        private void nudLevel_ValueChanged(object sender, EventArgs e)
+        {
+            dbzdnd.Properties.Settings.Default.Level = (int) nudLevel.Value;
+            dbzdnd.Properties.Settings.Default.Save();
+        }
+
+        private void btnAddStim_Click(object sender, EventArgs e)
+        {
+            dbzdnd.Properties.Settings.Default.StimCount += 1;
+            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
+            dbzdnd.Properties.Settings.Default.Save();
+        }
+
+        private void btnRemStim_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.StimCount <= 0)
+            {
+                MessageBox.Show("mate wat u doin?");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.StimCount -= 1;
+                lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+
+        }
+
+        private void btnUseStim_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.StimCount <= 0)
+            {
+                MessageBox.Show("ye nah fuck off mate");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.StimCount -= 1;
+                lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+        }
+
+        private void btnAddRec_Click(object sender, EventArgs e)
+        {
+            dbzdnd.Properties.Settings.Default.RecoveryCount += 1;
+            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
+            dbzdnd.Properties.Settings.Default.Save();
+        }
+
+        private void btnRemRec_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.RecoveryCount <= 0)
+            {
+                MessageBox.Show("mate wat u doin?");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.RecoveryCount -= 1;
+                lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+        }
+
+        private void btnUseRec_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.RecoveryCount <= 0)
+            {
+                MessageBox.Show("ye nah fuck off mate");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.RecoveryCount -= 1;
+                lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+        }
+
+        private void btnAddEnergy_Click(object sender, EventArgs e)
+        {
+            dbzdnd.Properties.Settings.Default.EnergyCount += 1;
+            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
+            dbzdnd.Properties.Settings.Default.Save();
+        }
+
+        private void btnRemEnergy_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.EnergyCount <= 0)
+            {
+                MessageBox.Show("mate wat u doin?");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.EnergyCount -= 1;
+                lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+        }
+
+        private void btnUseEnergy_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.EnergyCount <= 0)
+            {
+                MessageBox.Show("ye nah fuck off mate");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.EnergyCount -= 1;
+                lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
+        }
+
+        private void btnAddCredits_Click(object sender, EventArgs e)
+        {
+            dbzdnd.Properties.Settings.Default.Credits += 1;
+            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
+            dbzdnd.Properties.Settings.Default.Save();
+        }
+
+        private void btnRemoveCredits_Click(object sender, EventArgs e)
+        {
+            if (dbzdnd.Properties.Settings.Default.Credits <= 0)
+            {
+                MessageBox.Show("mate wat u doin?");
+            }
+            else
+            {
+                dbzdnd.Properties.Settings.Default.Credits -= 1;
+                lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
+                dbzdnd.Properties.Settings.Default.Save();
+            }
         }
     }
 }

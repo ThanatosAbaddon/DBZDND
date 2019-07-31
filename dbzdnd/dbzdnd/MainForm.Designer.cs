@@ -125,7 +125,6 @@
             this.btnRemEnergy = new System.Windows.Forms.Button();
             this.btnAddEnergy = new System.Windows.Forms.Button();
             this.btnUseEnergy = new System.Windows.Forms.Button();
-            this.nudEnergyPill = new System.Windows.Forms.NumericUpDown();
             this.lblEnergyPills = new System.Windows.Forms.Label();
             this.btnRemoveCredits = new System.Windows.Forms.Button();
             this.btnRemRec = new System.Windows.Forms.Button();
@@ -135,9 +134,6 @@
             this.btnAddStim = new System.Windows.Forms.Button();
             this.btnUseRec = new System.Windows.Forms.Button();
             this.btnUseStim = new System.Windows.Forms.Button();
-            this.nudCredits = new System.Windows.Forms.NumericUpDown();
-            this.nudRecPill = new System.Windows.Forms.NumericUpDown();
-            this.nudStimPill = new System.Windows.Forms.NumericUpDown();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblRecoveryPills = new System.Windows.Forms.Label();
             this.lblStimPills = new System.Windows.Forms.Label();
@@ -189,10 +185,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCurrentChi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).BeginInit();
             this.InventoryGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInfo
@@ -232,6 +224,7 @@
             this.nudLevel.Name = "nudLevel";
             this.nudLevel.Size = new System.Drawing.Size(159, 22);
             this.nudLevel.TabIndex = 1;
+            this.nudLevel.ValueChanged += new System.EventHandler(this.nudLevel_ValueChanged);
             // 
             // lblLevel
             // 
@@ -1148,7 +1141,6 @@
             this.InventoryGroup.Controls.Add(this.btnRemEnergy);
             this.InventoryGroup.Controls.Add(this.btnAddEnergy);
             this.InventoryGroup.Controls.Add(this.btnUseEnergy);
-            this.InventoryGroup.Controls.Add(this.nudEnergyPill);
             this.InventoryGroup.Controls.Add(this.lblEnergyPills);
             this.InventoryGroup.Controls.Add(this.btnRemoveCredits);
             this.InventoryGroup.Controls.Add(this.btnRemRec);
@@ -1158,9 +1150,6 @@
             this.InventoryGroup.Controls.Add(this.btnAddStim);
             this.InventoryGroup.Controls.Add(this.btnUseRec);
             this.InventoryGroup.Controls.Add(this.btnUseStim);
-            this.InventoryGroup.Controls.Add(this.nudCredits);
-            this.InventoryGroup.Controls.Add(this.nudRecPill);
-            this.InventoryGroup.Controls.Add(this.nudStimPill);
             this.InventoryGroup.Controls.Add(this.lblCredits);
             this.InventoryGroup.Controls.Add(this.lblRecoveryPills);
             this.InventoryGroup.Controls.Add(this.lblStimPills);
@@ -1180,6 +1169,7 @@
             this.btnRemEnergy.TabIndex = 13;
             this.btnRemEnergy.Text = "-";
             this.btnRemEnergy.UseVisualStyleBackColor = true;
+            this.btnRemEnergy.Click += new System.EventHandler(this.btnRemEnergy_Click);
             // 
             // btnAddEnergy
             // 
@@ -1189,6 +1179,7 @@
             this.btnAddEnergy.TabIndex = 12;
             this.btnAddEnergy.Text = "+";
             this.btnAddEnergy.UseVisualStyleBackColor = true;
+            this.btnAddEnergy.Click += new System.EventHandler(this.btnAddEnergy_Click);
             // 
             // btnUseEnergy
             // 
@@ -1198,14 +1189,7 @@
             this.btnUseEnergy.TabIndex = 14;
             this.btnUseEnergy.Text = "Use";
             this.btnUseEnergy.UseVisualStyleBackColor = true;
-            // 
-            // nudEnergyPill
-            // 
-            this.nudEnergyPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudEnergyPill.Location = new System.Drawing.Point(119, 104);
-            this.nudEnergyPill.Name = "nudEnergyPill";
-            this.nudEnergyPill.Size = new System.Drawing.Size(91, 22);
-            this.nudEnergyPill.TabIndex = 11;
+            this.btnUseEnergy.Click += new System.EventHandler(this.btnUseEnergy_Click);
             // 
             // lblEnergyPills
             // 
@@ -1213,9 +1197,9 @@
             this.lblEnergyPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblEnergyPills.Location = new System.Drawing.Point(2, 103);
             this.lblEnergyPills.Name = "lblEnergyPills";
-            this.lblEnergyPills.Size = new System.Drawing.Size(89, 20);
+            this.lblEnergyPills.Size = new System.Drawing.Size(97, 20);
             this.lblEnergyPills.TabIndex = 15;
-            this.lblEnergyPills.Text = "Energy pills";
+            this.lblEnergyPills.Text = "Energy pills: ";
             // 
             // btnRemoveCredits
             // 
@@ -1225,6 +1209,7 @@
             this.btnRemoveCredits.TabIndex = 17;
             this.btnRemoveCredits.Text = "-";
             this.btnRemoveCredits.UseVisualStyleBackColor = true;
+            this.btnRemoveCredits.Click += new System.EventHandler(this.btnRemoveCredits_Click);
             // 
             // btnRemRec
             // 
@@ -1234,6 +1219,7 @@
             this.btnRemRec.TabIndex = 9;
             this.btnRemRec.Text = "-";
             this.btnRemRec.UseVisualStyleBackColor = true;
+            this.btnRemRec.Click += new System.EventHandler(this.btnRemRec_Click);
             // 
             // btnRemStim
             // 
@@ -1243,6 +1229,7 @@
             this.btnRemStim.TabIndex = 5;
             this.btnRemStim.Text = "-";
             this.btnRemStim.UseVisualStyleBackColor = true;
+            this.btnRemStim.Click += new System.EventHandler(this.btnRemStim_Click);
             // 
             // btnAddCredits
             // 
@@ -1252,6 +1239,7 @@
             this.btnAddCredits.TabIndex = 16;
             this.btnAddCredits.Text = "+";
             this.btnAddCredits.UseVisualStyleBackColor = true;
+            this.btnAddCredits.Click += new System.EventHandler(this.btnAddCredits_Click);
             // 
             // btnAddRec
             // 
@@ -1261,6 +1249,7 @@
             this.btnAddRec.TabIndex = 8;
             this.btnAddRec.Text = "+";
             this.btnAddRec.UseVisualStyleBackColor = true;
+            this.btnAddRec.Click += new System.EventHandler(this.btnAddRec_Click);
             // 
             // btnAddStim
             // 
@@ -1270,6 +1259,7 @@
             this.btnAddStim.TabIndex = 4;
             this.btnAddStim.Text = "+";
             this.btnAddStim.UseVisualStyleBackColor = true;
+            this.btnAddStim.Click += new System.EventHandler(this.btnAddStim_Click);
             // 
             // btnUseRec
             // 
@@ -1279,6 +1269,7 @@
             this.btnUseRec.TabIndex = 10;
             this.btnUseRec.Text = "Use";
             this.btnUseRec.UseVisualStyleBackColor = true;
+            this.btnUseRec.Click += new System.EventHandler(this.btnUseRec_Click);
             // 
             // btnUseStim
             // 
@@ -1288,30 +1279,7 @@
             this.btnUseStim.TabIndex = 6;
             this.btnUseStim.Text = "Use";
             this.btnUseStim.UseVisualStyleBackColor = true;
-            // 
-            // nudCredits
-            // 
-            this.nudCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudCredits.Location = new System.Drawing.Point(119, 132);
-            this.nudCredits.Name = "nudCredits";
-            this.nudCredits.Size = new System.Drawing.Size(91, 22);
-            this.nudCredits.TabIndex = 15;
-            // 
-            // nudRecPill
-            // 
-            this.nudRecPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudRecPill.Location = new System.Drawing.Point(119, 76);
-            this.nudRecPill.Name = "nudRecPill";
-            this.nudRecPill.Size = new System.Drawing.Size(91, 22);
-            this.nudRecPill.TabIndex = 7;
-            // 
-            // nudStimPill
-            // 
-            this.nudStimPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudStimPill.Location = new System.Drawing.Point(119, 48);
-            this.nudStimPill.Name = "nudStimPill";
-            this.nudStimPill.Size = new System.Drawing.Size(91, 22);
-            this.nudStimPill.TabIndex = 3;
+            this.btnUseStim.Click += new System.EventHandler(this.btnUseStim_Click);
             // 
             // lblCredits
             // 
@@ -1319,9 +1287,9 @@
             this.lblCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblCredits.Location = new System.Drawing.Point(2, 131);
             this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(59, 20);
+            this.lblCredits.Size = new System.Drawing.Size(67, 20);
             this.lblCredits.TabIndex = 3;
-            this.lblCredits.Text = "Credits";
+            this.lblCredits.Text = "Credits: ";
             // 
             // lblRecoveryPills
             // 
@@ -1329,9 +1297,9 @@
             this.lblRecoveryPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblRecoveryPills.Location = new System.Drawing.Point(2, 75);
             this.lblRecoveryPills.Name = "lblRecoveryPills";
-            this.lblRecoveryPills.Size = new System.Drawing.Size(105, 20);
+            this.lblRecoveryPills.Size = new System.Drawing.Size(113, 20);
             this.lblRecoveryPills.TabIndex = 2;
-            this.lblRecoveryPills.Text = "Recovery pills";
+            this.lblRecoveryPills.Text = "Recovery pills: ";
             // 
             // lblStimPills
             // 
@@ -1339,9 +1307,9 @@
             this.lblStimPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lblStimPills.Location = new System.Drawing.Point(2, 47);
             this.lblStimPills.Name = "lblStimPills";
-            this.lblStimPills.Size = new System.Drawing.Size(118, 20);
+            this.lblStimPills.Size = new System.Drawing.Size(122, 20);
             this.lblStimPills.TabIndex = 1;
-            this.lblStimPills.Text = "Stimulation pills";
+            this.lblStimPills.Text = "Stimulation pills:";
             // 
             // btnInventory
             // 
@@ -1423,10 +1391,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).EndInit();
             this.InventoryGroup.ResumeLayout(false);
             this.InventoryGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1535,9 +1499,6 @@
         private System.Windows.Forms.Button btnAddStim;
         private System.Windows.Forms.Button btnUseRec;
         private System.Windows.Forms.Button btnUseStim;
-        private System.Windows.Forms.NumericUpDown nudCredits;
-        private System.Windows.Forms.NumericUpDown nudRecPill;
-        private System.Windows.Forms.NumericUpDown nudStimPill;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblRecoveryPills;
         private System.Windows.Forms.Label lblStimPills;
@@ -1545,7 +1506,6 @@
         private System.Windows.Forms.Button btnRemEnergy;
         private System.Windows.Forms.Button btnAddEnergy;
         private System.Windows.Forms.Button btnUseEnergy;
-        private System.Windows.Forms.NumericUpDown nudEnergyPill;
         private System.Windows.Forms.Label lblEnergyPills;
     }
 }
