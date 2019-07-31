@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addValues.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addValues.Designer.cs">
+      <DependentUpon>addValues.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     <Compile Include="Transformations.Designer.cs">
       <DependentUpon>Transformations.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="addValues.resx">
+      <DependentUpon>addValues.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

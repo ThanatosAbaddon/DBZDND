@@ -14,7 +14,7 @@
     <Setting Name="EnergyCount" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Credits" Type="System.Int32" Scope="User">
+    <Setting Name="Credits" Type="System.Decimal" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="StatPoints" Type="System.Int32" Scope="User">

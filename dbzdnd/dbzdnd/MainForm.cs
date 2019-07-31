@@ -199,20 +199,24 @@ namespace dbzdnd
 
         private void btnAddCredits_Click(object sender, EventArgs e)
         {
-            dbzdnd.Properties.Settings.Default.Credits += 1;
-            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
-            dbzdnd.Properties.Settings.Default.Save();
+
+            new addValues("add", "credits", this);
         }
 
         private void btnRemoveCredits_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.Credits <= 0)
+            new addValues("take", "credits", this);
+        }
+
+        public void changeCredits(decimal amount)
+        {
+            if (amount < 0 && dbzdnd.Properties.Settings.Default.Credits + amount < 0)
             {
-                MessageBox.Show("mate wat u doin?");
+                MessageBox.Show("yeah nah you're too poor");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.Credits -= 1;
+                dbzdnd.Properties.Settings.Default.Credits += amount;
                 lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
                 dbzdnd.Properties.Settings.Default.Save();
             }

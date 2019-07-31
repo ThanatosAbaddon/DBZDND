@@ -74,9 +74,9 @@ namespace dbzdnd.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Credits {
+        public decimal Credits {
             get {
-                return ((int)(this["Credits"]));
+                return ((decimal)(this["Credits"]));
             }
             set {
                 this["Credits"] = value;

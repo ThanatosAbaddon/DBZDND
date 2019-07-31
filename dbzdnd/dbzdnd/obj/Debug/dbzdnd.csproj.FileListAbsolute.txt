@@ -9,3 +9,4 @@ C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.cspro
 C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.exe
 C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.pdb
 C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.PlayerInfo.resources
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.addValues.resources
