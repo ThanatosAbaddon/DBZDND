@@ -37,66 +37,66 @@
             this.lblPowerLevel = new System.Windows.Forms.Label();
             this.tabStrengthTop = new System.Windows.Forms.TabControl();
             this.tabStrength = new System.Windows.Forms.TabPage();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.nudPower = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
+            this.nudAthletics = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.nudChiSupers = new System.Windows.Forms.NumericUpDown();
             this.label10 = new System.Windows.Forms.Label();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.nudStrikeSupers = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
+            this.nudBasicAttack = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.nudStrength = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
+            this.nudEndurance = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
+            this.nudSpeed = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
+            this.nudStealth = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.nudAcrobatics = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
+            this.nudDexterity = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.nudResistance = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.nudChi = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
-            this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
+            this.nudStamina = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
-            this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
+            this.nudHealth = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
-            this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
+            this.nudConstitution = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
+            this.nudCombat = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
-            this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
+            this.nudTechnology = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
-            this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
+            this.nudIntelligence = new System.Windows.Forms.NumericUpDown();
             this.label27 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
+            this.nudPerception = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
-            this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
+            this.nudMedicine = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
-            this.numericUpDown29 = new System.Windows.Forms.NumericUpDown();
+            this.nudInsight = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
-            this.numericUpDown30 = new System.Windows.Forms.NumericUpDown();
+            this.nudWisdom = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
+            this.nudPersuasion = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
-            this.numericUpDown31 = new System.Windows.Forms.NumericUpDown();
+            this.nudPerformance = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
-            this.numericUpDown32 = new System.Windows.Forms.NumericUpDown();
+            this.Intimidation = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
-            this.numericUpDown33 = new System.Windows.Forms.NumericUpDown();
+            this.nudDeception = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
-            this.numericUpDown34 = new System.Windows.Forms.NumericUpDown();
+            this.nudCharisma = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
             this.nudStatPoints = new System.Windows.Forms.NumericUpDown();
             this.lblStats = new System.Windows.Forms.Label();
@@ -122,64 +122,64 @@
             this.btnFillHealth = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.InventoryGroup = new System.Windows.Forms.GroupBox();
-            this.btnInventory = new System.Windows.Forms.Button();
-            this.lblStimPills = new System.Windows.Forms.Label();
-            this.lblRecoveryPills = new System.Windows.Forms.Label();
-            this.lblCredits = new System.Windows.Forms.Label();
-            this.nudStimPill = new System.Windows.Forms.NumericUpDown();
-            this.nudRecPill = new System.Windows.Forms.NumericUpDown();
-            this.nudCredits = new System.Windows.Forms.NumericUpDown();
-            this.btnUseStim = new System.Windows.Forms.Button();
-            this.btnUseRec = new System.Windows.Forms.Button();
-            this.btnAddStim = new System.Windows.Forms.Button();
-            this.btnAddRec = new System.Windows.Forms.Button();
-            this.btnAddCredits = new System.Windows.Forms.Button();
-            this.btnRemStim = new System.Windows.Forms.Button();
-            this.btnRemRec = new System.Windows.Forms.Button();
-            this.btnRemoveCredits = new System.Windows.Forms.Button();
             this.btnRemEnergy = new System.Windows.Forms.Button();
             this.btnAddEnergy = new System.Windows.Forms.Button();
             this.btnUseEnergy = new System.Windows.Forms.Button();
             this.nudEnergyPill = new System.Windows.Forms.NumericUpDown();
             this.lblEnergyPills = new System.Windows.Forms.Label();
+            this.btnRemoveCredits = new System.Windows.Forms.Button();
+            this.btnRemRec = new System.Windows.Forms.Button();
+            this.btnRemStim = new System.Windows.Forms.Button();
+            this.btnAddCredits = new System.Windows.Forms.Button();
+            this.btnAddRec = new System.Windows.Forms.Button();
+            this.btnAddStim = new System.Windows.Forms.Button();
+            this.btnUseRec = new System.Windows.Forms.Button();
+            this.btnUseStim = new System.Windows.Forms.Button();
+            this.nudCredits = new System.Windows.Forms.NumericUpDown();
+            this.nudRecPill = new System.Windows.Forms.NumericUpDown();
+            this.nudStimPill = new System.Windows.Forms.NumericUpDown();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.lblRecoveryPills = new System.Windows.Forms.Label();
+            this.lblStimPills = new System.Windows.Forms.Label();
+            this.btnInventory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.PlayerGroup.SuspendLayout();
             this.tabStrengthTop.SuspendLayout();
             this.tabStrength.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAthletics)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChiSupers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStrikeSupers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBasicAttack)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStrength)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEndurance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpeed)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStealth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAcrobatics)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDexterity)).BeginInit();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudResistance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStamina)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHealth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudConstitution)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCombat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTechnology)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntelligence)).BeginInit();
             this.tabPage5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPerception)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMedicine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInsight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWisdom)).BeginInit();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPerformance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Intimidation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCharisma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpecPoints)).BeginInit();
             this.StatsGroup.SuspendLayout();
@@ -189,10 +189,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudCurrentChi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).BeginInit();
             this.InventoryGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInfo
@@ -283,17 +283,17 @@
             // 
             // tabStrength
             // 
-            this.tabStrength.Controls.Add(this.numericUpDown12);
+            this.tabStrength.Controls.Add(this.nudPower);
             this.tabStrength.Controls.Add(this.label12);
-            this.tabStrength.Controls.Add(this.numericUpDown11);
+            this.tabStrength.Controls.Add(this.nudAthletics);
             this.tabStrength.Controls.Add(this.label11);
-            this.tabStrength.Controls.Add(this.numericUpDown10);
+            this.tabStrength.Controls.Add(this.nudChiSupers);
             this.tabStrength.Controls.Add(this.label10);
-            this.tabStrength.Controls.Add(this.numericUpDown9);
+            this.tabStrength.Controls.Add(this.nudStrikeSupers);
             this.tabStrength.Controls.Add(this.label9);
-            this.tabStrength.Controls.Add(this.numericUpDown8);
+            this.tabStrength.Controls.Add(this.nudBasicAttack);
             this.tabStrength.Controls.Add(this.label8);
-            this.tabStrength.Controls.Add(this.numericUpDown7);
+            this.tabStrength.Controls.Add(this.nudStrength);
             this.tabStrength.Controls.Add(this.label7);
             this.tabStrength.Location = new System.Drawing.Point(4, 22);
             this.tabStrength.Name = "tabStrength";
@@ -303,13 +303,13 @@
             this.tabStrength.Text = "STR";
             this.tabStrength.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown12
+            // nudPower
             // 
-            this.numericUpDown12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown12.Location = new System.Drawing.Point(118, 122);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown12.TabIndex = 11;
+            this.nudPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPower.Location = new System.Drawing.Point(118, 122);
+            this.nudPower.Name = "nudPower";
+            this.nudPower.Size = new System.Drawing.Size(217, 21);
+            this.nudPower.TabIndex = 11;
             // 
             // label12
             // 
@@ -321,13 +321,13 @@
             this.label12.TabIndex = 10;
             this.label12.Text = "Power:";
             // 
-            // numericUpDown11
+            // nudAthletics
             // 
-            this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown11.Location = new System.Drawing.Point(118, 98);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown11.TabIndex = 9;
+            this.nudAthletics.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudAthletics.Location = new System.Drawing.Point(118, 98);
+            this.nudAthletics.Name = "nudAthletics";
+            this.nudAthletics.Size = new System.Drawing.Size(217, 21);
+            this.nudAthletics.TabIndex = 9;
             // 
             // label11
             // 
@@ -339,13 +339,13 @@
             this.label11.TabIndex = 8;
             this.label11.Text = "Athletics:";
             // 
-            // numericUpDown10
+            // nudChiSupers
             // 
-            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown10.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown10.TabIndex = 7;
+            this.nudChiSupers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudChiSupers.Location = new System.Drawing.Point(118, 74);
+            this.nudChiSupers.Name = "nudChiSupers";
+            this.nudChiSupers.Size = new System.Drawing.Size(217, 21);
+            this.nudChiSupers.TabIndex = 7;
             // 
             // label10
             // 
@@ -357,13 +357,13 @@
             this.label10.TabIndex = 6;
             this.label10.Text = "Chi Blast Supers:";
             // 
-            // numericUpDown9
+            // nudStrikeSupers
             // 
-            this.numericUpDown9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown9.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown9.TabIndex = 5;
+            this.nudStrikeSupers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudStrikeSupers.Location = new System.Drawing.Point(118, 50);
+            this.nudStrikeSupers.Name = "nudStrikeSupers";
+            this.nudStrikeSupers.Size = new System.Drawing.Size(217, 21);
+            this.nudStrikeSupers.TabIndex = 5;
             // 
             // label9
             // 
@@ -375,13 +375,13 @@
             this.label9.TabIndex = 4;
             this.label9.Text = "Strike Supers:";
             // 
-            // numericUpDown8
+            // nudBasicAttack
             // 
-            this.numericUpDown8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown8.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown8.TabIndex = 3;
+            this.nudBasicAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudBasicAttack.Location = new System.Drawing.Point(118, 26);
+            this.nudBasicAttack.Name = "nudBasicAttack";
+            this.nudBasicAttack.Size = new System.Drawing.Size(217, 21);
+            this.nudBasicAttack.TabIndex = 3;
             // 
             // label8
             // 
@@ -393,13 +393,13 @@
             this.label8.TabIndex = 2;
             this.label8.Text = "Basic Attack:";
             // 
-            // numericUpDown7
+            // nudStrength
             // 
-            this.numericUpDown7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown7.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown7.TabIndex = 1;
+            this.nudStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudStrength.Location = new System.Drawing.Point(118, 2);
+            this.nudStrength.Name = "nudStrength";
+            this.nudStrength.Size = new System.Drawing.Size(217, 21);
+            this.nudStrength.TabIndex = 1;
             // 
             // label7
             // 
@@ -413,31 +413,31 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.numericUpDown13);
+            this.tabPage2.Controls.Add(this.nudEndurance);
             this.tabPage2.Controls.Add(this.label13);
-            this.tabPage2.Controls.Add(this.numericUpDown14);
+            this.tabPage2.Controls.Add(this.nudSpeed);
             this.tabPage2.Controls.Add(this.label14);
-            this.tabPage2.Controls.Add(this.numericUpDown15);
+            this.tabPage2.Controls.Add(this.nudStealth);
             this.tabPage2.Controls.Add(this.label15);
-            this.tabPage2.Controls.Add(this.numericUpDown16);
+            this.tabPage2.Controls.Add(this.nudAcrobatics);
             this.tabPage2.Controls.Add(this.label16);
-            this.tabPage2.Controls.Add(this.numericUpDown17);
+            this.tabPage2.Controls.Add(this.nudDexterity);
             this.tabPage2.Controls.Add(this.label17);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(341, 229);
+            this.tabPage2.Size = new System.Drawing.Size(341, 149);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DEX";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown13
+            // nudEndurance
             // 
-            this.numericUpDown13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown13.Location = new System.Drawing.Point(118, 98);
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown13.TabIndex = 19;
+            this.nudEndurance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudEndurance.Location = new System.Drawing.Point(118, 98);
+            this.nudEndurance.Name = "nudEndurance";
+            this.nudEndurance.Size = new System.Drawing.Size(217, 21);
+            this.nudEndurance.TabIndex = 19;
             // 
             // label13
             // 
@@ -449,13 +449,13 @@
             this.label13.TabIndex = 18;
             this.label13.Text = "Endurance:";
             // 
-            // numericUpDown14
+            // nudSpeed
             // 
-            this.numericUpDown14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown14.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown14.TabIndex = 17;
+            this.nudSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudSpeed.Location = new System.Drawing.Point(118, 74);
+            this.nudSpeed.Name = "nudSpeed";
+            this.nudSpeed.Size = new System.Drawing.Size(217, 21);
+            this.nudSpeed.TabIndex = 17;
             // 
             // label14
             // 
@@ -467,13 +467,13 @@
             this.label14.TabIndex = 16;
             this.label14.Text = "Speed:";
             // 
-            // numericUpDown15
+            // nudStealth
             // 
-            this.numericUpDown15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown15.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown15.TabIndex = 15;
+            this.nudStealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudStealth.Location = new System.Drawing.Point(118, 50);
+            this.nudStealth.Name = "nudStealth";
+            this.nudStealth.Size = new System.Drawing.Size(217, 21);
+            this.nudStealth.TabIndex = 15;
             // 
             // label15
             // 
@@ -485,13 +485,13 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "Stealth:";
             // 
-            // numericUpDown16
+            // nudAcrobatics
             // 
-            this.numericUpDown16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown16.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown16.TabIndex = 13;
+            this.nudAcrobatics.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudAcrobatics.Location = new System.Drawing.Point(118, 26);
+            this.nudAcrobatics.Name = "nudAcrobatics";
+            this.nudAcrobatics.Size = new System.Drawing.Size(217, 21);
+            this.nudAcrobatics.TabIndex = 13;
             // 
             // label16
             // 
@@ -503,13 +503,13 @@
             this.label16.TabIndex = 12;
             this.label16.Text = "Acrobatics:";
             // 
-            // numericUpDown17
+            // nudDexterity
             // 
-            this.numericUpDown17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown17.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown17.TabIndex = 11;
+            this.nudDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudDexterity.Location = new System.Drawing.Point(118, 2);
+            this.nudDexterity.Name = "nudDexterity";
+            this.nudDexterity.Size = new System.Drawing.Size(217, 21);
+            this.nudDexterity.TabIndex = 11;
             // 
             // label17
             // 
@@ -523,31 +523,31 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.numericUpDown18);
+            this.tabPage3.Controls.Add(this.nudResistance);
             this.tabPage3.Controls.Add(this.label18);
-            this.tabPage3.Controls.Add(this.numericUpDown19);
+            this.tabPage3.Controls.Add(this.nudChi);
             this.tabPage3.Controls.Add(this.label19);
-            this.tabPage3.Controls.Add(this.numericUpDown20);
+            this.tabPage3.Controls.Add(this.nudStamina);
             this.tabPage3.Controls.Add(this.label20);
-            this.tabPage3.Controls.Add(this.numericUpDown21);
+            this.tabPage3.Controls.Add(this.nudHealth);
             this.tabPage3.Controls.Add(this.label21);
-            this.tabPage3.Controls.Add(this.numericUpDown22);
+            this.tabPage3.Controls.Add(this.nudConstitution);
             this.tabPage3.Controls.Add(this.label22);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(341, 229);
+            this.tabPage3.Size = new System.Drawing.Size(341, 149);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CON";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown18
+            // nudResistance
             // 
-            this.numericUpDown18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown18.Location = new System.Drawing.Point(118, 98);
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown18.TabIndex = 19;
+            this.nudResistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudResistance.Location = new System.Drawing.Point(118, 98);
+            this.nudResistance.Name = "nudResistance";
+            this.nudResistance.Size = new System.Drawing.Size(217, 21);
+            this.nudResistance.TabIndex = 19;
             // 
             // label18
             // 
@@ -559,13 +559,13 @@
             this.label18.TabIndex = 18;
             this.label18.Text = "Resistance:";
             // 
-            // numericUpDown19
+            // nudChi
             // 
-            this.numericUpDown19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown19.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown19.TabIndex = 17;
+            this.nudChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudChi.Location = new System.Drawing.Point(118, 74);
+            this.nudChi.Name = "nudChi";
+            this.nudChi.Size = new System.Drawing.Size(217, 21);
+            this.nudChi.TabIndex = 17;
             // 
             // label19
             // 
@@ -577,13 +577,13 @@
             this.label19.TabIndex = 16;
             this.label19.Text = "Chi:";
             // 
-            // numericUpDown20
+            // nudStamina
             // 
-            this.numericUpDown20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown20.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown20.TabIndex = 15;
+            this.nudStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudStamina.Location = new System.Drawing.Point(118, 50);
+            this.nudStamina.Name = "nudStamina";
+            this.nudStamina.Size = new System.Drawing.Size(217, 21);
+            this.nudStamina.TabIndex = 15;
             // 
             // label20
             // 
@@ -595,13 +595,13 @@
             this.label20.TabIndex = 14;
             this.label20.Text = "Stamina:";
             // 
-            // numericUpDown21
+            // nudHealth
             // 
-            this.numericUpDown21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown21.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown21.Name = "numericUpDown21";
-            this.numericUpDown21.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown21.TabIndex = 13;
+            this.nudHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudHealth.Location = new System.Drawing.Point(118, 26);
+            this.nudHealth.Name = "nudHealth";
+            this.nudHealth.Size = new System.Drawing.Size(217, 21);
+            this.nudHealth.TabIndex = 13;
             // 
             // label21
             // 
@@ -613,13 +613,13 @@
             this.label21.TabIndex = 12;
             this.label21.Text = "Health:";
             // 
-            // numericUpDown22
+            // nudConstitution
             // 
-            this.numericUpDown22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown22.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown22.Name = "numericUpDown22";
-            this.numericUpDown22.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown22.TabIndex = 11;
+            this.nudConstitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudConstitution.Location = new System.Drawing.Point(118, 2);
+            this.nudConstitution.Name = "nudConstitution";
+            this.nudConstitution.Size = new System.Drawing.Size(217, 21);
+            this.nudConstitution.TabIndex = 11;
             // 
             // label22
             // 
@@ -633,27 +633,27 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.numericUpDown25);
+            this.tabPage4.Controls.Add(this.nudCombat);
             this.tabPage4.Controls.Add(this.label25);
-            this.tabPage4.Controls.Add(this.numericUpDown26);
+            this.tabPage4.Controls.Add(this.nudTechnology);
             this.tabPage4.Controls.Add(this.label26);
-            this.tabPage4.Controls.Add(this.numericUpDown27);
+            this.tabPage4.Controls.Add(this.nudIntelligence);
             this.tabPage4.Controls.Add(this.label27);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(341, 229);
+            this.tabPage4.Size = new System.Drawing.Size(341, 149);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "INT";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown25
+            // nudCombat
             // 
-            this.numericUpDown25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown25.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown25.Name = "numericUpDown25";
-            this.numericUpDown25.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown25.TabIndex = 15;
+            this.nudCombat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCombat.Location = new System.Drawing.Point(118, 50);
+            this.nudCombat.Name = "nudCombat";
+            this.nudCombat.Size = new System.Drawing.Size(217, 21);
+            this.nudCombat.TabIndex = 15;
             // 
             // label25
             // 
@@ -665,13 +665,13 @@
             this.label25.TabIndex = 14;
             this.label25.Text = "Combat:";
             // 
-            // numericUpDown26
+            // nudTechnology
             // 
-            this.numericUpDown26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown26.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown26.Name = "numericUpDown26";
-            this.numericUpDown26.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown26.TabIndex = 13;
+            this.nudTechnology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudTechnology.Location = new System.Drawing.Point(118, 26);
+            this.nudTechnology.Name = "nudTechnology";
+            this.nudTechnology.Size = new System.Drawing.Size(217, 21);
+            this.nudTechnology.TabIndex = 13;
             // 
             // label26
             // 
@@ -683,13 +683,13 @@
             this.label26.TabIndex = 12;
             this.label26.Text = "Technology:";
             // 
-            // numericUpDown27
+            // nudIntelligence
             // 
-            this.numericUpDown27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown27.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown27.Name = "numericUpDown27";
-            this.numericUpDown27.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown27.TabIndex = 11;
+            this.nudIntelligence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudIntelligence.Location = new System.Drawing.Point(118, 2);
+            this.nudIntelligence.Name = "nudIntelligence";
+            this.nudIntelligence.Size = new System.Drawing.Size(217, 21);
+            this.nudIntelligence.TabIndex = 11;
             // 
             // label27
             // 
@@ -703,29 +703,29 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.numericUpDown24);
+            this.tabPage5.Controls.Add(this.nudPerception);
             this.tabPage5.Controls.Add(this.label24);
-            this.tabPage5.Controls.Add(this.numericUpDown28);
+            this.tabPage5.Controls.Add(this.nudMedicine);
             this.tabPage5.Controls.Add(this.label28);
-            this.tabPage5.Controls.Add(this.numericUpDown29);
+            this.tabPage5.Controls.Add(this.nudInsight);
             this.tabPage5.Controls.Add(this.label29);
-            this.tabPage5.Controls.Add(this.numericUpDown30);
+            this.tabPage5.Controls.Add(this.nudWisdom);
             this.tabPage5.Controls.Add(this.label30);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(341, 229);
+            this.tabPage5.Size = new System.Drawing.Size(341, 149);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "WISD";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown24
+            // nudPerception
             // 
-            this.numericUpDown24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown24.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown24.Name = "numericUpDown24";
-            this.numericUpDown24.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown24.TabIndex = 17;
+            this.nudPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPerception.Location = new System.Drawing.Point(118, 74);
+            this.nudPerception.Name = "nudPerception";
+            this.nudPerception.Size = new System.Drawing.Size(217, 21);
+            this.nudPerception.TabIndex = 17;
             // 
             // label24
             // 
@@ -737,13 +737,13 @@
             this.label24.TabIndex = 16;
             this.label24.Text = "Perception:";
             // 
-            // numericUpDown28
+            // nudMedicine
             // 
-            this.numericUpDown28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown28.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown28.Name = "numericUpDown28";
-            this.numericUpDown28.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown28.TabIndex = 15;
+            this.nudMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudMedicine.Location = new System.Drawing.Point(118, 50);
+            this.nudMedicine.Name = "nudMedicine";
+            this.nudMedicine.Size = new System.Drawing.Size(217, 21);
+            this.nudMedicine.TabIndex = 15;
             // 
             // label28
             // 
@@ -755,13 +755,13 @@
             this.label28.TabIndex = 14;
             this.label28.Text = "Medicine:";
             // 
-            // numericUpDown29
+            // nudInsight
             // 
-            this.numericUpDown29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown29.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown29.Name = "numericUpDown29";
-            this.numericUpDown29.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown29.TabIndex = 13;
+            this.nudInsight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudInsight.Location = new System.Drawing.Point(118, 26);
+            this.nudInsight.Name = "nudInsight";
+            this.nudInsight.Size = new System.Drawing.Size(217, 21);
+            this.nudInsight.TabIndex = 13;
             // 
             // label29
             // 
@@ -773,13 +773,13 @@
             this.label29.TabIndex = 12;
             this.label29.Text = "Insight:";
             // 
-            // numericUpDown30
+            // nudWisdom
             // 
-            this.numericUpDown30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown30.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown30.Name = "numericUpDown30";
-            this.numericUpDown30.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown30.TabIndex = 11;
+            this.nudWisdom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudWisdom.Location = new System.Drawing.Point(118, 2);
+            this.nudWisdom.Name = "nudWisdom";
+            this.nudWisdom.Size = new System.Drawing.Size(217, 21);
+            this.nudWisdom.TabIndex = 11;
             // 
             // label30
             // 
@@ -793,31 +793,31 @@
             // 
             // tabPage6
             // 
-            this.tabPage6.Controls.Add(this.numericUpDown23);
+            this.tabPage6.Controls.Add(this.nudPersuasion);
             this.tabPage6.Controls.Add(this.label23);
-            this.tabPage6.Controls.Add(this.numericUpDown31);
+            this.tabPage6.Controls.Add(this.nudPerformance);
             this.tabPage6.Controls.Add(this.label31);
-            this.tabPage6.Controls.Add(this.numericUpDown32);
+            this.tabPage6.Controls.Add(this.Intimidation);
             this.tabPage6.Controls.Add(this.label32);
-            this.tabPage6.Controls.Add(this.numericUpDown33);
+            this.tabPage6.Controls.Add(this.nudDeception);
             this.tabPage6.Controls.Add(this.label33);
-            this.tabPage6.Controls.Add(this.numericUpDown34);
+            this.tabPage6.Controls.Add(this.nudCharisma);
             this.tabPage6.Controls.Add(this.label34);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(341, 229);
+            this.tabPage6.Size = new System.Drawing.Size(341, 149);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "CHAR";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // numericUpDown23
+            // nudPersuasion
             // 
-            this.numericUpDown23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown23.Location = new System.Drawing.Point(118, 98);
-            this.numericUpDown23.Name = "numericUpDown23";
-            this.numericUpDown23.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown23.TabIndex = 19;
+            this.nudPersuasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPersuasion.Location = new System.Drawing.Point(118, 98);
+            this.nudPersuasion.Name = "nudPersuasion";
+            this.nudPersuasion.Size = new System.Drawing.Size(217, 21);
+            this.nudPersuasion.TabIndex = 19;
             // 
             // label23
             // 
@@ -829,13 +829,13 @@
             this.label23.TabIndex = 18;
             this.label23.Text = "Persuasion:";
             // 
-            // numericUpDown31
+            // nudPerformance
             // 
-            this.numericUpDown31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown31.Location = new System.Drawing.Point(118, 74);
-            this.numericUpDown31.Name = "numericUpDown31";
-            this.numericUpDown31.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown31.TabIndex = 17;
+            this.nudPerformance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPerformance.Location = new System.Drawing.Point(118, 74);
+            this.nudPerformance.Name = "nudPerformance";
+            this.nudPerformance.Size = new System.Drawing.Size(217, 21);
+            this.nudPerformance.TabIndex = 17;
             // 
             // label31
             // 
@@ -847,13 +847,13 @@
             this.label31.TabIndex = 16;
             this.label31.Text = "Performance:";
             // 
-            // numericUpDown32
+            // Intimidation
             // 
-            this.numericUpDown32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown32.Location = new System.Drawing.Point(118, 50);
-            this.numericUpDown32.Name = "numericUpDown32";
-            this.numericUpDown32.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown32.TabIndex = 15;
+            this.Intimidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Intimidation.Location = new System.Drawing.Point(118, 50);
+            this.Intimidation.Name = "Intimidation";
+            this.Intimidation.Size = new System.Drawing.Size(217, 21);
+            this.Intimidation.TabIndex = 15;
             // 
             // label32
             // 
@@ -865,13 +865,13 @@
             this.label32.TabIndex = 14;
             this.label32.Text = "Intimidation:";
             // 
-            // numericUpDown33
+            // nudDeception
             // 
-            this.numericUpDown33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown33.Location = new System.Drawing.Point(118, 26);
-            this.numericUpDown33.Name = "numericUpDown33";
-            this.numericUpDown33.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown33.TabIndex = 13;
+            this.nudDeception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudDeception.Location = new System.Drawing.Point(118, 26);
+            this.nudDeception.Name = "nudDeception";
+            this.nudDeception.Size = new System.Drawing.Size(217, 21);
+            this.nudDeception.TabIndex = 13;
             // 
             // label33
             // 
@@ -883,13 +883,13 @@
             this.label33.TabIndex = 12;
             this.label33.Text = "Deception:";
             // 
-            // numericUpDown34
+            // nudCharisma
             // 
-            this.numericUpDown34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown34.Location = new System.Drawing.Point(118, 2);
-            this.numericUpDown34.Name = "numericUpDown34";
-            this.numericUpDown34.Size = new System.Drawing.Size(217, 21);
-            this.numericUpDown34.TabIndex = 11;
+            this.nudCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudCharisma.Location = new System.Drawing.Point(118, 2);
+            this.nudCharisma.Name = "nudCharisma";
+            this.nudCharisma.Size = new System.Drawing.Size(217, 21);
+            this.nudCharisma.TabIndex = 11;
             // 
             // label34
             // 
@@ -1172,142 +1172,6 @@
             this.InventoryGroup.TabStop = false;
             this.InventoryGroup.Text = "Inventory";
             // 
-            // btnInventory
-            // 
-            this.btnInventory.Location = new System.Drawing.Point(0, 19);
-            this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Size = new System.Drawing.Size(124, 23);
-            this.btnInventory.TabIndex = 0;
-            this.btnInventory.Text = "View inventory";
-            this.btnInventory.UseVisualStyleBackColor = true;
-            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
-            // 
-            // lblStimPills
-            // 
-            this.lblStimPills.AutoSize = true;
-            this.lblStimPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblStimPills.Location = new System.Drawing.Point(2, 47);
-            this.lblStimPills.Name = "lblStimPills";
-            this.lblStimPills.Size = new System.Drawing.Size(118, 20);
-            this.lblStimPills.TabIndex = 1;
-            this.lblStimPills.Text = "Stimulation pills";
-            // 
-            // lblRecoveryPills
-            // 
-            this.lblRecoveryPills.AutoSize = true;
-            this.lblRecoveryPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblRecoveryPills.Location = new System.Drawing.Point(2, 75);
-            this.lblRecoveryPills.Name = "lblRecoveryPills";
-            this.lblRecoveryPills.Size = new System.Drawing.Size(105, 20);
-            this.lblRecoveryPills.TabIndex = 2;
-            this.lblRecoveryPills.Text = "Recovery pills";
-            // 
-            // lblCredits
-            // 
-            this.lblCredits.AutoSize = true;
-            this.lblCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCredits.Location = new System.Drawing.Point(2, 131);
-            this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(59, 20);
-            this.lblCredits.TabIndex = 3;
-            this.lblCredits.Text = "Credits";
-            // 
-            // nudStimPill
-            // 
-            this.nudStimPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudStimPill.Location = new System.Drawing.Point(119, 48);
-            this.nudStimPill.Name = "nudStimPill";
-            this.nudStimPill.Size = new System.Drawing.Size(91, 22);
-            this.nudStimPill.TabIndex = 4;
-            // 
-            // nudRecPill
-            // 
-            this.nudRecPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudRecPill.Location = new System.Drawing.Point(119, 76);
-            this.nudRecPill.Name = "nudRecPill";
-            this.nudRecPill.Size = new System.Drawing.Size(91, 22);
-            this.nudRecPill.TabIndex = 5;
-            // 
-            // nudCredits
-            // 
-            this.nudCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
-            this.nudCredits.Location = new System.Drawing.Point(119, 132);
-            this.nudCredits.Name = "nudCredits";
-            this.nudCredits.Size = new System.Drawing.Size(91, 22);
-            this.nudCredits.TabIndex = 6;
-            // 
-            // btnUseStim
-            // 
-            this.btnUseStim.Location = new System.Drawing.Point(294, 47);
-            this.btnUseStim.Name = "btnUseStim";
-            this.btnUseStim.Size = new System.Drawing.Size(58, 23);
-            this.btnUseStim.TabIndex = 7;
-            this.btnUseStim.Text = "Use";
-            this.btnUseStim.UseVisualStyleBackColor = true;
-            // 
-            // btnUseRec
-            // 
-            this.btnUseRec.Location = new System.Drawing.Point(294, 75);
-            this.btnUseRec.Name = "btnUseRec";
-            this.btnUseRec.Size = new System.Drawing.Size(58, 23);
-            this.btnUseRec.TabIndex = 8;
-            this.btnUseRec.Text = "Use";
-            this.btnUseRec.UseVisualStyleBackColor = true;
-            // 
-            // btnAddStim
-            // 
-            this.btnAddStim.Location = new System.Drawing.Point(216, 47);
-            this.btnAddStim.Name = "btnAddStim";
-            this.btnAddStim.Size = new System.Drawing.Size(33, 23);
-            this.btnAddStim.TabIndex = 9;
-            this.btnAddStim.Text = "+";
-            this.btnAddStim.UseVisualStyleBackColor = true;
-            // 
-            // btnAddRec
-            // 
-            this.btnAddRec.Location = new System.Drawing.Point(216, 75);
-            this.btnAddRec.Name = "btnAddRec";
-            this.btnAddRec.Size = new System.Drawing.Size(33, 23);
-            this.btnAddRec.TabIndex = 10;
-            this.btnAddRec.Text = "+";
-            this.btnAddRec.UseVisualStyleBackColor = true;
-            // 
-            // btnAddCredits
-            // 
-            this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
-            this.btnAddCredits.Name = "btnAddCredits";
-            this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
-            this.btnAddCredits.TabIndex = 11;
-            this.btnAddCredits.Text = "+";
-            this.btnAddCredits.UseVisualStyleBackColor = true;
-            // 
-            // btnRemStim
-            // 
-            this.btnRemStim.Location = new System.Drawing.Point(255, 47);
-            this.btnRemStim.Name = "btnRemStim";
-            this.btnRemStim.Size = new System.Drawing.Size(33, 23);
-            this.btnRemStim.TabIndex = 12;
-            this.btnRemStim.Text = "-";
-            this.btnRemStim.UseVisualStyleBackColor = true;
-            // 
-            // btnRemRec
-            // 
-            this.btnRemRec.Location = new System.Drawing.Point(255, 75);
-            this.btnRemRec.Name = "btnRemRec";
-            this.btnRemRec.Size = new System.Drawing.Size(33, 23);
-            this.btnRemRec.TabIndex = 13;
-            this.btnRemRec.Text = "-";
-            this.btnRemRec.UseVisualStyleBackColor = true;
-            // 
-            // btnRemoveCredits
-            // 
-            this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
-            this.btnRemoveCredits.Name = "btnRemoveCredits";
-            this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
-            this.btnRemoveCredits.TabIndex = 14;
-            this.btnRemoveCredits.Text = "-";
-            this.btnRemoveCredits.UseVisualStyleBackColor = true;
-            // 
             // btnRemEnergy
             // 
             this.btnRemEnergy.Location = new System.Drawing.Point(255, 103);
@@ -1353,6 +1217,142 @@
             this.lblEnergyPills.TabIndex = 15;
             this.lblEnergyPills.Text = "Energy pills";
             // 
+            // btnRemoveCredits
+            // 
+            this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
+            this.btnRemoveCredits.Name = "btnRemoveCredits";
+            this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnRemoveCredits.TabIndex = 14;
+            this.btnRemoveCredits.Text = "-";
+            this.btnRemoveCredits.UseVisualStyleBackColor = true;
+            // 
+            // btnRemRec
+            // 
+            this.btnRemRec.Location = new System.Drawing.Point(255, 75);
+            this.btnRemRec.Name = "btnRemRec";
+            this.btnRemRec.Size = new System.Drawing.Size(33, 23);
+            this.btnRemRec.TabIndex = 13;
+            this.btnRemRec.Text = "-";
+            this.btnRemRec.UseVisualStyleBackColor = true;
+            // 
+            // btnRemStim
+            // 
+            this.btnRemStim.Location = new System.Drawing.Point(255, 47);
+            this.btnRemStim.Name = "btnRemStim";
+            this.btnRemStim.Size = new System.Drawing.Size(33, 23);
+            this.btnRemStim.TabIndex = 12;
+            this.btnRemStim.Text = "-";
+            this.btnRemStim.UseVisualStyleBackColor = true;
+            // 
+            // btnAddCredits
+            // 
+            this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
+            this.btnAddCredits.Name = "btnAddCredits";
+            this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnAddCredits.TabIndex = 11;
+            this.btnAddCredits.Text = "+";
+            this.btnAddCredits.UseVisualStyleBackColor = true;
+            // 
+            // btnAddRec
+            // 
+            this.btnAddRec.Location = new System.Drawing.Point(216, 75);
+            this.btnAddRec.Name = "btnAddRec";
+            this.btnAddRec.Size = new System.Drawing.Size(33, 23);
+            this.btnAddRec.TabIndex = 10;
+            this.btnAddRec.Text = "+";
+            this.btnAddRec.UseVisualStyleBackColor = true;
+            // 
+            // btnAddStim
+            // 
+            this.btnAddStim.Location = new System.Drawing.Point(216, 47);
+            this.btnAddStim.Name = "btnAddStim";
+            this.btnAddStim.Size = new System.Drawing.Size(33, 23);
+            this.btnAddStim.TabIndex = 9;
+            this.btnAddStim.Text = "+";
+            this.btnAddStim.UseVisualStyleBackColor = true;
+            // 
+            // btnUseRec
+            // 
+            this.btnUseRec.Location = new System.Drawing.Point(294, 75);
+            this.btnUseRec.Name = "btnUseRec";
+            this.btnUseRec.Size = new System.Drawing.Size(58, 23);
+            this.btnUseRec.TabIndex = 8;
+            this.btnUseRec.Text = "Use";
+            this.btnUseRec.UseVisualStyleBackColor = true;
+            // 
+            // btnUseStim
+            // 
+            this.btnUseStim.Location = new System.Drawing.Point(294, 47);
+            this.btnUseStim.Name = "btnUseStim";
+            this.btnUseStim.Size = new System.Drawing.Size(58, 23);
+            this.btnUseStim.TabIndex = 7;
+            this.btnUseStim.Text = "Use";
+            this.btnUseStim.UseVisualStyleBackColor = true;
+            // 
+            // nudCredits
+            // 
+            this.nudCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudCredits.Location = new System.Drawing.Point(119, 132);
+            this.nudCredits.Name = "nudCredits";
+            this.nudCredits.Size = new System.Drawing.Size(91, 22);
+            this.nudCredits.TabIndex = 6;
+            // 
+            // nudRecPill
+            // 
+            this.nudRecPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudRecPill.Location = new System.Drawing.Point(119, 76);
+            this.nudRecPill.Name = "nudRecPill";
+            this.nudRecPill.Size = new System.Drawing.Size(91, 22);
+            this.nudRecPill.TabIndex = 5;
+            // 
+            // nudStimPill
+            // 
+            this.nudStimPill.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.nudStimPill.Location = new System.Drawing.Point(119, 48);
+            this.nudStimPill.Name = "nudStimPill";
+            this.nudStimPill.Size = new System.Drawing.Size(91, 22);
+            this.nudStimPill.TabIndex = 4;
+            // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblCredits.Location = new System.Drawing.Point(2, 131);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(59, 20);
+            this.lblCredits.TabIndex = 3;
+            this.lblCredits.Text = "Credits";
+            // 
+            // lblRecoveryPills
+            // 
+            this.lblRecoveryPills.AutoSize = true;
+            this.lblRecoveryPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblRecoveryPills.Location = new System.Drawing.Point(2, 75);
+            this.lblRecoveryPills.Name = "lblRecoveryPills";
+            this.lblRecoveryPills.Size = new System.Drawing.Size(105, 20);
+            this.lblRecoveryPills.TabIndex = 2;
+            this.lblRecoveryPills.Text = "Recovery pills";
+            // 
+            // lblStimPills
+            // 
+            this.lblStimPills.AutoSize = true;
+            this.lblStimPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblStimPills.Location = new System.Drawing.Point(2, 47);
+            this.lblStimPills.Name = "lblStimPills";
+            this.lblStimPills.Size = new System.Drawing.Size(118, 20);
+            this.lblStimPills.TabIndex = 1;
+            this.lblStimPills.Text = "Stimulation pills";
+            // 
+            // btnInventory
+            // 
+            this.btnInventory.Location = new System.Drawing.Point(0, 19);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(124, 23);
+            this.btnInventory.TabIndex = 0;
+            this.btnInventory.Text = "View inventory";
+            this.btnInventory.UseVisualStyleBackColor = true;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1373,44 +1373,44 @@
             this.tabStrengthTop.ResumeLayout(false);
             this.tabStrength.ResumeLayout(false);
             this.tabStrength.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAthletics)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChiSupers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStrikeSupers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBasicAttack)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStrength)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudEndurance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSpeed)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStealth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAcrobatics)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDexterity)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudResistance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudChi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStamina)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudHealth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudConstitution)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCombat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudTechnology)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntelligence)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPerception)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudMedicine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudInsight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudWisdom)).EndInit();
             this.tabPage6.ResumeLayout(false);
             this.tabPage6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown33)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPerformance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Intimidation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCharisma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudSpecPoints)).EndInit();
             this.StatsGroup.ResumeLayout(false);
@@ -1423,10 +1423,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudEXP)).EndInit();
             this.InventoryGroup.ResumeLayout(false);
             this.InventoryGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudEnergyPill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudCredits)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudRecPill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudStimPill)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1467,61 +1467,61 @@
         private System.Windows.Forms.NumericUpDown nudEXP;
         private System.Windows.Forms.Button btnFillHealth;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
+        private System.Windows.Forms.NumericUpDown nudPower;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
+        private System.Windows.Forms.NumericUpDown nudAthletics;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.NumericUpDown nudChiSupers;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown nudStrikeSupers;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
+        private System.Windows.Forms.NumericUpDown nudBasicAttack;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown nudStrength;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
+        private System.Windows.Forms.NumericUpDown nudEndurance;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
+        private System.Windows.Forms.NumericUpDown nudSpeed;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
+        private System.Windows.Forms.NumericUpDown nudStealth;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown numericUpDown16;
+        private System.Windows.Forms.NumericUpDown nudAcrobatics;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.NumericUpDown numericUpDown17;
+        private System.Windows.Forms.NumericUpDown nudDexterity;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.NumericUpDown numericUpDown18;
+        private System.Windows.Forms.NumericUpDown nudResistance;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.NumericUpDown nudChi;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.NumericUpDown numericUpDown20;
+        private System.Windows.Forms.NumericUpDown nudStamina;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown numericUpDown21;
+        private System.Windows.Forms.NumericUpDown nudHealth;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown numericUpDown22;
+        private System.Windows.Forms.NumericUpDown nudConstitution;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.NumericUpDown numericUpDown25;
+        private System.Windows.Forms.NumericUpDown nudCombat;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.NumericUpDown numericUpDown26;
+        private System.Windows.Forms.NumericUpDown nudTechnology;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.NumericUpDown numericUpDown27;
+        private System.Windows.Forms.NumericUpDown nudIntelligence;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.NumericUpDown numericUpDown24;
+        private System.Windows.Forms.NumericUpDown nudPerception;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.NumericUpDown numericUpDown28;
+        private System.Windows.Forms.NumericUpDown nudMedicine;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.NumericUpDown numericUpDown29;
+        private System.Windows.Forms.NumericUpDown nudInsight;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.NumericUpDown numericUpDown30;
+        private System.Windows.Forms.NumericUpDown nudWisdom;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.NumericUpDown numericUpDown23;
+        private System.Windows.Forms.NumericUpDown nudPersuasion;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.NumericUpDown numericUpDown31;
+        private System.Windows.Forms.NumericUpDown nudPerformance;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown numericUpDown32;
+        private System.Windows.Forms.NumericUpDown Intimidation;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.NumericUpDown numericUpDown33;
+        private System.Windows.Forms.NumericUpDown nudDeception;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.NumericUpDown numericUpDown34;
+        private System.Windows.Forms.NumericUpDown nudCharisma;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Button btnAddConstStam;
         private System.Windows.Forms.Button btnTransform;
