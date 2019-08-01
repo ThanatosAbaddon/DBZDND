@@ -25,7 +25,7 @@ namespace dbzdnd
                 StreamWriter sr = new StreamWriter(client.GetStream());
 
                 //Write save string here
-                sr.WriteLine("It Worked!");
+                sr.WriteLine("testFile\nIt Worked!\n3rd Line");
                 sr.Flush();
 
                 Console.WriteLine("Saved");

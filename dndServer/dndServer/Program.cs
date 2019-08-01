@@ -2,6 +2,7 @@
 using System.Net.Sockets;
 using System.Net;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace dndServer
 {
@@ -20,32 +21,54 @@ namespace dndServer
                 server.Start();
 
                 Byte[] bytes = new Byte[256];
-                String data = null;
+                
 
                 //Listen loop
                 while (true)
                 {
-                    TcpClient client = server.AcceptTcpClient();
 
-                    StreamReader sr = new StreamReader(client.GetStream());
+                        TcpClient client = server.AcceptTcpClient();
 
-                    //Get file string
-                    data = sr.ReadLine();
+                        StreamReader sr = new StreamReader(client.GetStream());
+
+                        //Get file string
+
+                        string fileString = null;
+
+                        string data = "";
+                        while (data != null)
+                        {
+                            //Console.WriteLine(data);
+                            
+                            var task = Task.Run(() => sr.ReadLine());
+                                if (task.Wait(TimeSpan.FromMilliseconds(1000)))
+                                {
+                                    fileString += task.Result + "\n";
+
+                                }
+                                else
+                                {
+                                    data = null;
+                                }
+                        }
+
+                        //client.Close();
 
 
-                    if (data.StartsWith("GET"))
-                    {
-                        //Get save file
-                    } else
-                    {
-                        //Save, save file
-                        System.IO.File.WriteAllText("test.txt", data);
-                        Console.WriteLine("File saved from: " + client.Client.RemoteEndPoint.ToString());
-                    }
+
+                        if (fileString.StartsWith("GET"))
+                        {
+                            //Get save file
+                        }
+                        else
+                        {
+                            //Save, save file
+                            System.IO.File.WriteAllText("test.txt", fileString);
+                            Console.WriteLine("File saved from: " + client.Client.RemoteEndPoint.ToString());
+                        }
+
+                        Console.WriteLine(fileString);
                     
-                    //Console.WriteLine(data);
-                    
-                    client.Close();
                 }
 
             } catch (SocketException e)
