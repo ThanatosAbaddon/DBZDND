@@ -1125,6 +1125,7 @@
             this.btnFillHealth.TabIndex = 25;
             this.btnFillHealth.Text = "Full";
             this.btnFillHealth.UseVisualStyleBackColor = true;
+            this.btnFillHealth.Click += new System.EventHandler(this.btnFillHealth_Click);
             // 
             // label3
             // 
