@@ -220,11 +220,20 @@ namespace dbzdnd
                 lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
                 dbzdnd.Properties.Settings.Default.Save();
             }
+<<<<<<< HEAD
         }
 
         private void btnFillHealth_Click(object sender, EventArgs e)
         {
             //other stuff
         }
+=======
+        }
+
+        private void btnFillHealth_Click(object sender, EventArgs e)
+        {
+            //hello
+        }
+>>>>>>> master
     }
 }
