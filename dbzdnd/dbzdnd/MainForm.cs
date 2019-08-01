@@ -17,21 +17,22 @@ namespace dbzdnd
         private Skills skillWindow = new Skills();
         private Inventory inventoryWindow = new Inventory();
 
+
         public MainForm()
         {
             InitializeComponent();
+            refreshForm();
+        }
+
+        //Refreshes the entire form
+        public void refreshForm()
+        {
             lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
             lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
             lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
             lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
         }
-
-
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void openWindow(Form Window)
         {
 
