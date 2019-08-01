@@ -221,5 +221,10 @@ namespace dbzdnd
                 dbzdnd.Properties.Settings.Default.Save();
             }
         }
+
+        private void btnFillHealth_Click(object sender, EventArgs e)
+        {
+            //other stuff
+        }
     }
 }
