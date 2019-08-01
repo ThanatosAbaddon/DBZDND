@@ -14,6 +14,8 @@ namespace dbzdnd
         [STAThread]
         static void Main()
         {
+            //Sets up the appdata
+            AppData appData = AppData.Instance();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());

@@ -52,6 +52,7 @@
     <Compile Include="addValues.Designer.cs">
       <DependentUpon>addValues.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppData.cs" />
     <Compile Include="Inventory.cs">
       <SubType>Form</SubType>
     </Compile>
