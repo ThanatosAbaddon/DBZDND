@@ -255,13 +255,6 @@ namespace dbzdnd
             Application.Exit();
         }
         #endregion
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Network test = new Network("127.0.0.1", 25000);
-            test.Save();
-            Console.WriteLine(test.Get("test"));
-        }
     }
 
 

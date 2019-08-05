@@ -1,0 +1,14 @@
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe.config
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.pdb
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csprojAssemblyReference.cache
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csproj.CoreCompileInputs.cache
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.exe
+F:\Users\Ryan\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.pdb
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe.config
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.pdb
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csprojAssemblyReference.cache
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csproj.CoreCompileInputs.cache
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.exe
+C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.pdb
