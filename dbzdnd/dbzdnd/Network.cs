@@ -15,6 +15,9 @@ namespace dbzdnd
             this.port = port;
         }
 
+        /**
+         * Sends the save file to server
+         */
         public void Save()
         {
             Console.WriteLine("Auto Saving");
@@ -37,12 +40,23 @@ namespace dbzdnd
             {
                 Console.WriteLine("SocketException: {0}", e);
             }
+            catch
+            {
+                Console.WriteLine("Unknown Error");
+            }
         }
 
+        /**
+         * Gets save file from server
+         * PARM name of file.
+         * RETURN file
+         */ 
         public String Get(String name)
         {
-
             Console.WriteLine("Loading");
+
+            string fileString = "";
+
             try
             {
                 //Create network client
@@ -54,29 +68,28 @@ namespace dbzdnd
                 sw.WriteLine("GET\n" + name + "\nEND");
                 sw.Flush();
 
-
-                string file = "";
-
+                //Recieve file
                 string line = sr.ReadLine();
                 while (line != "END" && line != null)
                 {
-                    file += line;
+                    fileString += line;
                     line = sr.ReadLine();
 
                     if (line != "END" && line != null)
                     {
-                        file += "\n";
+                        fileString += "\n";
                     }
                 }
-
-                Console.WriteLine(file);
             }
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
             }
+            catch
+            {
+                Console.WriteLine("Unknown Error");
+            }
 
-            String fileString = null;
             return fileString;
         }
     }

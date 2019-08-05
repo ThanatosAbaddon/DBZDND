@@ -26,14 +26,14 @@ namespace dndServer
                 //Listen loop
                 while (true)
                 {
-
+                    //Create network client
                     TcpClient client = server.AcceptTcpClient();
 
                     StreamReader sr = new StreamReader(client.GetStream());
                     
 
                     string fileString = "";
-                    
+                    //Recieve file
                     string line = sr.ReadLine();
                     while (line != "END")
                     {
@@ -49,17 +49,19 @@ namespace dndServer
 
                     if (fileString.StartsWith("GET"))
                     {
+                        //Send file
                         fileString = fileString.Substring(4);
 
 
                         StreamWriter sw = new StreamWriter(client.GetStream());
 
                         sw.WriteLine(System.IO.File.ReadAllText(fileString + ".txt") + "\nEND");
-                        //Get save file
+                        sw.Flush();
+                        Console.WriteLine("File, " + fileString + ".txt sent to: " + client.Client.RemoteEndPoint.ToString());
                     }
                     else
                     {
-                        //Save, save file
+                        //Save file
                         System.IO.File.WriteAllText("test.txt", fileString);
                         Console.WriteLine("File saved from: " + client.Client.RemoteEndPoint.ToString());
                     }
@@ -67,19 +69,20 @@ namespace dndServer
                     client.Close();
 
                     Console.WriteLine(fileString);
-
                 }
-
             }
             catch (SocketException e)
             {
                 Console.WriteLine("SocketException: {0}", e);
             }
+            catch
+            {
+                Console.WriteLine("Unknown Error");
+            }
             finally
             {
                 server.Stop();
             }
-
         }
     }
 }

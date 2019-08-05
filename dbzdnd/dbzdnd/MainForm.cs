@@ -233,7 +233,7 @@ namespace dbzdnd
         {
             Network test = new Network("127.0.0.1", 25000);
             test.Save();
-            test.Get("test");
+            Console.WriteLine(test.Get("test"));
         }
     }
 
