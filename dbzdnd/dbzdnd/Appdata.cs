@@ -17,7 +17,7 @@ namespace dbzdnd
         /// 
         private static AppData singleObject = null;
         private readonly static Object padlock = new Object();
-
+        private MainForm _MainForm;
         /// <summary>
         /// Constructor (DON'T USE, USE Instance() INSTEAD!!!)
         /// </summary>
@@ -35,29 +35,47 @@ namespace dbzdnd
             return null;
         }
 
-
         /// <summary>
-        /// Generates an instance of this class.
+        /// Used when this method is called from the initial forms. Creates a new appdata based on what the user wants to use.
         /// </summary>
-        public static AppData Instance()
+        /// <param name="IP">The server's IP</param>
+        /// <param name="online">Checks if the user wants to go online or offline</param>
+        /// <param name="name">user's name, used to load the save</param>
+        /// <param name="loadLocation">online / offline / none loading</param>
+        /// <returns></returns>
+        public static AppData Instance(int IP, bool online, string name, string loadLocation)
         {
 
             lock (padlock)
             {
                 if (singleObject == null)
                 {
+                    //loads the saved appdata
                     singleObject = new AppData();
-                    AppData getFile = loadAppData();
-                    if (getFile != null)
+
+                    if (loadLocation == "online")
                     {
-                        if (MessageBox.Show("Do you want to continue your last session?", "Confirm Load", MessageBoxButtons.YesNo) == DialogResult.Yes)
-                        {
-                            singleObject = getFile;
-                        }
+                        //singleObject = loadOnline(name, ip)
                     }
-
+                    else if (loadLocation == "offline")
+                    {
+                        singleObject = loadAppData();
+                    }
                 }
+                singleObject._MainForm = new MainForm();
+                singleObject._MainForm.Show();
+                return singleObject;
+            }
 
+        }
+
+        /// <summary>
+        /// Returns a single static object of this class
+        /// </summary>
+        public static AppData Instance()
+        {
+            lock (padlock)
+            {
                 return singleObject;
             }
 

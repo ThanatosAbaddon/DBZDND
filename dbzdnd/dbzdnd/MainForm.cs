@@ -24,15 +24,26 @@ namespace dbzdnd
             refreshForm();
         }
 
-        //Refreshes the entire form
-        public void refreshForm()
+        #region "buttons"
+        private void nudLevel_ValueChanged(object sender, EventArgs e)
         {
-            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
-            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
-            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
-            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
+            dbzdnd.Properties.Settings.Default.Level = (int)nudLevel.Value;
+            dbzdnd.Properties.Settings.Default.Save();
         }
-        
+
+        private void btnFillHealth_Click(object sender, EventArgs e)
+        {
+            //other stuff
+            //hello
+        }
+        #endregion
+
+        #region "windows"
+
+        /// <summary>
+        /// generic window showing.
+        /// </summary>
+        /// <param name="Window"></param>
         private void openWindow(Form Window)
         {
 
@@ -85,13 +96,9 @@ namespace dbzdnd
             }
             openWindow(skillWindow);
         }
-
-        private void nudLevel_ValueChanged(object sender, EventArgs e)
-        {
-            dbzdnd.Properties.Settings.Default.Level = (int) nudLevel.Value;
-            dbzdnd.Properties.Settings.Default.Save();
-        }
-
+        #endregion
+        
+        #region "itemUsing"
         private void btnAddStim_Click(object sender, EventArgs e)
         {
             dbzdnd.Properties.Settings.Default.StimCount += 1;
@@ -223,15 +230,32 @@ namespace dbzdnd
             }
 
         }
+        #endregion
 
-        private void btnFillHealth_Click(object sender, EventArgs e)
+        #region "Form Stuff"
+        //Refreshes the entire form
+        public void refreshForm()
         {
-            //other stuff
-            //hello
+            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
+            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
+            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
+            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
         }
+
+        /// <summary>
+        /// Ends the program when the main window is closed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Save First
+            Application.Exit();
+        }
+        #endregion
     }
 
 
 
-    
+
 }
