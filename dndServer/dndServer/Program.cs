@@ -2,7 +2,6 @@
 using System.Net.Sockets;
 using System.Net;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace dndServer
 {
@@ -10,8 +9,6 @@ namespace dndServer
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting D&D save server");
-
             TcpListener server = null;
 
             try
@@ -19,65 +16,78 @@ namespace dndServer
                 //Start server
                 server = new TcpListener(IPAddress.Parse("0.0.0.0"), 25000);
                 server.Start();
+                
+                Console.WriteLine("[" + DateTime.Now.ToString() + "] Started D&D save server");
 
-                Byte[] bytes = new Byte[256];
-
+                TcpClient client = null;
 
                 //Listen loop
                 while (true)
                 {
-                    //Create network client
-                    TcpClient client = server.AcceptTcpClient();
-
-                    StreamReader sr = new StreamReader(client.GetStream());
-                    
-
-                    string fileString = "";
-                    //Recieve file
-                    string line = sr.ReadLine();
-                    while (line != "END")
+                    try
                     {
-                        fileString += line;
-                        line = sr.ReadLine();
+                        //Create network client
+                        client = server.AcceptTcpClient();
 
-                        if (line != "END")
+                        StreamReader sr = new StreamReader(client.GetStream());
+
+
+                        string fileString = "";
+                        //Recieve file
+                        string line = sr.ReadLine();
+                        while (line != "END")
                         {
-                            fileString += "\n";
+                            fileString += line;
+                            line = sr.ReadLine();
+
+                            if (line != "END")
+                            {
+                                fileString += "\n";
+                            }
                         }
+
+
+                        if (fileString.StartsWith("GET"))
+                        {
+                            //Get file name
+                            string fileName = fileString.Substring(4) + ".xml";
+
+                            StreamWriter sw = new StreamWriter(client.GetStream());
+
+                            //Send file
+                            sw.WriteLine(System.IO.File.ReadAllText(fileName) + "\nEND");
+                            sw.Flush();
+                            Console.WriteLine("[" + DateTime.Now.ToString() + "] File, " + fileName + " sent to: " + client.Client.RemoteEndPoint.ToString());
+                        }
+                        else
+                        {
+                            //Get file name
+                            string fileName = fileString.Substring(0, fileString.IndexOf("\n")) + ".xml";
+
+                            //Save file
+                            System.IO.File.WriteAllText(fileName, fileString);
+                            Console.WriteLine("[" + DateTime.Now.ToString() + "] File, " + fileName + " saved from: " + client.Client.RemoteEndPoint.ToString());
+                        }
+
                     }
-
-
-                    if (fileString.StartsWith("GET"))
+                    catch (FileNotFoundException e)
                     {
-                        //Send file
-                        fileString = fileString.Substring(4);
-
-
-                        StreamWriter sw = new StreamWriter(client.GetStream());
-
-                        sw.WriteLine(System.IO.File.ReadAllText(fileString + ".txt") + "\nEND");
-                        sw.Flush();
-                        Console.WriteLine("File, " + fileString + ".txt sent to: " + client.Client.RemoteEndPoint.ToString());
+                        Console.WriteLine("[" + DateTime.Now.ToString() + "] File not found: " + client.Client.RemoteEndPoint.ToString());
                     }
-                    else
+                    catch (Exception e)
                     {
-                        //Save file
-                        System.IO.File.WriteAllText("test.txt", fileString);
-                        Console.WriteLine("File saved from: " + client.Client.RemoteEndPoint.ToString());
+                        Console.WriteLine("[" + DateTime.Now.ToString() + "] " + e);
                     }
-
-                    client.Close();
-
-                    Console.WriteLine(fileString);
+                    finally
+                    {
+                        client.Close();
+                    }
                 }
+
             }
-            catch (SocketException e)
+            catch (Exception e)
             {
-                Console.WriteLine("SocketException: {0}", e);
-            }
-            catch
-            {
-                Console.WriteLine("Unknown Error");
+                Console.WriteLine("[" + DateTime.Now.ToString() + "] " + e);
             }
             finally
             {
