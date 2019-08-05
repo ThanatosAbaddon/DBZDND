@@ -35,3 +35,4 @@ C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CoreCo
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.exe
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.pdb
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.InitialForms.resources
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.InitialForms.resources
