@@ -12,26 +12,40 @@ namespace dbzdnd
 {
     public partial class MainForm : Form
     {
+        #region "variables"
         private PlayerInfo infoWindow = new PlayerInfo();
         private Transformations transformWindow = new Transformations();
         private Skills skillWindow = new Skills();
         private Inventory inventoryWindow = new Inventory();
+        private AppData _AppData = AppData.Instance();
+        #endregion
 
         public MainForm()
         {
             InitializeComponent();
-            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
-            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
-            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
-            lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
+            refreshForm();
         }
 
-
-        private void MainForm_Load(object sender, EventArgs e)
+        #region "buttons"
+        private void nudLevel_ValueChanged(object sender, EventArgs e)
         {
-
+            _AppData._Level = (int)nudLevel.Value;
+            //call Countdown
         }
 
+        private void btnFillHealth_Click(object sender, EventArgs e)
+        {
+            //other stuff
+            //hello
+        }
+        #endregion
+
+        #region "windows"
+
+        /// <summary>
+        /// generic window showing.
+        /// </summary>
+        /// <param name="Window"></param>
         private void openWindow(Form Window)
         {
 
@@ -67,7 +81,7 @@ namespace dbzdnd
 
         private void btnTransform_Click(object sender, EventArgs e)
         {
-            
+
             if (transformWindow.IsDisposed == true)
             {
                 transformWindow = new Transformations();
@@ -84,116 +98,112 @@ namespace dbzdnd
             }
             openWindow(skillWindow);
         }
+        #endregion
 
-        private void nudLevel_ValueChanged(object sender, EventArgs e)
-        {
-            dbzdnd.Properties.Settings.Default.Level = (int) nudLevel.Value;
-            dbzdnd.Properties.Settings.Default.Save();
-        }
-
+        #region "itemUsing"
         private void btnAddStim_Click(object sender, EventArgs e)
         {
-            dbzdnd.Properties.Settings.Default.StimCount += 1;
-            lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
-            dbzdnd.Properties.Settings.Default.Save();
+            _AppData._StimCount += 1;
+            lblStimPills.Text = "Stimulation pills: " + _AppData._StimCount;
+            //Call Save Countdown
         }
 
         private void btnRemStim_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.StimCount <= 0)
+            if (_AppData._StimCount <= 0)
             {
                 MessageBox.Show("mate wat u doin?");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.StimCount -= 1;
-                lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._StimCount -= 1;
+                lblStimPills.Text = "Stimulation pills: " + _AppData._StimCount;
+                //Call Save Countdown
             }
 
         }
 
         private void btnUseStim_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.StimCount <= 0)
+            if (_AppData._StimCount <= 0)
             {
                 MessageBox.Show("ye nah fuck off mate");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.StimCount -= 1;
-                lblStimPills.Text = "Stimulation pills: " + dbzdnd.Properties.Settings.Default.StimCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._StimCount -= 1;
+                lblStimPills.Text = "Stimulation pills: " + _AppData._StimCount;
+                //Call Save Countdown
             }
         }
 
         private void btnAddRec_Click(object sender, EventArgs e)
         {
-            dbzdnd.Properties.Settings.Default.RecoveryCount += 1;
-            lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
-            dbzdnd.Properties.Settings.Default.Save();
+            _AppData._RecoveryCount += 1;
+            lblRecoveryPills.Text = "Recovery pills: " + _AppData._RecoveryCount;
+            //Call Save Countdown
         }
 
         private void btnRemRec_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.RecoveryCount <= 0)
+            if (_AppData._RecoveryCount <= 0)
             {
                 MessageBox.Show("mate wat u doin?");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.RecoveryCount -= 1;
-                lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._RecoveryCount -= 1;
+                lblRecoveryPills.Text = "Recovery pills: " + _AppData._RecoveryCount;
+                //Call Save Countdown
             }
         }
 
         private void btnUseRec_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.RecoveryCount <= 0)
+            if (_AppData._RecoveryCount <= 0)
             {
                 MessageBox.Show("ye nah fuck off mate");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.RecoveryCount -= 1;
-                lblRecoveryPills.Text = "Recovery pills: " + dbzdnd.Properties.Settings.Default.RecoveryCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._RecoveryCount -= 1;
+                lblRecoveryPills.Text = "Recovery pills: " + _AppData._RecoveryCount;
+                //Call Save Countdown
             }
         }
 
         private void btnAddEnergy_Click(object sender, EventArgs e)
         {
-            dbzdnd.Properties.Settings.Default.EnergyCount += 1;
-            lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
-            dbzdnd.Properties.Settings.Default.Save();
+            _AppData._EnergyCount += 1;
+            lblEnergyPills.Text = "Energy pills: " + _AppData._EnergyCount;
+            //Call Save Countdown
         }
 
         private void btnRemEnergy_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.EnergyCount <= 0)
+            if (_AppData._EnergyCount <= 0)
             {
                 MessageBox.Show("mate wat u doin?");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.EnergyCount -= 1;
-                lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._EnergyCount -= 1;
+                lblEnergyPills.Text = "Energy pills: " + _AppData._EnergyCount;
+                //Call Save Countdown
             }
         }
 
         private void btnUseEnergy_Click(object sender, EventArgs e)
         {
-            if (dbzdnd.Properties.Settings.Default.EnergyCount <= 0)
+            if (_AppData._EnergyCount <= 0)
             {
                 MessageBox.Show("ye nah fuck off mate");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.EnergyCount -= 1;
-                lblEnergyPills.Text = "Energy pills: " + dbzdnd.Properties.Settings.Default.EnergyCount;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._EnergyCount -= 1;
+                lblEnergyPills.Text = "Energy pills: " + _AppData._EnergyCount;
+                //Call Save Countdown
             }
         }
 
@@ -210,24 +220,41 @@ namespace dbzdnd
 
         public void changeCredits(decimal amount)
         {
-            if (amount < 0 && dbzdnd.Properties.Settings.Default.Credits + amount < 0)
+            if (amount < 0 && _AppData._Credits + amount < 0)
             {
                 MessageBox.Show("yeah nah you're too poor");
             }
             else
             {
-                dbzdnd.Properties.Settings.Default.Credits += amount;
-                lblCredits.Text = "Credits: " + dbzdnd.Properties.Settings.Default.Credits;
-                dbzdnd.Properties.Settings.Default.Save();
+                _AppData._Credits += amount;
+                lblCredits.Text = "Credits: " + _AppData._Credits;
+                //Call Save Countdown
             }
 
         }
+        #endregion
 
-        private void btnFillHealth_Click(object sender, EventArgs e)
+        #region "Form Stuff"
+        //Refreshes the entire form
+        public void refreshForm()
         {
-            //other stuff
-            //hello
+            lblStimPills.Text = "Stimulation pills: " + _AppData._StimCount;
+            lblRecoveryPills.Text = "Recovery pills: " + _AppData._RecoveryCount;
+            lblEnergyPills.Text = "Energy pills: " + _AppData._EnergyCount;
+            lblCredits.Text = "Credits: " + _AppData._Credits;
         }
+
+        /// <summary>
+        /// Ends the program when the main window is closed
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Save First
+            Application.Exit();
+        }
+        #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -239,5 +266,5 @@ namespace dbzdnd
 
 
 
-    
+
 }
