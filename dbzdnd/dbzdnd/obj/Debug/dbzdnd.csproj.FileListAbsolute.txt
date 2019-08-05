@@ -34,15 +34,5 @@ C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.Genera
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CoreCompileInputs.cache
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.exe
 C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.pdb
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.exe.config
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.exe
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.pdb
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csprojAssemblyReference.cache
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.addValues.resources
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.MainForm.resources
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.PlayerInfo.resources
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.Properties.Resources.resources
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.GenerateResource.cache
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CoreCompileInputs.cache
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.exe
-F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.pdb
+C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.InitialForms.resources
+C:\Users\craba\Documents\cloneFolder\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.InitialForms.resources

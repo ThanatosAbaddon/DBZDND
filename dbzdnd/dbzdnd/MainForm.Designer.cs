@@ -138,7 +138,6 @@
             this.lblRecoveryPills = new System.Windows.Forms.Label();
             this.lblStimPills = new System.Windows.Forms.Label();
             this.btnInventory = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).BeginInit();
             this.PlayerGroup.SuspendLayout();
@@ -190,9 +189,10 @@
             // 
             // btnInfo
             // 
-            this.btnInfo.Location = new System.Drawing.Point(6, 44);
+            this.btnInfo.Location = new System.Drawing.Point(12, 85);
+            this.btnInfo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnInfo.Name = "btnInfo";
-            this.btnInfo.Size = new System.Drawing.Size(124, 23);
+            this.btnInfo.Size = new System.Drawing.Size(248, 44);
             this.btnInfo.TabIndex = 0;
             this.btnInfo.Text = "Player Info";
             this.btnInfo.UseVisualStyleBackColor = true;
@@ -202,18 +202,20 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.lblName.Location = new System.Drawing.Point(1, 16);
+            this.lblName.Location = new System.Drawing.Point(2, 31);
+            this.lblName.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(129, 25);
+            this.lblName.Size = new System.Drawing.Size(250, 48);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "PlayerName";
             // 
             // pbCharacterPicture
             // 
             this.pbCharacterPicture.Image = global::dbzdnd.Properties.Resources.CharacterPic;
-            this.pbCharacterPicture.Location = new System.Drawing.Point(376, 236);
+            this.pbCharacterPicture.Location = new System.Drawing.Point(752, 454);
+            this.pbCharacterPicture.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pbCharacterPicture.Name = "pbCharacterPicture";
-            this.pbCharacterPicture.Size = new System.Drawing.Size(350, 306);
+            this.pbCharacterPicture.Size = new System.Drawing.Size(700, 588);
             this.pbCharacterPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCharacterPicture.TabIndex = 2;
             this.pbCharacterPicture.TabStop = false;
@@ -221,9 +223,10 @@
             // nudLevel
             // 
             this.nudLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudLevel.Location = new System.Drawing.Point(54, 71);
+            this.nudLevel.Location = new System.Drawing.Point(108, 137);
+            this.nudLevel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudLevel.Name = "nudLevel";
-            this.nudLevel.Size = new System.Drawing.Size(159, 22);
+            this.nudLevel.Size = new System.Drawing.Size(318, 37);
             this.nudLevel.TabIndex = 1;
             this.nudLevel.ValueChanged += new System.EventHandler(this.nudLevel_ValueChanged);
             // 
@@ -231,23 +234,25 @@
             // 
             this.lblLevel.AutoSize = true;
             this.lblLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLevel.Location = new System.Drawing.Point(2, 70);
+            this.lblLevel.Location = new System.Drawing.Point(4, 135);
+            this.lblLevel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblLevel.Name = "lblLevel";
-            this.lblLevel.Size = new System.Drawing.Size(46, 20);
+            this.lblLevel.Size = new System.Drawing.Size(91, 37);
             this.lblLevel.TabIndex = 7;
             this.lblLevel.Text = "Level";
             // 
             // PlayerGroup
             // 
-            this.PlayerGroup.Controls.Add(this.button1);
             this.PlayerGroup.Controls.Add(this.lblPowerLevel);
             this.PlayerGroup.Controls.Add(this.lblName);
             this.PlayerGroup.Controls.Add(this.btnInfo);
             this.PlayerGroup.Controls.Add(this.lblLevel);
             this.PlayerGroup.Controls.Add(this.nudLevel);
-            this.PlayerGroup.Location = new System.Drawing.Point(12, 12);
+            this.PlayerGroup.Location = new System.Drawing.Point(24, 23);
+            this.PlayerGroup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.PlayerGroup.Name = "PlayerGroup";
-            this.PlayerGroup.Size = new System.Drawing.Size(358, 131);
+            this.PlayerGroup.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.PlayerGroup.Size = new System.Drawing.Size(716, 252);
             this.PlayerGroup.TabIndex = 16;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
@@ -256,9 +261,10 @@
             // 
             this.lblPowerLevel.AutoSize = true;
             this.lblPowerLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblPowerLevel.Location = new System.Drawing.Point(2, 96);
+            this.lblPowerLevel.Location = new System.Drawing.Point(4, 185);
+            this.lblPowerLevel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblPowerLevel.Name = "lblPowerLevel";
-            this.lblPowerLevel.Size = new System.Drawing.Size(98, 20);
+            this.lblPowerLevel.Size = new System.Drawing.Size(199, 37);
             this.lblPowerLevel.TabIndex = 8;
             this.lblPowerLevel.Text = "Power Level:";
             // 
@@ -270,10 +276,11 @@
             this.tabStrengthTop.Controls.Add(this.tabPage4);
             this.tabStrengthTop.Controls.Add(this.tabPage5);
             this.tabStrengthTop.Controls.Add(this.tabPage6);
-            this.tabStrengthTop.Location = new System.Drawing.Point(3, 45);
+            this.tabStrengthTop.Location = new System.Drawing.Point(6, 87);
+            this.tabStrengthTop.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabStrengthTop.Name = "tabStrengthTop";
             this.tabStrengthTop.SelectedIndex = 0;
-            this.tabStrengthTop.Size = new System.Drawing.Size(349, 175);
+            this.tabStrengthTop.Size = new System.Drawing.Size(698, 337);
             this.tabStrengthTop.TabIndex = 17;
             // 
             // tabStrength
@@ -290,10 +297,11 @@
             this.tabStrength.Controls.Add(this.label8);
             this.tabStrength.Controls.Add(this.nudStrength);
             this.tabStrength.Controls.Add(this.label7);
-            this.tabStrength.Location = new System.Drawing.Point(4, 22);
+            this.tabStrength.Location = new System.Drawing.Point(8, 39);
+            this.tabStrength.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabStrength.Name = "tabStrength";
-            this.tabStrength.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabStrength.Size = new System.Drawing.Size(341, 149);
+            this.tabStrength.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabStrength.Size = new System.Drawing.Size(682, 290);
             this.tabStrength.TabIndex = 0;
             this.tabStrength.Text = "STR";
             this.tabStrength.UseVisualStyleBackColor = true;
@@ -301,108 +309,120 @@
             // nudPower
             // 
             this.nudPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPower.Location = new System.Drawing.Point(118, 122);
+            this.nudPower.Location = new System.Drawing.Point(236, 235);
+            this.nudPower.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudPower.Name = "nudPower";
-            this.nudPower.Size = new System.Drawing.Size(217, 21);
+            this.nudPower.Size = new System.Drawing.Size(434, 35);
             this.nudPower.TabIndex = 11;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(7, 124);
+            this.label12.Location = new System.Drawing.Point(14, 238);
+            this.label12.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 16);
+            this.label12.Size = new System.Drawing.Size(93, 30);
             this.label12.TabIndex = 10;
             this.label12.Text = "Power:";
             // 
             // nudAthletics
             // 
             this.nudAthletics.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAthletics.Location = new System.Drawing.Point(118, 98);
+            this.nudAthletics.Location = new System.Drawing.Point(236, 188);
+            this.nudAthletics.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudAthletics.Name = "nudAthletics";
-            this.nudAthletics.Size = new System.Drawing.Size(217, 21);
+            this.nudAthletics.Size = new System.Drawing.Size(434, 35);
             this.nudAthletics.TabIndex = 9;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(7, 100);
+            this.label11.Location = new System.Drawing.Point(14, 192);
+            this.label11.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 16);
+            this.label11.Size = new System.Drawing.Size(117, 30);
             this.label11.TabIndex = 8;
             this.label11.Text = "Athletics:";
             // 
             // nudChiSupers
             // 
             this.nudChiSupers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudChiSupers.Location = new System.Drawing.Point(118, 74);
+            this.nudChiSupers.Location = new System.Drawing.Point(236, 142);
+            this.nudChiSupers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudChiSupers.Name = "nudChiSupers";
-            this.nudChiSupers.Size = new System.Drawing.Size(217, 21);
+            this.nudChiSupers.Size = new System.Drawing.Size(434, 35);
             this.nudChiSupers.TabIndex = 7;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(7, 76);
+            this.label10.Location = new System.Drawing.Point(14, 146);
+            this.label10.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 16);
+            this.label10.Size = new System.Drawing.Size(211, 30);
             this.label10.TabIndex = 6;
             this.label10.Text = "Chi Blast Supers:";
             // 
             // nudStrikeSupers
             // 
             this.nudStrikeSupers.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStrikeSupers.Location = new System.Drawing.Point(118, 50);
+            this.nudStrikeSupers.Location = new System.Drawing.Point(236, 96);
+            this.nudStrikeSupers.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudStrikeSupers.Name = "nudStrikeSupers";
-            this.nudStrikeSupers.Size = new System.Drawing.Size(217, 21);
+            this.nudStrikeSupers.Size = new System.Drawing.Size(434, 35);
             this.nudStrikeSupers.TabIndex = 21;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(7, 52);
+            this.label9.Location = new System.Drawing.Point(14, 100);
+            this.label9.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(91, 16);
+            this.label9.Size = new System.Drawing.Size(174, 30);
             this.label9.TabIndex = 4;
             this.label9.Text = "Strike Supers:";
             // 
             // nudBasicAttack
             // 
             this.nudBasicAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudBasicAttack.Location = new System.Drawing.Point(118, 26);
+            this.nudBasicAttack.Location = new System.Drawing.Point(236, 50);
+            this.nudBasicAttack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudBasicAttack.Name = "nudBasicAttack";
-            this.nudBasicAttack.Size = new System.Drawing.Size(217, 21);
+            this.nudBasicAttack.Size = new System.Drawing.Size(434, 35);
             this.nudBasicAttack.TabIndex = 20;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(7, 28);
+            this.label8.Location = new System.Drawing.Point(14, 54);
+            this.label8.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(85, 16);
+            this.label8.Size = new System.Drawing.Size(161, 30);
             this.label8.TabIndex = 2;
             this.label8.Text = "Basic Attack:";
             // 
             // nudStrength
             // 
             this.nudStrength.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStrength.Location = new System.Drawing.Point(118, 2);
+            this.nudStrength.Location = new System.Drawing.Point(236, 4);
+            this.nudStrength.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudStrength.Name = "nudStrength";
-            this.nudStrength.Size = new System.Drawing.Size(217, 21);
+            this.nudStrength.Size = new System.Drawing.Size(434, 35);
             this.nudStrength.TabIndex = 19;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(7, 4);
+            this.label7.Location = new System.Drawing.Point(14, 8);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(63, 16);
+            this.label7.Size = new System.Drawing.Size(123, 30);
             this.label7.TabIndex = 0;
             this.label7.Text = "Strength: ";
             // 
@@ -418,10 +438,11 @@
             this.tabPage2.Controls.Add(this.label16);
             this.tabPage2.Controls.Add(this.nudDexterity);
             this.tabPage2.Controls.Add(this.label17);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(8, 39);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(341, 149);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage2.Size = new System.Drawing.Size(682, 290);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DEX";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -429,90 +450,100 @@
             // nudEndurance
             // 
             this.nudEndurance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudEndurance.Location = new System.Drawing.Point(118, 98);
+            this.nudEndurance.Location = new System.Drawing.Point(236, 188);
+            this.nudEndurance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudEndurance.Name = "nudEndurance";
-            this.nudEndurance.Size = new System.Drawing.Size(217, 21);
+            this.nudEndurance.Size = new System.Drawing.Size(434, 35);
             this.nudEndurance.TabIndex = 19;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(7, 100);
+            this.label13.Location = new System.Drawing.Point(14, 192);
+            this.label13.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 16);
+            this.label13.Size = new System.Drawing.Size(143, 30);
             this.label13.TabIndex = 18;
             this.label13.Text = "Endurance:";
             // 
             // nudSpeed
             // 
             this.nudSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSpeed.Location = new System.Drawing.Point(118, 74);
+            this.nudSpeed.Location = new System.Drawing.Point(236, 142);
+            this.nudSpeed.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudSpeed.Name = "nudSpeed";
-            this.nudSpeed.Size = new System.Drawing.Size(217, 21);
+            this.nudSpeed.Size = new System.Drawing.Size(434, 35);
             this.nudSpeed.TabIndex = 17;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(7, 76);
+            this.label14.Location = new System.Drawing.Point(14, 146);
+            this.label14.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 16);
+            this.label14.Size = new System.Drawing.Size(93, 30);
             this.label14.TabIndex = 16;
             this.label14.Text = "Speed:";
             // 
             // nudStealth
             // 
             this.nudStealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStealth.Location = new System.Drawing.Point(118, 50);
+            this.nudStealth.Location = new System.Drawing.Point(236, 96);
+            this.nudStealth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudStealth.Name = "nudStealth";
-            this.nudStealth.Size = new System.Drawing.Size(217, 21);
+            this.nudStealth.Size = new System.Drawing.Size(434, 35);
             this.nudStealth.TabIndex = 15;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(7, 52);
+            this.label15.Location = new System.Drawing.Point(14, 100);
+            this.label15.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 16);
+            this.label15.Size = new System.Drawing.Size(99, 30);
             this.label15.TabIndex = 14;
             this.label15.Text = "Stealth:";
             // 
             // nudAcrobatics
             // 
             this.nudAcrobatics.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudAcrobatics.Location = new System.Drawing.Point(118, 26);
+            this.nudAcrobatics.Location = new System.Drawing.Point(236, 50);
+            this.nudAcrobatics.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudAcrobatics.Name = "nudAcrobatics";
-            this.nudAcrobatics.Size = new System.Drawing.Size(217, 21);
+            this.nudAcrobatics.Size = new System.Drawing.Size(434, 35);
             this.nudAcrobatics.TabIndex = 13;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(7, 28);
+            this.label16.Location = new System.Drawing.Point(14, 54);
+            this.label16.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(75, 16);
+            this.label16.Size = new System.Drawing.Size(140, 30);
             this.label16.TabIndex = 12;
             this.label16.Text = "Acrobatics:";
             // 
             // nudDexterity
             // 
             this.nudDexterity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudDexterity.Location = new System.Drawing.Point(118, 2);
+            this.nudDexterity.Location = new System.Drawing.Point(236, 4);
+            this.nudDexterity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudDexterity.Name = "nudDexterity";
-            this.nudDexterity.Size = new System.Drawing.Size(217, 21);
+            this.nudDexterity.Size = new System.Drawing.Size(434, 35);
             this.nudDexterity.TabIndex = 11;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(7, 4);
+            this.label17.Location = new System.Drawing.Point(14, 8);
+            this.label17.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(66, 16);
+            this.label17.Size = new System.Drawing.Size(128, 30);
             this.label17.TabIndex = 10;
             this.label17.Text = "Dexterity: ";
             // 
@@ -528,10 +559,11 @@
             this.tabPage3.Controls.Add(this.label21);
             this.tabPage3.Controls.Add(this.nudConstitution);
             this.tabPage3.Controls.Add(this.label22);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(8, 39);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage3.Size = new System.Drawing.Size(341, 149);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage3.Size = new System.Drawing.Size(682, 290);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "CON";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -539,90 +571,100 @@
             // nudResistance
             // 
             this.nudResistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudResistance.Location = new System.Drawing.Point(118, 98);
+            this.nudResistance.Location = new System.Drawing.Point(236, 188);
+            this.nudResistance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudResistance.Name = "nudResistance";
-            this.nudResistance.Size = new System.Drawing.Size(217, 21);
+            this.nudResistance.Size = new System.Drawing.Size(434, 35);
             this.nudResistance.TabIndex = 19;
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(7, 100);
+            this.label18.Location = new System.Drawing.Point(14, 192);
+            this.label18.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(79, 16);
+            this.label18.Size = new System.Drawing.Size(147, 30);
             this.label18.TabIndex = 18;
             this.label18.Text = "Resistance:";
             // 
             // nudChi
             // 
             this.nudChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudChi.Location = new System.Drawing.Point(118, 74);
+            this.nudChi.Location = new System.Drawing.Point(236, 142);
+            this.nudChi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudChi.Name = "nudChi";
-            this.nudChi.Size = new System.Drawing.Size(217, 21);
+            this.nudChi.Size = new System.Drawing.Size(434, 35);
             this.nudChi.TabIndex = 17;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(7, 76);
+            this.label19.Location = new System.Drawing.Point(14, 146);
+            this.label19.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(30, 16);
+            this.label19.Size = new System.Drawing.Size(59, 30);
             this.label19.TabIndex = 16;
             this.label19.Text = "Chi:";
             // 
             // nudStamina
             // 
             this.nudStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStamina.Location = new System.Drawing.Point(118, 50);
+            this.nudStamina.Location = new System.Drawing.Point(236, 96);
+            this.nudStamina.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudStamina.Name = "nudStamina";
-            this.nudStamina.Size = new System.Drawing.Size(217, 21);
+            this.nudStamina.Size = new System.Drawing.Size(434, 35);
             this.nudStamina.TabIndex = 15;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(7, 52);
+            this.label20.Location = new System.Drawing.Point(14, 100);
+            this.label20.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 16);
+            this.label20.Size = new System.Drawing.Size(114, 30);
             this.label20.TabIndex = 14;
             this.label20.Text = "Stamina:";
             // 
             // nudHealth
             // 
             this.nudHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudHealth.Location = new System.Drawing.Point(118, 26);
+            this.nudHealth.Location = new System.Drawing.Point(236, 50);
+            this.nudHealth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudHealth.Name = "nudHealth";
-            this.nudHealth.Size = new System.Drawing.Size(217, 21);
+            this.nudHealth.Size = new System.Drawing.Size(434, 35);
             this.nudHealth.TabIndex = 13;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(7, 28);
+            this.label21.Location = new System.Drawing.Point(14, 54);
+            this.label21.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(50, 16);
+            this.label21.Size = new System.Drawing.Size(94, 30);
             this.label21.TabIndex = 12;
             this.label21.Text = "Health:";
             // 
             // nudConstitution
             // 
             this.nudConstitution.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudConstitution.Location = new System.Drawing.Point(118, 2);
+            this.nudConstitution.Location = new System.Drawing.Point(236, 4);
+            this.nudConstitution.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudConstitution.Name = "nudConstitution";
-            this.nudConstitution.Size = new System.Drawing.Size(217, 21);
+            this.nudConstitution.Size = new System.Drawing.Size(434, 35);
             this.nudConstitution.TabIndex = 11;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(7, 4);
+            this.label22.Location = new System.Drawing.Point(14, 8);
+            this.label22.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(79, 16);
+            this.label22.Size = new System.Drawing.Size(155, 30);
             this.label22.TabIndex = 10;
             this.label22.Text = "Constitution:";
             // 
@@ -634,10 +676,11 @@
             this.tabPage4.Controls.Add(this.label26);
             this.tabPage4.Controls.Add(this.nudIntelligence);
             this.tabPage4.Controls.Add(this.label27);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Location = new System.Drawing.Point(8, 39);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage4.Size = new System.Drawing.Size(341, 149);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage4.Size = new System.Drawing.Size(682, 290);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "INT";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -645,54 +688,60 @@
             // nudCombat
             // 
             this.nudCombat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudCombat.Location = new System.Drawing.Point(118, 50);
+            this.nudCombat.Location = new System.Drawing.Point(236, 96);
+            this.nudCombat.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudCombat.Name = "nudCombat";
-            this.nudCombat.Size = new System.Drawing.Size(217, 21);
+            this.nudCombat.Size = new System.Drawing.Size(434, 35);
             this.nudCombat.TabIndex = 15;
             // 
             // label25
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(7, 52);
+            this.label25.Location = new System.Drawing.Point(14, 100);
+            this.label25.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(58, 16);
+            this.label25.Size = new System.Drawing.Size(110, 30);
             this.label25.TabIndex = 14;
             this.label25.Text = "Combat:";
             // 
             // nudTechnology
             // 
             this.nudTechnology.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudTechnology.Location = new System.Drawing.Point(118, 26);
+            this.nudTechnology.Location = new System.Drawing.Point(236, 50);
+            this.nudTechnology.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudTechnology.Name = "nudTechnology";
-            this.nudTechnology.Size = new System.Drawing.Size(217, 21);
+            this.nudTechnology.Size = new System.Drawing.Size(434, 35);
             this.nudTechnology.TabIndex = 13;
             // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(7, 28);
+            this.label26.Location = new System.Drawing.Point(14, 54);
+            this.label26.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(83, 16);
+            this.label26.Size = new System.Drawing.Size(152, 30);
             this.label26.TabIndex = 12;
             this.label26.Text = "Technology:";
             // 
             // nudIntelligence
             // 
             this.nudIntelligence.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudIntelligence.Location = new System.Drawing.Point(118, 2);
+            this.nudIntelligence.Location = new System.Drawing.Point(236, 4);
+            this.nudIntelligence.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudIntelligence.Name = "nudIntelligence";
-            this.nudIntelligence.Size = new System.Drawing.Size(217, 21);
+            this.nudIntelligence.Size = new System.Drawing.Size(434, 35);
             this.nudIntelligence.TabIndex = 11;
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(7, 4);
+            this.label27.Location = new System.Drawing.Point(14, 8);
+            this.label27.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(82, 16);
+            this.label27.Size = new System.Drawing.Size(155, 30);
             this.label27.TabIndex = 10;
             this.label27.Text = "Intelligence: ";
             // 
@@ -706,10 +755,11 @@
             this.tabPage5.Controls.Add(this.label29);
             this.tabPage5.Controls.Add(this.nudWisdom);
             this.tabPage5.Controls.Add(this.label30);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Location = new System.Drawing.Point(8, 39);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage5.Size = new System.Drawing.Size(341, 149);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage5.Size = new System.Drawing.Size(682, 290);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "WISD";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -717,72 +767,80 @@
             // nudPerception
             // 
             this.nudPerception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPerception.Location = new System.Drawing.Point(118, 74);
+            this.nudPerception.Location = new System.Drawing.Point(236, 142);
+            this.nudPerception.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudPerception.Name = "nudPerception";
-            this.nudPerception.Size = new System.Drawing.Size(217, 21);
+            this.nudPerception.Size = new System.Drawing.Size(434, 35);
             this.nudPerception.TabIndex = 17;
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(7, 76);
+            this.label24.Location = new System.Drawing.Point(14, 146);
+            this.label24.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(76, 16);
+            this.label24.Size = new System.Drawing.Size(142, 30);
             this.label24.TabIndex = 16;
             this.label24.Text = "Perception:";
             // 
             // nudMedicine
             // 
             this.nudMedicine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudMedicine.Location = new System.Drawing.Point(118, 50);
+            this.nudMedicine.Location = new System.Drawing.Point(236, 96);
+            this.nudMedicine.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudMedicine.Name = "nudMedicine";
-            this.nudMedicine.Size = new System.Drawing.Size(217, 21);
+            this.nudMedicine.Size = new System.Drawing.Size(434, 35);
             this.nudMedicine.TabIndex = 15;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(7, 52);
+            this.label28.Location = new System.Drawing.Point(14, 100);
+            this.label28.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(66, 16);
+            this.label28.Size = new System.Drawing.Size(123, 30);
             this.label28.TabIndex = 14;
             this.label28.Text = "Medicine:";
             // 
             // nudInsight
             // 
             this.nudInsight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudInsight.Location = new System.Drawing.Point(118, 26);
+            this.nudInsight.Location = new System.Drawing.Point(236, 50);
+            this.nudInsight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudInsight.Name = "nudInsight";
-            this.nudInsight.Size = new System.Drawing.Size(217, 21);
+            this.nudInsight.Size = new System.Drawing.Size(434, 35);
             this.nudInsight.TabIndex = 13;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(7, 28);
+            this.label29.Location = new System.Drawing.Point(14, 54);
+            this.label29.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(49, 16);
+            this.label29.Size = new System.Drawing.Size(94, 30);
             this.label29.TabIndex = 12;
             this.label29.Text = "Insight:";
             // 
             // nudWisdom
             // 
             this.nudWisdom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudWisdom.Location = new System.Drawing.Point(118, 2);
+            this.nudWisdom.Location = new System.Drawing.Point(236, 4);
+            this.nudWisdom.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudWisdom.Name = "nudWisdom";
-            this.nudWisdom.Size = new System.Drawing.Size(217, 21);
+            this.nudWisdom.Size = new System.Drawing.Size(434, 35);
             this.nudWisdom.TabIndex = 11;
             // 
             // label30
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(7, 4);
+            this.label30.Location = new System.Drawing.Point(14, 8);
+            this.label30.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(64, 16);
+            this.label30.Size = new System.Drawing.Size(121, 30);
             this.label30.TabIndex = 10;
             this.label30.Text = "Wisdom: ";
             // 
@@ -798,10 +856,11 @@
             this.tabPage6.Controls.Add(this.label33);
             this.tabPage6.Controls.Add(this.nudCharisma);
             this.tabPage6.Controls.Add(this.label34);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Location = new System.Drawing.Point(8, 39);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage6.Size = new System.Drawing.Size(341, 149);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tabPage6.Size = new System.Drawing.Size(682, 290);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "CHAR";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -809,113 +868,125 @@
             // nudPersuasion
             // 
             this.nudPersuasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPersuasion.Location = new System.Drawing.Point(118, 98);
+            this.nudPersuasion.Location = new System.Drawing.Point(236, 188);
+            this.nudPersuasion.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudPersuasion.Name = "nudPersuasion";
-            this.nudPersuasion.Size = new System.Drawing.Size(217, 21);
+            this.nudPersuasion.Size = new System.Drawing.Size(434, 35);
             this.nudPersuasion.TabIndex = 19;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(7, 100);
+            this.label23.Location = new System.Drawing.Point(14, 192);
+            this.label23.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(79, 16);
+            this.label23.Size = new System.Drawing.Size(148, 30);
             this.label23.TabIndex = 18;
             this.label23.Text = "Persuasion:";
             // 
             // nudPerformance
             // 
             this.nudPerformance.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudPerformance.Location = new System.Drawing.Point(118, 74);
+            this.nudPerformance.Location = new System.Drawing.Point(236, 142);
+            this.nudPerformance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudPerformance.Name = "nudPerformance";
-            this.nudPerformance.Size = new System.Drawing.Size(217, 21);
+            this.nudPerformance.Size = new System.Drawing.Size(434, 35);
             this.nudPerformance.TabIndex = 17;
             // 
             // label31
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(7, 76);
+            this.label31.Location = new System.Drawing.Point(14, 146);
+            this.label31.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(88, 16);
+            this.label31.Size = new System.Drawing.Size(167, 30);
             this.label31.TabIndex = 16;
             this.label31.Text = "Performance:";
             // 
             // Intimidation
             // 
             this.Intimidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Intimidation.Location = new System.Drawing.Point(118, 50);
+            this.Intimidation.Location = new System.Drawing.Point(236, 96);
+            this.Intimidation.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Intimidation.Name = "Intimidation";
-            this.Intimidation.Size = new System.Drawing.Size(217, 21);
+            this.Intimidation.Size = new System.Drawing.Size(434, 35);
             this.Intimidation.TabIndex = 15;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(7, 52);
+            this.label32.Location = new System.Drawing.Point(14, 100);
+            this.label32.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(78, 16);
+            this.label32.Size = new System.Drawing.Size(150, 30);
             this.label32.TabIndex = 14;
             this.label32.Text = "Intimidation:";
             // 
             // nudDeception
             // 
             this.nudDeception.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudDeception.Location = new System.Drawing.Point(118, 26);
+            this.nudDeception.Location = new System.Drawing.Point(236, 50);
+            this.nudDeception.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudDeception.Name = "nudDeception";
-            this.nudDeception.Size = new System.Drawing.Size(217, 21);
+            this.nudDeception.Size = new System.Drawing.Size(434, 35);
             this.nudDeception.TabIndex = 13;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(7, 28);
+            this.label33.Location = new System.Drawing.Point(14, 54);
+            this.label33.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(73, 16);
+            this.label33.Size = new System.Drawing.Size(135, 30);
             this.label33.TabIndex = 12;
             this.label33.Text = "Deception:";
             // 
             // nudCharisma
             // 
             this.nudCharisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudCharisma.Location = new System.Drawing.Point(118, 2);
+            this.nudCharisma.Location = new System.Drawing.Point(236, 4);
+            this.nudCharisma.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudCharisma.Name = "nudCharisma";
-            this.nudCharisma.Size = new System.Drawing.Size(217, 21);
+            this.nudCharisma.Size = new System.Drawing.Size(434, 35);
             this.nudCharisma.TabIndex = 11;
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(7, 4);
+            this.label34.Location = new System.Drawing.Point(14, 8);
+            this.label34.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(71, 16);
+            this.label34.Size = new System.Drawing.Size(138, 30);
             this.label34.TabIndex = 10;
             this.label34.Text = "Charisma: ";
             // 
             // nudStatPoints
             // 
             this.nudStatPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStatPoints.Location = new System.Drawing.Point(90, 16);
+            this.nudStatPoints.Location = new System.Drawing.Point(180, 31);
+            this.nudStatPoints.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudStatPoints.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.nudStatPoints.Name = "nudStatPoints";
-            this.nudStatPoints.Size = new System.Drawing.Size(59, 21);
+            this.nudStatPoints.Size = new System.Drawing.Size(118, 35);
             this.nudStatPoints.TabIndex = 18;
             // 
             // lblStats
             // 
             this.lblStats.AutoSize = true;
             this.lblStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStats.Location = new System.Drawing.Point(3, 16);
+            this.lblStats.Location = new System.Drawing.Point(6, 31);
+            this.lblStats.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblStats.Name = "lblStats";
-            this.lblStats.Size = new System.Drawing.Size(80, 18);
+            this.lblStats.Size = new System.Drawing.Size(159, 36);
             this.lblStats.TabIndex = 19;
             this.lblStats.Text = "Stat Points";
             // 
@@ -923,23 +994,25 @@
             // 
             this.lblSpec.AutoSize = true;
             this.lblSpec.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSpec.Location = new System.Drawing.Point(199, 16);
+            this.lblSpec.Location = new System.Drawing.Point(398, 31);
+            this.lblSpec.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblSpec.Name = "lblSpec";
-            this.lblSpec.Size = new System.Drawing.Size(88, 18);
+            this.lblSpec.Size = new System.Drawing.Size(175, 36);
             this.lblSpec.TabIndex = 21;
             this.lblSpec.Text = "Spec Points";
             // 
             // nudSpecPoints
             // 
             this.nudSpecPoints.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSpecPoints.Location = new System.Drawing.Point(293, 16);
+            this.nudSpecPoints.Location = new System.Drawing.Point(586, 31);
+            this.nudSpecPoints.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudSpecPoints.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.nudSpecPoints.Name = "nudSpecPoints";
-            this.nudSpecPoints.Size = new System.Drawing.Size(59, 21);
+            this.nudSpecPoints.Size = new System.Drawing.Size(118, 35);
             this.nudSpecPoints.TabIndex = 19;
             // 
             // StatsGroup
@@ -949,9 +1022,11 @@
             this.StatsGroup.Controls.Add(this.tabStrengthTop);
             this.StatsGroup.Controls.Add(this.nudSpecPoints);
             this.StatsGroup.Controls.Add(this.nudStatPoints);
-            this.StatsGroup.Location = new System.Drawing.Point(12, 316);
+            this.StatsGroup.Location = new System.Drawing.Point(24, 608);
+            this.StatsGroup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.StatsGroup.Name = "StatsGroup";
-            this.StatsGroup.Size = new System.Drawing.Size(358, 226);
+            this.StatsGroup.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.StatsGroup.Size = new System.Drawing.Size(716, 435);
             this.StatsGroup.TabIndex = 22;
             this.StatsGroup.TabStop = false;
             this.StatsGroup.Text = "Stats";
@@ -960,9 +1035,10 @@
             // 
             this.nudCurrentHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.nudCurrentHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCurrentHealth.Location = new System.Drawing.Point(80, 19);
+            this.nudCurrentHealth.Location = new System.Drawing.Point(160, 37);
+            this.nudCurrentHealth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudCurrentHealth.Name = "nudCurrentHealth";
-            this.nudCurrentHealth.Size = new System.Drawing.Size(200, 26);
+            this.nudCurrentHealth.Size = new System.Drawing.Size(400, 44);
             this.nudCurrentHealth.TabIndex = 23;
             // 
             // BattleGroup
@@ -984,18 +1060,21 @@
             this.BattleGroup.Controls.Add(this.btnFillHealth);
             this.BattleGroup.Controls.Add(this.label3);
             this.BattleGroup.Controls.Add(this.nudCurrentHealth);
-            this.BattleGroup.Location = new System.Drawing.Point(376, 12);
+            this.BattleGroup.Location = new System.Drawing.Point(752, 23);
+            this.BattleGroup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BattleGroup.Name = "BattleGroup";
-            this.BattleGroup.Size = new System.Drawing.Size(350, 213);
+            this.BattleGroup.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.BattleGroup.Size = new System.Drawing.Size(700, 410);
             this.BattleGroup.TabIndex = 24;
             this.BattleGroup.TabStop = false;
             this.BattleGroup.Text = "Battle Stats";
             // 
             // btnSkills
             // 
-            this.btnSkills.Location = new System.Drawing.Point(238, 147);
+            this.btnSkills.Location = new System.Drawing.Point(476, 283);
+            this.btnSkills.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSkills.Name = "btnSkills";
-            this.btnSkills.Size = new System.Drawing.Size(106, 23);
+            this.btnSkills.Size = new System.Drawing.Size(212, 44);
             this.btnSkills.TabIndex = 9;
             this.btnSkills.Text = "Skills";
             this.btnSkills.UseVisualStyleBackColor = true;
@@ -1003,9 +1082,10 @@
             // 
             // btnTransform
             // 
-            this.btnTransform.Location = new System.Drawing.Point(176, 176);
+            this.btnTransform.Location = new System.Drawing.Point(352, 338);
+            this.btnTransform.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnTransform.Name = "btnTransform";
-            this.btnTransform.Size = new System.Drawing.Size(168, 23);
+            this.btnTransform.Size = new System.Drawing.Size(336, 44);
             this.btnTransform.TabIndex = 39;
             this.btnTransform.Text = "Transform";
             this.btnTransform.UseVisualStyleBackColor = true;
@@ -1013,45 +1093,50 @@
             // 
             // btnAddConstStam
             // 
-            this.btnAddConstStam.Location = new System.Drawing.Point(223, 117);
+            this.btnAddConstStam.Location = new System.Drawing.Point(446, 225);
+            this.btnAddConstStam.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddConstStam.Name = "btnAddConstStam";
-            this.btnAddConstStam.Size = new System.Drawing.Size(58, 23);
+            this.btnAddConstStam.Size = new System.Drawing.Size(116, 44);
             this.btnAddConstStam.TabIndex = 38;
             this.btnAddConstStam.Text = "+ const";
             this.btnAddConstStam.UseVisualStyleBackColor = true;
             // 
             // btnRecieveDamage
             // 
-            this.btnRecieveDamage.Location = new System.Drawing.Point(10, 176);
+            this.btnRecieveDamage.Location = new System.Drawing.Point(20, 338);
+            this.btnRecieveDamage.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRecieveDamage.Name = "btnRecieveDamage";
-            this.btnRecieveDamage.Size = new System.Drawing.Size(160, 23);
+            this.btnRecieveDamage.Size = new System.Drawing.Size(320, 44);
             this.btnRecieveDamage.TabIndex = 37;
             this.btnRecieveDamage.Text = "Recieve Damage";
             this.btnRecieveDamage.UseVisualStyleBackColor = true;
             // 
             // btnSuper
             // 
-            this.btnSuper.Location = new System.Drawing.Point(119, 147);
+            this.btnSuper.Location = new System.Drawing.Point(238, 283);
+            this.btnSuper.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSuper.Name = "btnSuper";
-            this.btnSuper.Size = new System.Drawing.Size(113, 23);
+            this.btnSuper.Size = new System.Drawing.Size(226, 44);
             this.btnSuper.TabIndex = 36;
             this.btnSuper.Text = "Supers";
             this.btnSuper.UseVisualStyleBackColor = true;
             // 
             // btnAttack
             // 
-            this.btnAttack.Location = new System.Drawing.Point(10, 147);
+            this.btnAttack.Location = new System.Drawing.Point(20, 283);
+            this.btnAttack.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAttack.Name = "btnAttack";
-            this.btnAttack.Size = new System.Drawing.Size(103, 23);
+            this.btnAttack.Size = new System.Drawing.Size(206, 44);
             this.btnAttack.TabIndex = 35;
             this.btnAttack.Text = "Attack";
             this.btnAttack.UseVisualStyleBackColor = true;
             // 
             // btnFillStamina
             // 
-            this.btnFillStamina.Location = new System.Drawing.Point(287, 117);
+            this.btnFillStamina.Location = new System.Drawing.Point(574, 225);
+            this.btnFillStamina.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFillStamina.Name = "btnFillStamina";
-            this.btnFillStamina.Size = new System.Drawing.Size(57, 23);
+            this.btnFillStamina.Size = new System.Drawing.Size(114, 44);
             this.btnFillStamina.TabIndex = 34;
             this.btnFillStamina.Text = "Full";
             this.btnFillStamina.UseVisualStyleBackColor = true;
@@ -1060,25 +1145,28 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(6, 117);
+            this.label6.Location = new System.Drawing.Point(12, 225);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 20);
+            this.label6.Size = new System.Drawing.Size(135, 37);
             this.label6.TabIndex = 33;
             this.label6.Text = "Stamina";
             // 
             // nudCurrentStamina
             // 
             this.nudCurrentStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCurrentStamina.Location = new System.Drawing.Point(80, 115);
+            this.nudCurrentStamina.Location = new System.Drawing.Point(160, 221);
+            this.nudCurrentStamina.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudCurrentStamina.Name = "nudCurrentStamina";
-            this.nudCurrentStamina.Size = new System.Drawing.Size(137, 26);
+            this.nudCurrentStamina.Size = new System.Drawing.Size(274, 44);
             this.nudCurrentStamina.TabIndex = 32;
             // 
             // btnFillChi
             // 
-            this.btnFillChi.Location = new System.Drawing.Point(287, 85);
+            this.btnFillChi.Location = new System.Drawing.Point(574, 163);
+            this.btnFillChi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFillChi.Name = "btnFillChi";
-            this.btnFillChi.Size = new System.Drawing.Size(57, 23);
+            this.btnFillChi.Size = new System.Drawing.Size(114, 44);
             this.btnFillChi.TabIndex = 31;
             this.btnFillChi.Text = "Full";
             this.btnFillChi.UseVisualStyleBackColor = true;
@@ -1087,43 +1175,48 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(6, 85);
+            this.label5.Location = new System.Drawing.Point(12, 163);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 20);
+            this.label5.Size = new System.Drawing.Size(65, 37);
             this.label5.TabIndex = 30;
             this.label5.Text = "Chi";
             // 
             // nudCurrentChi
             // 
             this.nudCurrentChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudCurrentChi.Location = new System.Drawing.Point(80, 83);
+            this.nudCurrentChi.Location = new System.Drawing.Point(160, 160);
+            this.nudCurrentChi.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudCurrentChi.Name = "nudCurrentChi";
-            this.nudCurrentChi.Size = new System.Drawing.Size(200, 26);
+            this.nudCurrentChi.Size = new System.Drawing.Size(400, 44);
             this.nudCurrentChi.TabIndex = 29;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(6, 53);
+            this.label4.Location = new System.Drawing.Point(12, 102);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 20);
+            this.label4.Size = new System.Drawing.Size(80, 37);
             this.label4.TabIndex = 27;
             this.label4.Text = "EXP";
             // 
             // nudEXP
             // 
             this.nudEXP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nudEXP.Location = new System.Drawing.Point(80, 51);
+            this.nudEXP.Location = new System.Drawing.Point(160, 98);
+            this.nudEXP.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.nudEXP.Name = "nudEXP";
-            this.nudEXP.Size = new System.Drawing.Size(200, 26);
+            this.nudEXP.Size = new System.Drawing.Size(400, 44);
             this.nudEXP.TabIndex = 26;
             // 
             // btnFillHealth
             // 
-            this.btnFillHealth.Location = new System.Drawing.Point(287, 21);
+            this.btnFillHealth.Location = new System.Drawing.Point(574, 40);
+            this.btnFillHealth.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFillHealth.Name = "btnFillHealth";
-            this.btnFillHealth.Size = new System.Drawing.Size(57, 23);
+            this.btnFillHealth.Size = new System.Drawing.Size(114, 44);
             this.btnFillHealth.TabIndex = 25;
             this.btnFillHealth.Text = "Full";
             this.btnFillHealth.UseVisualStyleBackColor = true;
@@ -1133,9 +1226,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(6, 21);
+            this.label3.Location = new System.Drawing.Point(12, 40);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 20);
+            this.label3.Size = new System.Drawing.Size(109, 37);
             this.label3.TabIndex = 24;
             this.label3.Text = "Health";
             // 
@@ -1157,18 +1251,21 @@
             this.InventoryGroup.Controls.Add(this.lblRecoveryPills);
             this.InventoryGroup.Controls.Add(this.lblStimPills);
             this.InventoryGroup.Controls.Add(this.btnInventory);
-            this.InventoryGroup.Location = new System.Drawing.Point(12, 149);
+            this.InventoryGroup.Location = new System.Drawing.Point(24, 287);
+            this.InventoryGroup.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.InventoryGroup.Name = "InventoryGroup";
-            this.InventoryGroup.Size = new System.Drawing.Size(358, 161);
+            this.InventoryGroup.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.InventoryGroup.Size = new System.Drawing.Size(716, 310);
             this.InventoryGroup.TabIndex = 15;
             this.InventoryGroup.TabStop = false;
             this.InventoryGroup.Text = "Inventory";
             // 
             // btnRemEnergy
             // 
-            this.btnRemEnergy.Location = new System.Drawing.Point(255, 103);
+            this.btnRemEnergy.Location = new System.Drawing.Point(510, 198);
+            this.btnRemEnergy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRemEnergy.Name = "btnRemEnergy";
-            this.btnRemEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnRemEnergy.Size = new System.Drawing.Size(66, 44);
             this.btnRemEnergy.TabIndex = 13;
             this.btnRemEnergy.Text = "-";
             this.btnRemEnergy.UseVisualStyleBackColor = true;
@@ -1176,9 +1273,10 @@
             // 
             // btnAddEnergy
             // 
-            this.btnAddEnergy.Location = new System.Drawing.Point(216, 103);
+            this.btnAddEnergy.Location = new System.Drawing.Point(432, 198);
+            this.btnAddEnergy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddEnergy.Name = "btnAddEnergy";
-            this.btnAddEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnAddEnergy.Size = new System.Drawing.Size(66, 44);
             this.btnAddEnergy.TabIndex = 12;
             this.btnAddEnergy.Text = "+";
             this.btnAddEnergy.UseVisualStyleBackColor = true;
@@ -1186,9 +1284,10 @@
             // 
             // btnUseEnergy
             // 
-            this.btnUseEnergy.Location = new System.Drawing.Point(294, 103);
+            this.btnUseEnergy.Location = new System.Drawing.Point(588, 198);
+            this.btnUseEnergy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnUseEnergy.Name = "btnUseEnergy";
-            this.btnUseEnergy.Size = new System.Drawing.Size(58, 23);
+            this.btnUseEnergy.Size = new System.Drawing.Size(116, 44);
             this.btnUseEnergy.TabIndex = 14;
             this.btnUseEnergy.Text = "Use";
             this.btnUseEnergy.UseVisualStyleBackColor = true;
@@ -1198,17 +1297,19 @@
             // 
             this.lblEnergyPills.AutoSize = true;
             this.lblEnergyPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblEnergyPills.Location = new System.Drawing.Point(2, 103);
+            this.lblEnergyPills.Location = new System.Drawing.Point(4, 198);
+            this.lblEnergyPills.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEnergyPills.Name = "lblEnergyPills";
-            this.lblEnergyPills.Size = new System.Drawing.Size(97, 20);
+            this.lblEnergyPills.Size = new System.Drawing.Size(199, 37);
             this.lblEnergyPills.TabIndex = 15;
             this.lblEnergyPills.Text = "Energy pills: ";
             // 
             // btnRemoveCredits
             // 
-            this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
+            this.btnRemoveCredits.Location = new System.Drawing.Point(510, 252);
+            this.btnRemoveCredits.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRemoveCredits.Name = "btnRemoveCredits";
-            this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnRemoveCredits.Size = new System.Drawing.Size(66, 44);
             this.btnRemoveCredits.TabIndex = 17;
             this.btnRemoveCredits.Text = "-";
             this.btnRemoveCredits.UseVisualStyleBackColor = true;
@@ -1216,9 +1317,10 @@
             // 
             // btnRemRec
             // 
-            this.btnRemRec.Location = new System.Drawing.Point(255, 75);
+            this.btnRemRec.Location = new System.Drawing.Point(510, 144);
+            this.btnRemRec.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRemRec.Name = "btnRemRec";
-            this.btnRemRec.Size = new System.Drawing.Size(33, 23);
+            this.btnRemRec.Size = new System.Drawing.Size(66, 44);
             this.btnRemRec.TabIndex = 9;
             this.btnRemRec.Text = "-";
             this.btnRemRec.UseVisualStyleBackColor = true;
@@ -1226,9 +1328,10 @@
             // 
             // btnRemStim
             // 
-            this.btnRemStim.Location = new System.Drawing.Point(255, 47);
+            this.btnRemStim.Location = new System.Drawing.Point(510, 90);
+            this.btnRemStim.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnRemStim.Name = "btnRemStim";
-            this.btnRemStim.Size = new System.Drawing.Size(33, 23);
+            this.btnRemStim.Size = new System.Drawing.Size(66, 44);
             this.btnRemStim.TabIndex = 5;
             this.btnRemStim.Text = "-";
             this.btnRemStim.UseVisualStyleBackColor = true;
@@ -1236,9 +1339,10 @@
             // 
             // btnAddCredits
             // 
-            this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
+            this.btnAddCredits.Location = new System.Drawing.Point(432, 252);
+            this.btnAddCredits.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddCredits.Name = "btnAddCredits";
-            this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnAddCredits.Size = new System.Drawing.Size(66, 44);
             this.btnAddCredits.TabIndex = 16;
             this.btnAddCredits.Text = "+";
             this.btnAddCredits.UseVisualStyleBackColor = true;
@@ -1246,9 +1350,10 @@
             // 
             // btnAddRec
             // 
-            this.btnAddRec.Location = new System.Drawing.Point(216, 75);
+            this.btnAddRec.Location = new System.Drawing.Point(432, 144);
+            this.btnAddRec.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddRec.Name = "btnAddRec";
-            this.btnAddRec.Size = new System.Drawing.Size(33, 23);
+            this.btnAddRec.Size = new System.Drawing.Size(66, 44);
             this.btnAddRec.TabIndex = 8;
             this.btnAddRec.Text = "+";
             this.btnAddRec.UseVisualStyleBackColor = true;
@@ -1256,9 +1361,10 @@
             // 
             // btnAddStim
             // 
-            this.btnAddStim.Location = new System.Drawing.Point(216, 47);
+            this.btnAddStim.Location = new System.Drawing.Point(432, 90);
+            this.btnAddStim.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddStim.Name = "btnAddStim";
-            this.btnAddStim.Size = new System.Drawing.Size(33, 23);
+            this.btnAddStim.Size = new System.Drawing.Size(66, 44);
             this.btnAddStim.TabIndex = 4;
             this.btnAddStim.Text = "+";
             this.btnAddStim.UseVisualStyleBackColor = true;
@@ -1266,9 +1372,10 @@
             // 
             // btnUseRec
             // 
-            this.btnUseRec.Location = new System.Drawing.Point(294, 75);
+            this.btnUseRec.Location = new System.Drawing.Point(588, 144);
+            this.btnUseRec.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnUseRec.Name = "btnUseRec";
-            this.btnUseRec.Size = new System.Drawing.Size(58, 23);
+            this.btnUseRec.Size = new System.Drawing.Size(116, 44);
             this.btnUseRec.TabIndex = 10;
             this.btnUseRec.Text = "Use";
             this.btnUseRec.UseVisualStyleBackColor = true;
@@ -1276,9 +1383,10 @@
             // 
             // btnUseStim
             // 
-            this.btnUseStim.Location = new System.Drawing.Point(294, 47);
+            this.btnUseStim.Location = new System.Drawing.Point(588, 90);
+            this.btnUseStim.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnUseStim.Name = "btnUseStim";
-            this.btnUseStim.Size = new System.Drawing.Size(58, 23);
+            this.btnUseStim.Size = new System.Drawing.Size(116, 44);
             this.btnUseStim.TabIndex = 6;
             this.btnUseStim.Text = "Use";
             this.btnUseStim.UseVisualStyleBackColor = true;
@@ -1288,9 +1396,10 @@
             // 
             this.lblCredits.AutoSize = true;
             this.lblCredits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblCredits.Location = new System.Drawing.Point(2, 131);
+            this.lblCredits.Location = new System.Drawing.Point(4, 252);
+            this.lblCredits.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblCredits.Name = "lblCredits";
-            this.lblCredits.Size = new System.Drawing.Size(67, 20);
+            this.lblCredits.Size = new System.Drawing.Size(136, 37);
             this.lblCredits.TabIndex = 3;
             this.lblCredits.Text = "Credits: ";
             // 
@@ -1298,9 +1407,10 @@
             // 
             this.lblRecoveryPills.AutoSize = true;
             this.lblRecoveryPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblRecoveryPills.Location = new System.Drawing.Point(2, 75);
+            this.lblRecoveryPills.Location = new System.Drawing.Point(4, 144);
+            this.lblRecoveryPills.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblRecoveryPills.Name = "lblRecoveryPills";
-            this.lblRecoveryPills.Size = new System.Drawing.Size(113, 20);
+            this.lblRecoveryPills.Size = new System.Drawing.Size(230, 37);
             this.lblRecoveryPills.TabIndex = 2;
             this.lblRecoveryPills.Text = "Recovery pills: ";
             // 
@@ -1308,45 +1418,38 @@
             // 
             this.lblStimPills.AutoSize = true;
             this.lblStimPills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblStimPills.Location = new System.Drawing.Point(2, 47);
+            this.lblStimPills.Location = new System.Drawing.Point(4, 90);
+            this.lblStimPills.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblStimPills.Name = "lblStimPills";
-            this.lblStimPills.Size = new System.Drawing.Size(122, 20);
+            this.lblStimPills.Size = new System.Drawing.Size(249, 37);
             this.lblStimPills.TabIndex = 1;
             this.lblStimPills.Text = "Stimulation pills:";
             // 
             // btnInventory
             // 
-            this.btnInventory.Location = new System.Drawing.Point(0, 19);
+            this.btnInventory.Location = new System.Drawing.Point(0, 37);
+            this.btnInventory.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnInventory.Name = "btnInventory";
-            this.btnInventory.Size = new System.Drawing.Size(124, 23);
+            this.btnInventory.Size = new System.Drawing.Size(248, 44);
             this.btnInventory.TabIndex = 2;
             this.btnInventory.Text = "View inventory";
             this.btnInventory.UseVisualStyleBackColor = true;
             this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(276, 16);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 389);
+            this.ClientSize = new System.Drawing.Size(1476, 1065);
             this.Controls.Add(this.BattleGroup);
             this.Controls.Add(this.StatsGroup);
             this.Controls.Add(this.PlayerGroup);
             this.Controls.Add(this.InventoryGroup);
             this.Controls.Add(this.pbCharacterPicture);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "MainForm";
             this.Text = "PlayerName";
-            this.Load += new System.EventHandler(this.MainForm_Load);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             this.PlayerGroup.ResumeLayout(false);
@@ -1520,7 +1623,6 @@
         private System.Windows.Forms.Button btnAddEnergy;
         private System.Windows.Forms.Button btnUseEnergy;
         private System.Windows.Forms.Label lblEnergyPills;
-        private System.Windows.Forms.Button button1;
     }
 }
 
