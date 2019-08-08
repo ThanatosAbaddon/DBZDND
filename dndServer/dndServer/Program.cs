@@ -50,7 +50,7 @@ namespace dndServer
                         if (fileString.StartsWith("GET"))
                         {
                             //Get file name
-                            string fileName = fileString.Substring(4) + ".xml";
+                            string fileName = fileString.Substring(4) + ".json";
 
                             StreamWriter sw = new StreamWriter(client.GetStream());
 
@@ -62,7 +62,7 @@ namespace dndServer
                         else
                         {
                             //Get file name
-                            string fileName = fileString.Substring(0, fileString.IndexOf("\n")) + ".xml";
+                            string fileName = fileString.Substring(0, fileString.IndexOf("\n")) + ".json";
 
                             //Save file
                             System.IO.File.WriteAllText(fileName, fileString);
