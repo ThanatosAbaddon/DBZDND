@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Net.Sockets;
 
@@ -26,9 +27,11 @@ namespace dbzdnd
                 //Create network client
                 TcpClient client = new TcpClient(ip, port);
                 StreamWriter sw = new StreamWriter(client.GetStream());
+                
+                //Get AppData
+                AppData playerData = AppData.Instance();
 
-                //Write save string here
-                string fileString = "testFile\nIt Worked!\n3rd Line";
+                string fileString = playerData._PlayerName + "\n" + JsonConvert.SerializeObject(playerData);
 
                 //Send file
                 sw.WriteLine(fileString + "\nEND");
