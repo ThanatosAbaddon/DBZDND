@@ -43,8 +43,6 @@ namespace dbzdnd
         private void txtPlayerName_TextChanged(object sender, EventArgs e)
         {
             _AppData._PlayerName = txtPlayerName.Text;
-            Properties.Settings.Default.PlayerName = _AppData._PlayerName;
-            Properties.Settings.Default.Save();
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)

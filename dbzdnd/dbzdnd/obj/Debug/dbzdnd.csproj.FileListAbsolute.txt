@@ -52,3 +52,6 @@ F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\dbzdnd.pdb
 F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\Newtonsoft.Json.dll
 F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\bin\Debug\Newtonsoft.Json.xml
 F:\Users\Ryan\Documents\Git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CopyComplete
+C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\bin\Debug\Newtonsoft.Json.dll
+C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\bin\Debug\Newtonsoft.Json.xml
+C:\Users\craba\Documents\git\DBZDND\dbzdnd\dbzdnd\obj\Debug\dbzdnd.csproj.CopyComplete

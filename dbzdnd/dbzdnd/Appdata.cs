@@ -22,6 +22,7 @@ namespace dbzdnd
         private int Intelligence, Technology, Combat;
         private int Wisdom, Insight, Medicine, Perception;
         private int Charisma, Deception, Intimidation, Performace, Persuasion;
+        private Network saveLoadLocation;
         
 
         /// <summary>
@@ -86,6 +87,7 @@ namespace dbzdnd
         public int _Intimidation { get => Intimidation; set => Intimidation = value; }
         public int _Performace { get => Performace; set => Performace = value; }
         public int _Persuasion { get => Persuasion; set => Persuasion = value; }
+        public Network _saveLoadLocation { get => saveLoadLocation; set => saveLoadLocation = value; }
         #endregion
 
         #region "loading"
@@ -151,7 +153,7 @@ namespace dbzdnd
         /// Loads the appData data
         /// </summary>
         /// <returns></returns>
-        public static AppData LoadAppData(bool Online, string name)
+        public static AppData LoadAppData(bool Online, string name, Network networkLocation = null)
         {
             AppData currentAppData = new AppData();
             string Input;
@@ -160,6 +162,8 @@ namespace dbzdnd
             currentAppData.PlayerName = name;
             if (Online == true)
             {
+                currentAppData._saveLoadLocation = networkLocation;
+                networkLocation.Get(name);
                 Input = "testA"; //Load Online
             }
             else
@@ -178,7 +182,7 @@ namespace dbzdnd
         /// <param name="name">user's name, used to load the save</param>
         /// <param name="loadLocation">online / offline / none loading</param>
         /// <returns></returns>
-        public static AppData Instance(int IP, bool online, string name, string loadLocation)
+        public static AppData Instance(string name, bool Online, Network NetworkLocation = null)
         {
 
             lock (padlock)
@@ -188,11 +192,11 @@ namespace dbzdnd
                     //loads the saved appdata
                     //remember to account for being online or offline
                     singleObject = new AppData();
-                    if (loadLocation.ToUpper() == "ONLINE")
+                    if (Online == true)
                     {
-                        singleObject = LoadAppData(true, name);
+                        singleObject = LoadAppData(true, name, NetworkLocation);
                     }
-                    else if (loadLocation.ToUpper() == "OFFLINE")
+                    else
                     {
                         singleObject = LoadAppData(false, name);
                     }

@@ -20,10 +20,18 @@ namespace dbzdnd
             InitializeComponent();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnOnline_Click(object sender, EventArgs e)
         {
-            AppData.Instance(1, true, dbzdnd.Properties.Settings.Default.PlayerName, "Online");
+            Network newNetwork = new Network(txtIP.Text, 1234);
+            //TEST IF A CONNECTION CAN BE MADE
+            AppData.Instance(txtName.Text, true, newNetwork);
+            this.Hide();
+        }
+
+        private void btnOffline_Click(object sender, EventArgs e)
+        {
+            //CHECK THAT THERE IS A FILE WITH THE GIVEN NAME
+            AppData.Instance(txtName.Text, false);
             this.Hide();
         }
     }

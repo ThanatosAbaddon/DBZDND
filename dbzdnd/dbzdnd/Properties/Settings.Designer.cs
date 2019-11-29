@@ -22,17 +22,5 @@ namespace dbzdnd.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("William")]
-        public string PlayerName {
-            get {
-                return ((string)(this["PlayerName"]));
-            }
-            set {
-                this["PlayerName"] = value;
-            }
-        }
     }
 }
