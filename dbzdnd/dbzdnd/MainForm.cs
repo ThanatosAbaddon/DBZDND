@@ -272,9 +272,7 @@ namespace dbzdnd
 
         private void autosave_Tick(object sender, EventArgs e)
         {
-            //TODO Add way of setting connection IP.
-            Network network = new Network("127.0.0.1", 25000);
-            network.Save();
+            AppData.Instance()._saveLoadLocation.Save();
 
             autoSave.Stop();
         }

@@ -27,11 +27,13 @@ namespace dbzdnd
             try
             {
                 //Create network client
+                client = new TcpClient(ip, port);
                 StreamWriter sw = new StreamWriter(client.GetStream());
                 
                 //Get AppData
                 AppData playerData = AppData.Instance();
 
+                //Serialize
                 string fileString = playerData._PlayerName + "\n" + JsonConvert.SerializeObject(playerData);
 
                 //Send file
@@ -94,6 +96,11 @@ namespace dbzdnd
             }
 
             return fileString;
+        }
+
+        public bool TestName(String name)
+        {
+            return !(Get(name) == "");
         }
     }
 }

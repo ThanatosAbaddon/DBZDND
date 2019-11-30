@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,11 +26,23 @@ namespace dbzdnd
             try
             {
                 Network newNetwork = new Network(txtIP.Text, Decimal.ToInt32(txtPort.Value));
-                AppData.Instance(txtName.Text, true, newNetwork);
-                this.Hide();
-            } catch
+
+                string playerData = newNetwork.Get(txtName.Text);
+
+                if (playerData != "") {
+                    //Removes headder from player data
+                    playerData = playerData.Substring(playerData.IndexOf("\n") + 1, playerData.Length - txtName.Text.Length - 1);
+
+                    AppData.Instance(txtName.Text, true, newNetwork, playerData);
+                    this.Hide();
+                } else
+                {
+                    MessageBox.Show("Incorrect name");
+                }
+
+            } catch (SocketException)
             {
-                Console.WriteLine("Unable to connect to server.");
+                MessageBox.Show("Incorrect IP or Port");
             }
         }
 

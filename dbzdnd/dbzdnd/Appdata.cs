@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -153,21 +154,23 @@ namespace dbzdnd
         /// Loads the appData data
         /// </summary>
         /// <returns></returns>
-        public static AppData LoadAppData(bool Online, string name, Network networkLocation = null)
+        public static AppData LoadAppData(bool Online, string name, Network networkLocation = null, string playerData = "")
         {
-            AppData currentAppData = new AppData();
+            AppData currentAppData;
             string Input;
 
             //set all values
-            currentAppData.PlayerName = name;
             if (Online == true)
             {
+                //TODO de serialize playerData
+                currentAppData = JsonConvert.DeserializeObject<AppData>(playerData);
                 currentAppData._saveLoadLocation = networkLocation;
-                networkLocation.Get(name);
                 Input = "testA"; //Load Online
             }
             else
             {
+                currentAppData = new AppData();
+                currentAppData.PlayerName = name;
                 Input = "testB"; //Load Local
             }
             Console.WriteLine(Input);
@@ -182,7 +185,7 @@ namespace dbzdnd
         /// <param name="name">user's name, used to load the save</param>
         /// <param name="loadLocation">online / offline / none loading</param>
         /// <returns></returns>
-        public static AppData Instance(string name, bool Online, Network NetworkLocation = null)
+        public static AppData Instance(string name, bool Online, Network NetworkLocation = null, string playerData = "")
         {
 
             lock (padlock)
@@ -194,7 +197,7 @@ namespace dbzdnd
                     singleObject = new AppData();
                     if (Online == true)
                     {
-                        singleObject = LoadAppData(true, name, NetworkLocation);
+                        singleObject = LoadAppData(true, name, NetworkLocation, playerData);
                     }
                     else
                     {
