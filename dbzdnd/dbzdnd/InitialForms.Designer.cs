@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtIP = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.txtPort = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPort)).BeginInit();
             this.SuspendLayout();
             // 
             // btnOnline
@@ -92,7 +92,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(144, 20);
             this.txtIP.TabIndex = 4;
-            this.txtIP.Text = "255.255.255.255";
+            this.txtIP.Text = "127.0.0.1";
             // 
             // label3
             // 
@@ -103,24 +103,24 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Port:";
             // 
-            // numericUpDown1
+            // txtPort
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(57, 65);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.txtPort.Location = new System.Drawing.Point(57, 65);
+            this.txtPort.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.txtPort.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(144, 20);
-            this.numericUpDown1.TabIndex = 8;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            255,
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(144, 20);
+            this.txtPort.TabIndex = 8;
+            this.txtPort.Value = new decimal(new int[] {
+            25000,
             0,
             0,
             0});
@@ -130,7 +130,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(214, 151);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.txtPort);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtIP);
@@ -141,7 +141,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InitialForms";
             this.Text = "InitialForms";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPort)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,6 +156,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown txtPort;
     }
 }

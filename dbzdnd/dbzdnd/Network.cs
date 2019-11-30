@@ -9,11 +9,13 @@ namespace dbzdnd
     {
         private readonly string ip;
         private readonly int port;
+        private TcpClient client;
 
         public Network(string ip, int port)
         {
             this.ip = ip;
             this.port = port;
+            client = new TcpClient(ip, port);
         }
 
         /**
@@ -25,7 +27,6 @@ namespace dbzdnd
             try
             {
                 //Create network client
-                TcpClient client = new TcpClient(ip, port);
                 StreamWriter sw = new StreamWriter(client.GetStream());
                 
                 //Get AppData
@@ -63,7 +64,6 @@ namespace dbzdnd
             try
             {
                 //Create network client
-                TcpClient client = new TcpClient(ip, port);
                 StreamWriter sw = new StreamWriter(client.GetStream());
                 StreamReader sr = new StreamReader(client.GetStream());
 

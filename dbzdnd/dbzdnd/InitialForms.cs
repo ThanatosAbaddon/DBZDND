@@ -22,10 +22,15 @@ namespace dbzdnd
 
         private void btnOnline_Click(object sender, EventArgs e)
         {
-            Network newNetwork = new Network(txtIP.Text, 1234);
-            //TEST IF A CONNECTION CAN BE MADE
-            AppData.Instance(txtName.Text, true, newNetwork);
-            this.Hide();
+            try
+            {
+                Network newNetwork = new Network(txtIP.Text, Decimal.ToInt32(txtPort.Value));
+                AppData.Instance(txtName.Text, true, newNetwork);
+                this.Hide();
+            } catch
+            {
+                Console.WriteLine("Unable to connect to server.");
+            }
         }
 
         private void btnOffline_Click(object sender, EventArgs e)
