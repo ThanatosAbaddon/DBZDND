@@ -12,3 +12,10 @@ C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.cs
 C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csproj.CoreCompileInputs.cache
 C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.exe
 C:\Users\Ryan-PC\Documents\Git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.pdb
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe.config
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.exe
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\bin\Debug\dndServer.pdb
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csprojAssemblyReference.cache
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.csproj.CoreCompileInputs.cache
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.exe
+C:\Users\craba\Documents\git\DBZDND\dndServer\dndServer\obj\Debug\dndServer.pdb

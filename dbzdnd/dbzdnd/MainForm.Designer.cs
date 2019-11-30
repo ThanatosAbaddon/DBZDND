@@ -93,7 +93,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.nudPerformance = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
-            this.Intimidation = new System.Windows.Forms.NumericUpDown();
+            this.nudIntimidation = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
             this.nudDeception = new System.Windows.Forms.NumericUpDown();
             this.label33 = new System.Windows.Forms.Label();
@@ -175,7 +175,7 @@
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPerformance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Intimidation)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntimidation)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCharisma)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).BeginInit();
@@ -305,6 +305,7 @@
             this.nudPower.Name = "nudPower";
             this.nudPower.Size = new System.Drawing.Size(217, 21);
             this.nudPower.TabIndex = 11;
+            this.nudPower.ValueChanged += new System.EventHandler(this.nudPower_ValueChanged);
             // 
             // label12
             // 
@@ -323,6 +324,7 @@
             this.nudAthletics.Name = "nudAthletics";
             this.nudAthletics.Size = new System.Drawing.Size(217, 21);
             this.nudAthletics.TabIndex = 9;
+            this.nudAthletics.ValueChanged += new System.EventHandler(this.nudAthletics_ValueChanged);
             // 
             // label11
             // 
@@ -341,6 +343,7 @@
             this.nudChiSupers.Name = "nudChiSupers";
             this.nudChiSupers.Size = new System.Drawing.Size(217, 21);
             this.nudChiSupers.TabIndex = 7;
+            this.nudChiSupers.ValueChanged += new System.EventHandler(this.nudChiSupers_ValueChanged);
             // 
             // label10
             // 
@@ -359,6 +362,7 @@
             this.nudStrikeSupers.Name = "nudStrikeSupers";
             this.nudStrikeSupers.Size = new System.Drawing.Size(217, 21);
             this.nudStrikeSupers.TabIndex = 21;
+            this.nudStrikeSupers.ValueChanged += new System.EventHandler(this.nudStrikeSupers_ValueChanged);
             // 
             // label9
             // 
@@ -377,6 +381,7 @@
             this.nudBasicAttack.Name = "nudBasicAttack";
             this.nudBasicAttack.Size = new System.Drawing.Size(217, 21);
             this.nudBasicAttack.TabIndex = 20;
+            this.nudBasicAttack.ValueChanged += new System.EventHandler(this.nudBasicAttack_ValueChanged);
             // 
             // label8
             // 
@@ -395,6 +400,7 @@
             this.nudStrength.Name = "nudStrength";
             this.nudStrength.Size = new System.Drawing.Size(217, 21);
             this.nudStrength.TabIndex = 19;
+            this.nudStrength.ValueChanged += new System.EventHandler(this.nudStrength_ValueChanged);
             // 
             // label7
             // 
@@ -433,6 +439,7 @@
             this.nudEndurance.Name = "nudEndurance";
             this.nudEndurance.Size = new System.Drawing.Size(217, 21);
             this.nudEndurance.TabIndex = 19;
+            this.nudEndurance.ValueChanged += new System.EventHandler(this.nudEndurance_ValueChanged);
             // 
             // label13
             // 
@@ -451,6 +458,7 @@
             this.nudSpeed.Name = "nudSpeed";
             this.nudSpeed.Size = new System.Drawing.Size(217, 21);
             this.nudSpeed.TabIndex = 17;
+            this.nudSpeed.ValueChanged += new System.EventHandler(this.nudSpeed_ValueChanged);
             // 
             // label14
             // 
@@ -469,6 +477,7 @@
             this.nudStealth.Name = "nudStealth";
             this.nudStealth.Size = new System.Drawing.Size(217, 21);
             this.nudStealth.TabIndex = 15;
+            this.nudStealth.ValueChanged += new System.EventHandler(this.nudStealth_ValueChanged);
             // 
             // label15
             // 
@@ -487,6 +496,7 @@
             this.nudAcrobatics.Name = "nudAcrobatics";
             this.nudAcrobatics.Size = new System.Drawing.Size(217, 21);
             this.nudAcrobatics.TabIndex = 13;
+            this.nudAcrobatics.ValueChanged += new System.EventHandler(this.nudAcrobatics_ValueChanged);
             // 
             // label16
             // 
@@ -505,6 +515,7 @@
             this.nudDexterity.Name = "nudDexterity";
             this.nudDexterity.Size = new System.Drawing.Size(217, 21);
             this.nudDexterity.TabIndex = 11;
+            this.nudDexterity.ValueChanged += new System.EventHandler(this.nudDexterity_ValueChanged);
             // 
             // label17
             // 
@@ -543,6 +554,7 @@
             this.nudResistance.Name = "nudResistance";
             this.nudResistance.Size = new System.Drawing.Size(217, 21);
             this.nudResistance.TabIndex = 19;
+            this.nudResistance.ValueChanged += new System.EventHandler(this.nudResistance_ValueChanged);
             // 
             // label18
             // 
@@ -561,6 +573,7 @@
             this.nudChi.Name = "nudChi";
             this.nudChi.Size = new System.Drawing.Size(217, 21);
             this.nudChi.TabIndex = 17;
+            this.nudChi.ValueChanged += new System.EventHandler(this.nudChi_ValueChanged);
             // 
             // label19
             // 
@@ -579,6 +592,7 @@
             this.nudStamina.Name = "nudStamina";
             this.nudStamina.Size = new System.Drawing.Size(217, 21);
             this.nudStamina.TabIndex = 15;
+            this.nudStamina.ValueChanged += new System.EventHandler(this.nudStamina_ValueChanged);
             // 
             // label20
             // 
@@ -597,6 +611,7 @@
             this.nudHealth.Name = "nudHealth";
             this.nudHealth.Size = new System.Drawing.Size(217, 21);
             this.nudHealth.TabIndex = 13;
+            this.nudHealth.ValueChanged += new System.EventHandler(this.nudHealth_ValueChanged);
             // 
             // label21
             // 
@@ -615,6 +630,7 @@
             this.nudConstitution.Name = "nudConstitution";
             this.nudConstitution.Size = new System.Drawing.Size(217, 21);
             this.nudConstitution.TabIndex = 11;
+            this.nudConstitution.ValueChanged += new System.EventHandler(this.nudConstitution_ValueChanged);
             // 
             // label22
             // 
@@ -649,6 +665,7 @@
             this.nudCombat.Name = "nudCombat";
             this.nudCombat.Size = new System.Drawing.Size(217, 21);
             this.nudCombat.TabIndex = 15;
+            this.nudCombat.ValueChanged += new System.EventHandler(this.nudCombat_ValueChanged);
             // 
             // label25
             // 
@@ -667,6 +684,7 @@
             this.nudTechnology.Name = "nudTechnology";
             this.nudTechnology.Size = new System.Drawing.Size(217, 21);
             this.nudTechnology.TabIndex = 13;
+            this.nudTechnology.ValueChanged += new System.EventHandler(this.nudTechnology_ValueChanged);
             // 
             // label26
             // 
@@ -685,6 +703,7 @@
             this.nudIntelligence.Name = "nudIntelligence";
             this.nudIntelligence.Size = new System.Drawing.Size(217, 21);
             this.nudIntelligence.TabIndex = 11;
+            this.nudIntelligence.ValueChanged += new System.EventHandler(this.nudIntelligence_ValueChanged);
             // 
             // label27
             // 
@@ -721,6 +740,7 @@
             this.nudPerception.Name = "nudPerception";
             this.nudPerception.Size = new System.Drawing.Size(217, 21);
             this.nudPerception.TabIndex = 17;
+            this.nudPerception.ValueChanged += new System.EventHandler(this.nudPerception_ValueChanged);
             // 
             // label24
             // 
@@ -739,6 +759,7 @@
             this.nudMedicine.Name = "nudMedicine";
             this.nudMedicine.Size = new System.Drawing.Size(217, 21);
             this.nudMedicine.TabIndex = 15;
+            this.nudMedicine.ValueChanged += new System.EventHandler(this.nudMedicine_ValueChanged);
             // 
             // label28
             // 
@@ -757,6 +778,7 @@
             this.nudInsight.Name = "nudInsight";
             this.nudInsight.Size = new System.Drawing.Size(217, 21);
             this.nudInsight.TabIndex = 13;
+            this.nudInsight.ValueChanged += new System.EventHandler(this.nudInsight_ValueChanged);
             // 
             // label29
             // 
@@ -775,6 +797,7 @@
             this.nudWisdom.Name = "nudWisdom";
             this.nudWisdom.Size = new System.Drawing.Size(217, 21);
             this.nudWisdom.TabIndex = 11;
+            this.nudWisdom.ValueChanged += new System.EventHandler(this.nudWisdom_ValueChanged);
             // 
             // label30
             // 
@@ -792,7 +815,7 @@
             this.tabPage6.Controls.Add(this.label23);
             this.tabPage6.Controls.Add(this.nudPerformance);
             this.tabPage6.Controls.Add(this.label31);
-            this.tabPage6.Controls.Add(this.Intimidation);
+            this.tabPage6.Controls.Add(this.nudIntimidation);
             this.tabPage6.Controls.Add(this.label32);
             this.tabPage6.Controls.Add(this.nudDeception);
             this.tabPage6.Controls.Add(this.label33);
@@ -813,6 +836,7 @@
             this.nudPersuasion.Name = "nudPersuasion";
             this.nudPersuasion.Size = new System.Drawing.Size(217, 21);
             this.nudPersuasion.TabIndex = 19;
+            this.nudPersuasion.ValueChanged += new System.EventHandler(this.nudPersuasion_ValueChanged);
             // 
             // label23
             // 
@@ -831,6 +855,7 @@
             this.nudPerformance.Name = "nudPerformance";
             this.nudPerformance.Size = new System.Drawing.Size(217, 21);
             this.nudPerformance.TabIndex = 17;
+            this.nudPerformance.ValueChanged += new System.EventHandler(this.nudPerformance_ValueChanged);
             // 
             // label31
             // 
@@ -842,13 +867,14 @@
             this.label31.TabIndex = 16;
             this.label31.Text = "Performance:";
             // 
-            // Intimidation
+            // nudIntimidation
             // 
-            this.Intimidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Intimidation.Location = new System.Drawing.Point(118, 50);
-            this.Intimidation.Name = "Intimidation";
-            this.Intimidation.Size = new System.Drawing.Size(217, 21);
-            this.Intimidation.TabIndex = 15;
+            this.nudIntimidation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudIntimidation.Location = new System.Drawing.Point(118, 50);
+            this.nudIntimidation.Name = "nudIntimidation";
+            this.nudIntimidation.Size = new System.Drawing.Size(217, 21);
+            this.nudIntimidation.TabIndex = 15;
+            this.nudIntimidation.ValueChanged += new System.EventHandler(this.nudIntimidation_ValueChanged);
             // 
             // label32
             // 
@@ -867,6 +893,7 @@
             this.nudDeception.Name = "nudDeception";
             this.nudDeception.Size = new System.Drawing.Size(217, 21);
             this.nudDeception.TabIndex = 13;
+            this.nudDeception.ValueChanged += new System.EventHandler(this.nudDeception_ValueChanged);
             // 
             // label33
             // 
@@ -885,6 +912,7 @@
             this.nudCharisma.Name = "nudCharisma";
             this.nudCharisma.Size = new System.Drawing.Size(217, 21);
             this.nudCharisma.TabIndex = 11;
+            this.nudCharisma.ValueChanged += new System.EventHandler(this.nudCharisma_ValueChanged);
             // 
             // label34
             // 
@@ -908,6 +936,7 @@
             this.nudStatPoints.Name = "nudStatPoints";
             this.nudStatPoints.Size = new System.Drawing.Size(59, 21);
             this.nudStatPoints.TabIndex = 18;
+            this.nudStatPoints.ValueChanged += new System.EventHandler(this.nudStatPoints_ValueChanged);
             // 
             // lblStats
             // 
@@ -941,6 +970,7 @@
             this.nudSpecPoints.Name = "nudSpecPoints";
             this.nudSpecPoints.Size = new System.Drawing.Size(59, 21);
             this.nudSpecPoints.TabIndex = 19;
+            this.nudSpecPoints.ValueChanged += new System.EventHandler(this.nudSpecPoints_ValueChanged);
             // 
             // StatsGroup
             // 
@@ -1074,6 +1104,7 @@
             this.nudCurrentStamina.Name = "nudCurrentStamina";
             this.nudCurrentStamina.Size = new System.Drawing.Size(137, 26);
             this.nudCurrentStamina.TabIndex = 32;
+            this.nudCurrentStamina.ValueChanged += new System.EventHandler(this.nudCurrentStamina_ValueChanged);
             // 
             // btnFillChi
             // 
@@ -1101,6 +1132,7 @@
             this.nudCurrentChi.Name = "nudCurrentChi";
             this.nudCurrentChi.Size = new System.Drawing.Size(200, 26);
             this.nudCurrentChi.TabIndex = 29;
+            this.nudCurrentChi.ValueChanged += new System.EventHandler(this.nudCurrentChi_ValueChanged);
             // 
             // label4
             // 
@@ -1119,6 +1151,7 @@
             this.nudEXP.Name = "nudEXP";
             this.nudEXP.Size = new System.Drawing.Size(200, 26);
             this.nudEXP.TabIndex = 26;
+            this.nudEXP.ValueChanged += new System.EventHandler(this.nudEXP_ValueChanged);
             // 
             // btnFillHealth
             // 
@@ -1343,6 +1376,7 @@
             this.Name = "MainForm";
             this.Text = "PlayerName";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudLevel)).EndInit();
             this.PlayerGroup.ResumeLayout(false);
@@ -1385,7 +1419,7 @@
             this.tabPage6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudPersuasion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPerformance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Intimidation)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudIntimidation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudDeception)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCharisma)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudStatPoints)).EndInit();
@@ -1490,7 +1524,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.NumericUpDown nudPerformance;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.NumericUpDown Intimidation;
+        private System.Windows.Forms.NumericUpDown nudIntimidation;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.NumericUpDown nudDeception;
         private System.Windows.Forms.Label label33;

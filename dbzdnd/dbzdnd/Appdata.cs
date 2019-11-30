@@ -23,7 +23,7 @@ namespace dbzdnd
         private int Intelligence, Technology, Combat;
         private int Wisdom, Insight, Medicine, Perception;
         private int Charisma, Deception, Intimidation, Performace, Persuasion;
-        private Network saveLoadLocation;
+        private static Network saveLoadLocation;
         
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace dbzdnd
         public int _Intimidation { get => Intimidation; set => Intimidation = value; }
         public int _Performace { get => Performace; set => Performace = value; }
         public int _Persuasion { get => Persuasion; set => Persuasion = value; }
-        public Network _saveLoadLocation { get => saveLoadLocation; set => saveLoadLocation = value; }
+        public static Network _saveLoadLocation { get => saveLoadLocation; set => saveLoadLocation = value; }
         #endregion
 
         #region "loading"
@@ -164,7 +164,7 @@ namespace dbzdnd
             {
                 //TODO de serialize playerData
                 currentAppData = JsonConvert.DeserializeObject<AppData>(playerData);
-                currentAppData._saveLoadLocation = networkLocation;
+                _saveLoadLocation = networkLocation;
                 Input = "testA"; //Load Online
             }
             else
@@ -226,6 +226,20 @@ namespace dbzdnd
         #endregion
 
         #region "saving"
+        public static void saveAppData()
+        {
+            _saveLoadLocation.Save();
+        }
+
+        public void startTimer()
+        {
+            if(_MainForm != null)
+            {
+                _MainForm.startTimer();
+            }
+            
+        }
+
         override
         public String ToString()
         {
