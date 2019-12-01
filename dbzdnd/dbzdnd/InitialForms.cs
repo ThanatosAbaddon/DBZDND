@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -26,14 +27,11 @@ namespace dbzdnd
             try
             {
                 Network newNetwork = new Network(txtIP.Text, Decimal.ToInt32(txtPort.Value));
-
+                //Load player data from network
                 string playerData = newNetwork.Get(txtName.Text);
 
                 if (playerData != "") {
-                    //Removes headder from player data
-                    playerData = playerData.Substring(playerData.IndexOf("\n") + 1, playerData.Length - txtName.Text.Length - 1);
-
-                    AppData.Instance(txtName.Text, true, newNetwork, playerData);
+                    AppData.Instance(txtName.Text, playerData, newNetwork);
                     this.Hide();
                 } else
                 {
@@ -48,9 +46,17 @@ namespace dbzdnd
 
         private void btnOffline_Click(object sender, EventArgs e)
         {
-            //CHECK THAT THERE IS A FILE WITH THE GIVEN NAME
-            AppData.Instance(txtName.Text, false);
-            this.Hide();
+            try
+            {
+                //Load player data from file
+                string playerData = File.ReadAllText(txtName.Text + ".json");
+                
+                AppData.Instance(txtName.Text, playerData);
+                this.Hide();
+            } catch (FileNotFoundException)
+            {
+                MessageBox.Show("Incorrect name");
+            }
         }
     }
 }

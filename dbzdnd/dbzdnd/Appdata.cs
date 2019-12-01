@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -154,26 +155,16 @@ namespace dbzdnd
         /// Loads the appData data
         /// </summary>
         /// <returns></returns>
-        public static AppData LoadAppData(bool Online, string name, Network networkLocation = null, string playerData = "")
+        public static AppData LoadAppData(string name, string playerData, Network networkLocation = null)
         {
             AppData currentAppData;
-            string Input;
 
-            //set all values
-            if (Online == true)
-            {
-                //TODO de serialize playerData
-                currentAppData = JsonConvert.DeserializeObject<AppData>(playerData);
-                _saveLoadLocation = networkLocation;
-                Input = "testA"; //Load Online
-            }
-            else
-            {
-                currentAppData = new AppData();
-                currentAppData.PlayerName = name;
-                Input = "testB"; //Load Local
-            }
-            Console.WriteLine(Input);
+            //Removes headder from player data
+            playerData = playerData.Substring(playerData.IndexOf("\n") + 1, playerData.Length - name.Length - 1);
+
+            currentAppData = JsonConvert.DeserializeObject<AppData>(playerData);
+            _saveLoadLocation = networkLocation;
+            
             return currentAppData;
         }
 
@@ -185,7 +176,7 @@ namespace dbzdnd
         /// <param name="name">user's name, used to load the save</param>
         /// <param name="loadLocation">online / offline / none loading</param>
         /// <returns></returns>
-        public static AppData Instance(string name, bool Online, Network NetworkLocation = null, string playerData = "")
+        public static AppData Instance(string name, string playerData, Network NetworkLocation = null)
         {
 
             lock (padlock)
@@ -193,16 +184,7 @@ namespace dbzdnd
                 if (singleObject == null)
                 {
                     //loads the saved appdata
-                    //remember to account for being online or offline
-                    singleObject = new AppData();
-                    if (Online == true)
-                    {
-                        singleObject = LoadAppData(true, name, NetworkLocation, playerData);
-                    }
-                    else
-                    {
-                        singleObject = LoadAppData(false, name);
-                    }
+                    singleObject = LoadAppData(name, playerData, NetworkLocation);
 
                 }
                 singleObject._MainForm = new MainForm();
@@ -228,7 +210,24 @@ namespace dbzdnd
         #region "saving"
         public static void saveAppData()
         {
-            _saveLoadLocation.Save();
+            if (_saveLoadLocation == null)
+            {
+                Console.WriteLine("Local Auto Saving");
+
+                //Get AppData
+                AppData playerData = AppData.Instance();
+
+                //Serialize
+                string fileString = playerData._PlayerName + "\n" + playerData;
+
+                File.WriteAllText(playerData._PlayerName + ".json", fileString);
+
+                Console.WriteLine("Local Saved");
+            }
+            else
+            {
+                _saveLoadLocation.Save();
+            }
         }
 
         public void startTimer()
@@ -243,7 +242,7 @@ namespace dbzdnd
         override
         public String ToString()
         {
-            return "";
+            return JsonConvert.SerializeObject(singleObject);
         }
 
         #endregion

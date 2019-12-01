@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.IO;
 using System.Net.Sockets;
 
@@ -34,7 +33,7 @@ namespace dbzdnd
                 AppData playerData = AppData.Instance();
 
                 //Serialize
-                string fileString = playerData._PlayerName + "\n" + JsonConvert.SerializeObject(playerData);
+                string fileString = playerData._PlayerName + "\n" + playerData;
 
                 //Send file
                 sw.WriteLine(fileString + "\nEND");
