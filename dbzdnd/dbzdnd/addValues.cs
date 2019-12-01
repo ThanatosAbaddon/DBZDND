@@ -31,11 +31,11 @@ namespace dbzdnd
             {
                 if(doing == "take")
                 {
-                    mainRetrunForm.changeCredits(0 - nudValue.Value);
+                    mainRetrunForm.changeCredits(0 - (int)nudValue.Value);
                 }
                 else if (doing == "add")
                 {
-                    mainRetrunForm.changeCredits(nudValue.Value);
+                    mainRetrunForm.changeCredits((int)nudValue.Value);
                 }
             }
             this.Close();

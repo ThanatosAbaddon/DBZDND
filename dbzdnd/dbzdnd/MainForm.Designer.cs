@@ -108,7 +108,6 @@
             this.BattleGroup = new System.Windows.Forms.GroupBox();
             this.btnSkills = new System.Windows.Forms.Button();
             this.btnTransform = new System.Windows.Forms.Button();
-            this.btnAddConstStam = new System.Windows.Forms.Button();
             this.btnRecieveDamage = new System.Windows.Forms.Button();
             this.btnSuper = new System.Windows.Forms.Button();
             this.btnAttack = new System.Windows.Forms.Button();
@@ -125,7 +124,6 @@
             this.InventoryGroup = new System.Windows.Forms.GroupBox();
             this.btnRemEnergy = new System.Windows.Forms.Button();
             this.btnAddEnergy = new System.Windows.Forms.Button();
-            this.btnUseEnergy = new System.Windows.Forms.Button();
             this.lblEnergyPills = new System.Windows.Forms.Label();
             this.btnRemoveCredits = new System.Windows.Forms.Button();
             this.btnRemRec = new System.Windows.Forms.Button();
@@ -133,8 +131,6 @@
             this.btnAddCredits = new System.Windows.Forms.Button();
             this.btnAddRec = new System.Windows.Forms.Button();
             this.btnAddStim = new System.Windows.Forms.Button();
-            this.btnUseRec = new System.Windows.Forms.Button();
-            this.btnUseStim = new System.Windows.Forms.Button();
             this.lblCredits = new System.Windows.Forms.Label();
             this.lblRecoveryPills = new System.Windows.Forms.Label();
             this.lblStimPills = new System.Windows.Forms.Label();
@@ -991,6 +987,11 @@
             this.nudCurrentHealth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.nudCurrentHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nudCurrentHealth.Location = new System.Drawing.Point(80, 19);
+            this.nudCurrentHealth.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.nudCurrentHealth.Name = "nudCurrentHealth";
             this.nudCurrentHealth.Size = new System.Drawing.Size(200, 26);
             this.nudCurrentHealth.TabIndex = 23;
@@ -1000,7 +1001,6 @@
             // 
             this.BattleGroup.Controls.Add(this.btnSkills);
             this.BattleGroup.Controls.Add(this.btnTransform);
-            this.BattleGroup.Controls.Add(this.btnAddConstStam);
             this.BattleGroup.Controls.Add(this.btnRecieveDamage);
             this.BattleGroup.Controls.Add(this.btnSuper);
             this.BattleGroup.Controls.Add(this.btnAttack);
@@ -1042,15 +1042,6 @@
             this.btnTransform.UseVisualStyleBackColor = true;
             this.btnTransform.Click += new System.EventHandler(this.btnTransform_Click);
             // 
-            // btnAddConstStam
-            // 
-            this.btnAddConstStam.Location = new System.Drawing.Point(223, 117);
-            this.btnAddConstStam.Name = "btnAddConstStam";
-            this.btnAddConstStam.Size = new System.Drawing.Size(58, 23);
-            this.btnAddConstStam.TabIndex = 38;
-            this.btnAddConstStam.Text = "+ const";
-            this.btnAddConstStam.UseVisualStyleBackColor = true;
-            // 
             // btnRecieveDamage
             // 
             this.btnRecieveDamage.Location = new System.Drawing.Point(10, 176);
@@ -1086,6 +1077,7 @@
             this.btnFillStamina.TabIndex = 34;
             this.btnFillStamina.Text = "Full";
             this.btnFillStamina.UseVisualStyleBackColor = true;
+            this.btnFillStamina.Click += new System.EventHandler(this.btnFillStamina_Click);
             // 
             // label6
             // 
@@ -1101,8 +1093,13 @@
             // 
             this.nudCurrentStamina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nudCurrentStamina.Location = new System.Drawing.Point(80, 115);
+            this.nudCurrentStamina.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.nudCurrentStamina.Name = "nudCurrentStamina";
-            this.nudCurrentStamina.Size = new System.Drawing.Size(137, 26);
+            this.nudCurrentStamina.Size = new System.Drawing.Size(200, 26);
             this.nudCurrentStamina.TabIndex = 32;
             this.nudCurrentStamina.ValueChanged += new System.EventHandler(this.nudCurrentStamina_ValueChanged);
             // 
@@ -1114,6 +1111,7 @@
             this.btnFillChi.TabIndex = 31;
             this.btnFillChi.Text = "Full";
             this.btnFillChi.UseVisualStyleBackColor = true;
+            this.btnFillChi.Click += new System.EventHandler(this.btnFillChi_Click);
             // 
             // label5
             // 
@@ -1129,6 +1127,11 @@
             // 
             this.nudCurrentChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nudCurrentChi.Location = new System.Drawing.Point(80, 83);
+            this.nudCurrentChi.Maximum = new decimal(new int[] {
+            10000000,
+            0,
+            0,
+            0});
             this.nudCurrentChi.Name = "nudCurrentChi";
             this.nudCurrentChi.Size = new System.Drawing.Size(200, 26);
             this.nudCurrentChi.TabIndex = 29;
@@ -1148,6 +1151,11 @@
             // 
             this.nudEXP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nudEXP.Location = new System.Drawing.Point(80, 51);
+            this.nudEXP.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.nudEXP.Name = "nudEXP";
             this.nudEXP.Size = new System.Drawing.Size(200, 26);
             this.nudEXP.TabIndex = 26;
@@ -1177,7 +1185,6 @@
             // 
             this.InventoryGroup.Controls.Add(this.btnRemEnergy);
             this.InventoryGroup.Controls.Add(this.btnAddEnergy);
-            this.InventoryGroup.Controls.Add(this.btnUseEnergy);
             this.InventoryGroup.Controls.Add(this.lblEnergyPills);
             this.InventoryGroup.Controls.Add(this.btnRemoveCredits);
             this.InventoryGroup.Controls.Add(this.btnRemRec);
@@ -1185,8 +1192,6 @@
             this.InventoryGroup.Controls.Add(this.btnAddCredits);
             this.InventoryGroup.Controls.Add(this.btnAddRec);
             this.InventoryGroup.Controls.Add(this.btnAddStim);
-            this.InventoryGroup.Controls.Add(this.btnUseRec);
-            this.InventoryGroup.Controls.Add(this.btnUseStim);
             this.InventoryGroup.Controls.Add(this.lblCredits);
             this.InventoryGroup.Controls.Add(this.lblRecoveryPills);
             this.InventoryGroup.Controls.Add(this.lblStimPills);
@@ -1200,9 +1205,9 @@
             // 
             // btnRemEnergy
             // 
-            this.btnRemEnergy.Location = new System.Drawing.Point(255, 103);
+            this.btnRemEnergy.Location = new System.Drawing.Point(307, 103);
             this.btnRemEnergy.Name = "btnRemEnergy";
-            this.btnRemEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnRemEnergy.Size = new System.Drawing.Size(45, 23);
             this.btnRemEnergy.TabIndex = 13;
             this.btnRemEnergy.Text = "-";
             this.btnRemEnergy.UseVisualStyleBackColor = true;
@@ -1210,23 +1215,13 @@
             // 
             // btnAddEnergy
             // 
-            this.btnAddEnergy.Location = new System.Drawing.Point(216, 103);
+            this.btnAddEnergy.Location = new System.Drawing.Point(256, 103);
             this.btnAddEnergy.Name = "btnAddEnergy";
-            this.btnAddEnergy.Size = new System.Drawing.Size(33, 23);
+            this.btnAddEnergy.Size = new System.Drawing.Size(45, 23);
             this.btnAddEnergy.TabIndex = 12;
             this.btnAddEnergy.Text = "+";
             this.btnAddEnergy.UseVisualStyleBackColor = true;
             this.btnAddEnergy.Click += new System.EventHandler(this.btnAddEnergy_Click);
-            // 
-            // btnUseEnergy
-            // 
-            this.btnUseEnergy.Location = new System.Drawing.Point(294, 103);
-            this.btnUseEnergy.Name = "btnUseEnergy";
-            this.btnUseEnergy.Size = new System.Drawing.Size(58, 23);
-            this.btnUseEnergy.TabIndex = 14;
-            this.btnUseEnergy.Text = "Use";
-            this.btnUseEnergy.UseVisualStyleBackColor = true;
-            this.btnUseEnergy.Click += new System.EventHandler(this.btnUseEnergy_Click);
             // 
             // lblEnergyPills
             // 
@@ -1240,9 +1235,9 @@
             // 
             // btnRemoveCredits
             // 
-            this.btnRemoveCredits.Location = new System.Drawing.Point(255, 131);
+            this.btnRemoveCredits.Location = new System.Drawing.Point(307, 131);
             this.btnRemoveCredits.Name = "btnRemoveCredits";
-            this.btnRemoveCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnRemoveCredits.Size = new System.Drawing.Size(45, 23);
             this.btnRemoveCredits.TabIndex = 17;
             this.btnRemoveCredits.Text = "-";
             this.btnRemoveCredits.UseVisualStyleBackColor = true;
@@ -1250,9 +1245,9 @@
             // 
             // btnRemRec
             // 
-            this.btnRemRec.Location = new System.Drawing.Point(255, 75);
+            this.btnRemRec.Location = new System.Drawing.Point(307, 75);
             this.btnRemRec.Name = "btnRemRec";
-            this.btnRemRec.Size = new System.Drawing.Size(33, 23);
+            this.btnRemRec.Size = new System.Drawing.Size(45, 23);
             this.btnRemRec.TabIndex = 9;
             this.btnRemRec.Text = "-";
             this.btnRemRec.UseVisualStyleBackColor = true;
@@ -1260,9 +1255,9 @@
             // 
             // btnRemStim
             // 
-            this.btnRemStim.Location = new System.Drawing.Point(255, 47);
+            this.btnRemStim.Location = new System.Drawing.Point(307, 47);
             this.btnRemStim.Name = "btnRemStim";
-            this.btnRemStim.Size = new System.Drawing.Size(33, 23);
+            this.btnRemStim.Size = new System.Drawing.Size(45, 23);
             this.btnRemStim.TabIndex = 5;
             this.btnRemStim.Text = "-";
             this.btnRemStim.UseVisualStyleBackColor = true;
@@ -1270,9 +1265,9 @@
             // 
             // btnAddCredits
             // 
-            this.btnAddCredits.Location = new System.Drawing.Point(216, 131);
+            this.btnAddCredits.Location = new System.Drawing.Point(256, 131);
             this.btnAddCredits.Name = "btnAddCredits";
-            this.btnAddCredits.Size = new System.Drawing.Size(33, 23);
+            this.btnAddCredits.Size = new System.Drawing.Size(45, 23);
             this.btnAddCredits.TabIndex = 16;
             this.btnAddCredits.Text = "+";
             this.btnAddCredits.UseVisualStyleBackColor = true;
@@ -1280,9 +1275,9 @@
             // 
             // btnAddRec
             // 
-            this.btnAddRec.Location = new System.Drawing.Point(216, 75);
+            this.btnAddRec.Location = new System.Drawing.Point(256, 75);
             this.btnAddRec.Name = "btnAddRec";
-            this.btnAddRec.Size = new System.Drawing.Size(33, 23);
+            this.btnAddRec.Size = new System.Drawing.Size(45, 23);
             this.btnAddRec.TabIndex = 8;
             this.btnAddRec.Text = "+";
             this.btnAddRec.UseVisualStyleBackColor = true;
@@ -1290,33 +1285,13 @@
             // 
             // btnAddStim
             // 
-            this.btnAddStim.Location = new System.Drawing.Point(216, 47);
+            this.btnAddStim.Location = new System.Drawing.Point(256, 47);
             this.btnAddStim.Name = "btnAddStim";
-            this.btnAddStim.Size = new System.Drawing.Size(33, 23);
+            this.btnAddStim.Size = new System.Drawing.Size(45, 23);
             this.btnAddStim.TabIndex = 4;
             this.btnAddStim.Text = "+";
             this.btnAddStim.UseVisualStyleBackColor = true;
             this.btnAddStim.Click += new System.EventHandler(this.btnAddStim_Click);
-            // 
-            // btnUseRec
-            // 
-            this.btnUseRec.Location = new System.Drawing.Point(294, 75);
-            this.btnUseRec.Name = "btnUseRec";
-            this.btnUseRec.Size = new System.Drawing.Size(58, 23);
-            this.btnUseRec.TabIndex = 10;
-            this.btnUseRec.Text = "Use";
-            this.btnUseRec.UseVisualStyleBackColor = true;
-            this.btnUseRec.Click += new System.EventHandler(this.btnUseRec_Click);
-            // 
-            // btnUseStim
-            // 
-            this.btnUseStim.Location = new System.Drawing.Point(294, 47);
-            this.btnUseStim.Name = "btnUseStim";
-            this.btnUseStim.Size = new System.Drawing.Size(58, 23);
-            this.btnUseStim.TabIndex = 6;
-            this.btnUseStim.Text = "Use";
-            this.btnUseStim.UseVisualStyleBackColor = true;
-            this.btnUseStim.Click += new System.EventHandler(this.btnUseStim_Click);
             // 
             // lblCredits
             // 
@@ -1530,7 +1505,6 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.NumericUpDown nudCharisma;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Button btnAddConstStam;
         private System.Windows.Forms.Button btnTransform;
         private System.Windows.Forms.Button btnSkills;
         private System.Windows.Forms.GroupBox InventoryGroup;
@@ -1540,15 +1514,12 @@
         private System.Windows.Forms.Button btnAddCredits;
         private System.Windows.Forms.Button btnAddRec;
         private System.Windows.Forms.Button btnAddStim;
-        private System.Windows.Forms.Button btnUseRec;
-        private System.Windows.Forms.Button btnUseStim;
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Label lblRecoveryPills;
         private System.Windows.Forms.Label lblStimPills;
         private System.Windows.Forms.Button btnInventory;
         private System.Windows.Forms.Button btnRemEnergy;
         private System.Windows.Forms.Button btnAddEnergy;
-        private System.Windows.Forms.Button btnUseEnergy;
         private System.Windows.Forms.Label lblEnergyPills;
         private System.Windows.Forms.Timer autoSave;
     }

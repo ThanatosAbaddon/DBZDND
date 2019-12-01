@@ -15,8 +15,7 @@ namespace dbzdnd
         #region "variables"
         private string PlayerName, Name, Race, Height, Weight, Eyes, Skin, Alignment, Faction, Languages;
         private bool Male;
-        private decimal Credits;
-        private int Level, StimCount, RecoveryCount, EnergyCount, StatPoints, SpecPoints, Age;
+        private int Level, StimCount, RecoveryCount, EnergyCount, StatPoints, SpecPoints, Age, Credits;
         private int CurrentHealth, CurrentEXP, CurrentChi, CurrentStamina;
         private int Strength, BasicAttack, StrikeSupers, ChiBlastSupers, Athletics, Power;
         private int Dexterity, Acrobatics, Stealth, Speed, Endurance;
@@ -49,7 +48,7 @@ namespace dbzdnd
         public string _Faction { get => Faction; set => Faction = value; }
         public string _Languages { get => Languages; set => Languages = value; }
         public bool _Male { get => Male; set => Male = value; }
-        public decimal _Credits { get => Credits; set => Credits = value; }
+        public int _Credits { get => Credits; set => Credits = value; }
         public int _Level { get => Level; set => Level = value; }
         public int _StimCount { get => StimCount; set => StimCount = value; }
         public int _RecoveryCount { get => RecoveryCount; set => RecoveryCount = value; }
@@ -57,10 +56,7 @@ namespace dbzdnd
         public int _StatPoints { get => StatPoints; set => StatPoints = value; }
         public int _SpecPoints { get => SpecPoints; set => SpecPoints = value; }
         public int _Age { get => Age; set => Age = value; }
-        public int _CurrentHealth { get => CurrentHealth; set => CurrentHealth = value; }
         public int _CurrentEXP { get => CurrentEXP; set => CurrentEXP = value; }
-        public int _CurrentChi { get => CurrentChi; set => CurrentChi = value; }
-        public int _CurrentStamina { get => CurrentStamina; set => CurrentStamina = value; }
         public int _Strength { get => Strength; set => Strength = value; }
         public int _BasicAttack { get => BasicAttack; set => BasicAttack = value; }
         public int _StrikeSupers { get => StrikeSupers; set => StrikeSupers = value; }
@@ -90,6 +86,34 @@ namespace dbzdnd
         public int _Performace { get => Performace; set => Performace = value; }
         public int _Persuasion { get => Persuasion; set => Persuasion = value; }
         public static Network _saveLoadLocation { get => saveLoadLocation; set => saveLoadLocation = value; }
+
+        public int _CurrentHealth
+        {
+            get => CurrentHealth;
+            set{
+                CurrentHealth = value;
+                if (CurrentHealth > Health) CurrentHealth = Health;
+            }
+        }
+
+        public int _CurrentChi
+        {
+            get => CurrentChi;
+            set {
+                CurrentChi = value;
+                if (CurrentChi > Chi) CurrentChi = Chi;
+            }
+        }
+
+        public int _CurrentStamina
+        {
+            get => CurrentStamina;
+            set {
+                CurrentStamina = value;
+                if (CurrentStamina > Stamina) CurrentStamina = Stamina;
+            }
+        }
+
         #endregion
 
         #region "loading"

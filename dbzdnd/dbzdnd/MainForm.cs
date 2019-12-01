@@ -35,9 +35,22 @@ namespace dbzdnd
 
         private void btnFillHealth_Click(object sender, EventArgs e)
         {
-            
-            //other stuff
-            //hello
+            _AppData._CurrentHealth = _AppData._Health;
+            nudCurrentHealth.Value = _AppData._Health;
+            valueUpdate();
+        }
+        private void btnFillChi_Click(object sender, EventArgs e)
+        {
+            _AppData._CurrentChi = _AppData._Chi;
+            nudCurrentChi.Value = _AppData._CurrentChi;
+            valueUpdate();
+        }
+
+        private void btnFillStamina_Click(object sender, EventArgs e)
+        {
+            _AppData._CurrentStamina = _AppData._Stamina;
+            nudCurrentStamina.Value = _AppData._CurrentStamina;
+            valueUpdate();
         }
         #endregion
 
@@ -124,20 +137,6 @@ namespace dbzdnd
 
         }
 
-        private void btnUseStim_Click(object sender, EventArgs e)
-        {
-            if (_AppData._StimCount <= 0)
-            {
-                MessageBox.Show("ye nah fuck off mate");
-            }
-            else
-            {
-                _AppData._StimCount -= 1;
-                lblStimPills.Text = "Stimulation pills: " + _AppData._StimCount;
-                valueUpdate();
-            }
-        }
-
         private void btnAddRec_Click(object sender, EventArgs e)
         {
             _AppData._RecoveryCount += 1;
@@ -150,20 +149,6 @@ namespace dbzdnd
             if (_AppData._RecoveryCount <= 0)
             {
                 MessageBox.Show("mate wat u doin?");
-            }
-            else
-            {
-                _AppData._RecoveryCount -= 1;
-                lblRecoveryPills.Text = "Recovery pills: " + _AppData._RecoveryCount;
-                valueUpdate();
-            }
-        }
-
-        private void btnUseRec_Click(object sender, EventArgs e)
-        {
-            if (_AppData._RecoveryCount <= 0)
-            {
-                MessageBox.Show("ye nah fuck off mate");
             }
             else
             {
@@ -194,23 +179,8 @@ namespace dbzdnd
             }
         }
 
-        private void btnUseEnergy_Click(object sender, EventArgs e)
-        {
-            if (_AppData._EnergyCount <= 0)
-            {
-                MessageBox.Show("ye nah fuck off mate");
-            }
-            else
-            {
-                _AppData._EnergyCount -= 1;
-                lblEnergyPills.Text = "Energy pills: " + _AppData._EnergyCount;
-                valueUpdate();
-            }
-        }
-
         private void btnAddCredits_Click(object sender, EventArgs e)
         {
-
             new addValues("add", "credits", this);
         }
 
@@ -219,7 +189,7 @@ namespace dbzdnd
             new addValues("take", "credits", this);
         }
 
-        public void changeCredits(decimal amount)
+        public void changeCredits(int amount)
         {
             if (amount < 0 && _AppData._Credits + amount < 0)
             {
@@ -326,6 +296,7 @@ namespace dbzdnd
         private void nudCurrentHealth_ValueChanged(object sender, EventArgs e)
         {
             _AppData._CurrentHealth = decimal.ToInt32(nudCurrentHealth.Value);
+            nudCurrentHealth.Value = _AppData._CurrentHealth;
             valueUpdate();
         }
 
@@ -355,12 +326,14 @@ namespace dbzdnd
         private void nudCurrentChi_ValueChanged(object sender, EventArgs e)
         {
             _AppData._CurrentChi = decimal.ToInt32(nudCurrentChi.Value);
+            nudCurrentChi.Value = _AppData._CurrentChi;
             valueUpdate();
         }
 
         private void nudCurrentStamina_ValueChanged(object sender, EventArgs e)
         {
             _AppData._CurrentStamina = decimal.ToInt32(nudCurrentStamina.Value);
+            nudCurrentStamina.Value = _AppData._CurrentStamina;
             valueUpdate();
         }
 
