@@ -27,12 +27,34 @@ namespace dbzdnd
             try
             {
                 Network newNetwork = new Network(txtIP.Text, Decimal.ToInt32(txtPort.Value));
-                //Load player data from network
-                string playerData = newNetwork.Get(txtName.Text);
 
-                if (playerData != "") {
-                    AppData.Instance(txtName.Text, playerData, newNetwork);
+                //Load player data from network
+                string onlinePlayerDataString = newNetwork.Get(txtName.Text);
+                
+                //Test if online file exists
+                if (onlinePlayerDataString != "") {
+                    string[] onlinePlayerData = onlinePlayerDataString.Split(Environment.NewLine.ToCharArray());
+
+                    try
+                    {
+                        //Load local player file
+                        string[] localPlayerData = File.ReadAllText(txtName.Text + ".json").Split(Environment.NewLine.ToCharArray());
+
+                        //If local file can be loaded. Compare write times.
+                        if (System.Convert.ToInt32(localPlayerData[2]) > System.Convert.ToInt32(onlinePlayerData[2]))
+                        {
+                            AppData.Instance(txtName.Text, localPlayerData[1], newNetwork);
+                        } else
+                        {
+                            AppData.Instance(txtName.Text, onlinePlayerData[1], newNetwork);
+                        }
+
+                    } catch (FileNotFoundException)
+                    {
+                        AppData.Instance(txtName.Text, onlinePlayerData[1], newNetwork);
+                    }
                     this.Hide();
+                    
                 } else
                 {
                     MessageBox.Show("Incorrect name");
@@ -49,7 +71,7 @@ namespace dbzdnd
             try
             {
                 //Load player data from file
-                string playerData = File.ReadAllText(txtName.Text + ".json");
+                string playerData = File.ReadAllText(txtName.Text + ".json").Split(Environment.NewLine.ToCharArray())[1]; ;
                 
                 AppData.Instance(txtName.Text, playerData);
                 this.Hide();

@@ -159,9 +159,6 @@ namespace dbzdnd
         {
             AppData currentAppData;
 
-            //Removes headder from player data
-            playerData = playerData.Substring(playerData.IndexOf("\n") + 1, playerData.Length - name.Length - 1);
-
             currentAppData = JsonConvert.DeserializeObject<AppData>(playerData);
             _saveLoadLocation = networkLocation;
             
@@ -185,7 +182,6 @@ namespace dbzdnd
                 {
                     //loads the saved appdata
                     singleObject = LoadAppData(name, playerData, NetworkLocation);
-
                 }
                 singleObject._MainForm = new MainForm();
                 singleObject._MainForm.Show();
@@ -210,21 +206,15 @@ namespace dbzdnd
         #region "saving"
         public static void saveAppData()
         {
-            if (_saveLoadLocation == null)
-            {
-                Console.WriteLine("Local Auto Saving");
+            Console.WriteLine("Local Auto Saving");
+            
+            string fileString = singleObject._PlayerName + "\n" + singleObject + "\n" + DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            //Save local file
+            File.WriteAllText(singleObject._PlayerName + ".json", fileString);
 
-                //Get AppData
-                AppData playerData = AppData.Instance();
+            Console.WriteLine("Local Saved");
 
-                //Serialize
-                string fileString = playerData._PlayerName + "\n" + playerData;
-
-                File.WriteAllText(playerData._PlayerName + ".json", fileString);
-
-                Console.WriteLine("Local Saved");
-            }
-            else
+            if (_saveLoadLocation != null)
             {
                 _saveLoadLocation.Save();
             }

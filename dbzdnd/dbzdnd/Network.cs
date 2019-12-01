@@ -33,7 +33,7 @@ namespace dbzdnd
                 AppData playerData = AppData.Instance();
 
                 //Serialize
-                string fileString = playerData._PlayerName + "\n" + playerData;
+                string fileString = playerData._PlayerName + "\n" + playerData + "\n" + DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
                 //Send file
                 sw.WriteLine(fileString + "\nEND");
