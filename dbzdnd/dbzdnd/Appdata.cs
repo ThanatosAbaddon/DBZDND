@@ -253,6 +253,11 @@ namespace dbzdnd
             
         }
 
+        public void refreshForms()
+        {
+            _MainForm.refreshForm();
+        }
+
         override
         public String ToString()
         {
