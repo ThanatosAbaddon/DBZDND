@@ -252,6 +252,8 @@ namespace dbzdnd
             nudIntimidation.Value = _AppData._Intimidation;
             nudPerformance.Value = _AppData._Performace;
             nudPersuasion.Value = _AppData._Persuasion;
+
+            pbCharacterPicture.ImageLocation = "http://stellanova.ddns.net/DND/" + _AppData._PlayerName + ".png";
         }
 
         /// <summary>

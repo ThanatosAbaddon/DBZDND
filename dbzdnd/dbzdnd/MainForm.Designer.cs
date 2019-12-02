@@ -207,7 +207,6 @@
             // 
             // pbCharacterPicture
             // 
-            this.pbCharacterPicture.Image = global::dbzdnd.Properties.Resources.CharacterPic;
             this.pbCharacterPicture.Location = new System.Drawing.Point(376, 236);
             this.pbCharacterPicture.Name = "pbCharacterPicture";
             this.pbCharacterPicture.Size = new System.Drawing.Size(350, 306);

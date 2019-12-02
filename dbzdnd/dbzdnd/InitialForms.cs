@@ -26,19 +26,19 @@ namespace dbzdnd
         {
             try
             {
-                Network newNetwork = new Network(txtIP.Text, Decimal.ToInt32(txtPort.Value));
+                Network newNetwork = new Network(txtIP.Text, (int)txtPort.Value);
 
                 //Load player data from network
                 string onlinePlayerDataString = newNetwork.Get(txtName.Text);
                 
                 //Test if online file exists
                 if (onlinePlayerDataString != "") {
-                    string[] onlinePlayerData = onlinePlayerDataString.Split(Environment.NewLine.ToCharArray());
+                    string[] onlinePlayerData = onlinePlayerDataString.Split('\n');
 
                     try
                     {
                         //Load local player file
-                        string[] localPlayerData = File.ReadAllText(txtName.Text + ".json").Split(Environment.NewLine.ToCharArray());
+                        string[] localPlayerData = File.ReadAllText(txtName.Text + ".json").Split('\n');
 
                         //If local file can be loaded. Compare write times.
                         if (System.Convert.ToInt32(localPlayerData[2]) > System.Convert.ToInt32(onlinePlayerData[2]))
@@ -49,7 +49,7 @@ namespace dbzdnd
                             AppData.Instance(txtName.Text, onlinePlayerData[1], newNetwork);
                         }
 
-                    } catch (FileNotFoundException)
+                    } catch
                     {
                         AppData.Instance(txtName.Text, onlinePlayerData[1], newNetwork);
                     }
@@ -71,7 +71,7 @@ namespace dbzdnd
             try
             {
                 //Load player data from file
-                string playerData = File.ReadAllText(txtName.Text + ".json").Split(Environment.NewLine.ToCharArray())[1]; ;
+                string playerData = File.ReadAllText(txtName.Text + ".json").Split('\n')[1]; ;
                 
                 AppData.Instance(txtName.Text, playerData);
                 this.Hide();
