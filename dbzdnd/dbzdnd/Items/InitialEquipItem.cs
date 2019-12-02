@@ -14,7 +14,8 @@ namespace dbzdnd
         }
 
         public override void Use() {
-            
+            //appdata.equip
+            AppData.Instance().refreshForms();
         }
     }
 }
