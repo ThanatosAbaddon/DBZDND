@@ -13,8 +13,10 @@ namespace dbzdnd
     class AppData
     {
         #region "variables"
+        public enum Gender { Male, Female, NonBinary, Other };
+
         private string PlayerName, Name, Race, Height, Weight, Eyes, Skin, Alignment, Faction, Languages;
-        private bool Male;
+        private Gender gender;
         private int Level, StimCount, RecoveryCount, EnergyCount, StatPoints, SpecPoints, Age, Credits;
         private int CurrentHealth, CurrentEXP, CurrentChi, CurrentStamina;
         private int Strength, BasicAttack, StrikeSupers, ChiBlastSupers, Athletics, Power;
@@ -47,7 +49,7 @@ namespace dbzdnd
         public string _Alignment { get => Alignment; set => Alignment = value; }
         public string _Faction { get => Faction; set => Faction = value; }
         public string _Languages { get => Languages; set => Languages = value; }
-        public bool _Male { get => Male; set => Male = value; }
+        public Gender _Gender { get => gender; set => gender = value; }
         public int _Credits { get => Credits; set => Credits = value; }
         public int _Level { get => Level; set => Level = value; }
         public int _StimCount { get => StimCount; set => StimCount = value; }
@@ -132,7 +134,7 @@ namespace dbzdnd
             Alignment = "";
             Faction = "";
             Languages = "";
-            Male = true;
+            gender = Gender.Other;
             Credits = 0;
             Level = 0;
             StimCount = 0;

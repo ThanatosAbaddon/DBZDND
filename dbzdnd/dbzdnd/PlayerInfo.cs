@@ -19,15 +19,23 @@ namespace dbzdnd
             _AppData = AppData.Instance();
             txtPlayerName.Text = _AppData._PlayerName;
             txtName.Text = _AppData._Name;
-            if (_AppData._Male == true)
+            if (_AppData._Gender == AppData.Gender.Male)
             {
                 cbGender.Text = "Male";
             }
-            else
+            else if (_AppData._Gender == AppData.Gender.Female)
             {
                 cbGender.Text = "Female";
             }
-            
+            else if (_AppData._Gender == AppData.Gender.NonBinary)
+            {
+                cbGender.Text = "Non-binary";
+            }
+            else
+            {
+                cbGender.Text = "Other";
+            }
+
             cbRace.Text = _AppData._Race;
             cbAge.Value = _AppData._Age;
             txtHeight.Text = _AppData._Height;
@@ -62,13 +70,21 @@ namespace dbzdnd
 
         private void cbGender_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (txtPlayerName.Text.ToUpper() == "MALE")
+            if (cbGender.Text == "Male")
             {
-                _AppData._Male = true;
+                _AppData._Gender = AppData.Gender.Male;
             }
-            else if(txtPlayerName.Text.ToUpper() == "FEMALE")
+            else if(cbGender.Text == "Female")
             {
-                _AppData._Male = false;
+                _AppData._Gender = AppData.Gender.Female;
+            }
+            else if (cbGender.Text == "Non-binary")
+            {
+                _AppData._Gender = AppData.Gender.NonBinary;
+            }
+            else
+            {
+                _AppData._Gender = AppData.Gender.Other;
             }
             _AppData.startTimer();
         }

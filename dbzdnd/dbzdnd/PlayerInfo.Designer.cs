@@ -263,7 +263,9 @@
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
             "Male",
-            "Female"});
+            "Female",
+            "Non-binary",
+            "Other"});
             this.cbGender.Location = new System.Drawing.Point(8, 82);
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(453, 33);
